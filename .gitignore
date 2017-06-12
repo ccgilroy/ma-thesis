@@ -4,4 +4,7 @@ doc/notes/
 *.yml
 # ignore json files containing raw data
 *.json
+# ignore rds files containing raw data
+.rds
 .Rproj.user
+.httr-oauth
