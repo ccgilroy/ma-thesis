@@ -1,0 +1,7 @@
+# ignore scratch work sandbox
+doc/notes/
+# ignore yaml files containing api keys
+*.yml
+# ignore json files containing raw data
+*.json
+.Rproj.user
