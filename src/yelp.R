@@ -26,93 +26,7 @@ sig <- sign_oauth1.0(myapp, token = token, token_secret = token_secret)
 yelp_search <- "https://api.yelp.com/v2/search"
 
 ## TODO: programmatically create and read in list of cities
-cities <- c("Seattle")
-
-## Make requests ---------------------------------------------------------------
-
-lapply(cities, function(city) {
-  ## pause between API requests to avoid rate-limiting
-  Sys.sleep(10)
-  
-  ## make request
-  ## yelp_search and sig are global variables
-  query_list <-
-    list(
-      category_filter = "gaybars", 
-      location = city
-    )
-  r <- GET(yelp_search, sig, query = query_list)
-  
-  ## write response to json file
-  ## only if http status is ok
-  if(status_code(r) == 200) {
-    file_name <-
-      city %>% 
-      str_replace_all(pattern = " ", replacement = "_") %>%
-      str_to_lower() %>%
-      str_c(".json")
-    content(r, as = "text") %>% 
-      prettify() %>% 
-      write_file(file.path("data", "gaybars", "yelp", file_name))
-    
-    r_parsed <- content(r)
-    
-    ## Are there more than 20 listings?
-    if (r_parsed$total > 20) {
-      ## calculate number of offsets necessary
-      max_offsets <- floor(r_parsed$total / 20) 
-      
-      r_offsets <- 
-        lapply(1:max_offsets, function(offset) {
-          ## duplicate above code, but with offset
-          ## TODO: refactor this into a more elegant function
-          ## function(city, offset = 0)
-          
-          ## pause between API requests to avoid rate-limiting
-          Sys.sleep(10)
-          
-          ## make request
-          ## yelp_search and sig are global variables
-          query_list <-
-            list(
-              category_filter = "gaybars", 
-              location = city, 
-              offset = offset
-            )
-          r <- GET(yelp_search, sig, query = query_list)
-          
-          ## write response to json file
-          ## only if http status is ok
-          if(status_code(r) == 200) {
-            file_name <-
-              city %>% 
-              str_replace_all(pattern = " ", replacement = "_") %>%
-              str_to_lower() %>%
-              str_c(offset, ".json")
-            content(r, as = "text") %>% 
-              prettify() %>% 
-              write_file(file.path("data", "gaybars", "yelp", file_name))
-          }
-          
-          ## return response
-          r  
-        })
-      
-      ## return list of responses
-      c(list(r), r_offsets)
-    } else {
-      ## return single response if <= 20 listings
-      r
-    }
-  } else {
-    ## return single response if error
-    r
-  }
-}) -> responses 
-## assign responses to object for manual inspection if necessary
-
-## save as R object for request information
-saveRDS(responses, "data/gaybars/yelp/responses.rds")
+cities <- c("New York")
 
 ## Main function for making requests -------------------------------------------
 ## Note presence of hard-coded values like sleep time (10), 
@@ -140,7 +54,8 @@ make_yelp_request <- function(city, offset = 0) {
       city %>% 
       str_replace_all(pattern = " ", replacement = "_") %>%
       str_to_lower() %>%
-      str_c(offset, ".json")
+      str_c(offset, Sys.Date(), sep = "_") %>%
+      str_c(".json")
     content(r, as = "text") %>% 
       prettify() %>% 
       write_file(file.path("data", "gaybars", "yelp", file_name))
@@ -149,3 +64,43 @@ make_yelp_request <- function(city, offset = 0) {
   ## return response
   r  
 }
+
+## Make requests ---------------------------------------------------------------
+
+lapply(cities, function(city) {
+  
+  ## make first request (default offset = 0)
+  r <- make_yelp_request(city)
+  
+  ## only parse if status is ok
+  if(status_code(r) == 200) {
+    r_parsed <- content(r)
+    
+    ## Are there more than 20 listings?
+    if (r_parsed$total > 20) {
+      ## calculate number of offsets necessary
+      max_offsets <- floor(r_parsed$total / 20) 
+      
+      ## make requests with offsets
+      r_offsets <- 
+        lapply(1:max_offsets, function(offset) {
+          make_yelp_request(city, offset)
+        })
+      
+      ## return list of responses if > 20 listings
+      c(list(r), r_offsets)
+    } else {
+      ## return single response if <= 20 listings
+      r
+    }
+  } else {
+    ## return single response if http error
+    r
+  }
+}) -> responses 
+## assign responses to object for manual inspection if necessary
+
+## save as R object for request information
+saveRDS(responses, "data/gaybars/yelp/responses.rds")
+
+
