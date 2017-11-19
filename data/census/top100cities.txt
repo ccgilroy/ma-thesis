@@ -1,0 +1,100 @@
+New York, New York
+Los Angeles, California
+Chicago, Illinois
+Houston, Texas
+Philadelphia, Pennsylvania
+Phoenix, Arizona
+San Antonio, Texas
+San Diego, California
+Dallas, Texas
+San Jose, California
+Austin, Texas
+Jacksonville, Florida
+Indianapolis, Indiana
+San Francisco, California
+Columbus, Ohio
+Fort Worth, Texas
+Charlotte, North Carolina
+Detroit, Michigan
+El Paso, Texas
+Memphis, Tennessee
+Seattle, Washington
+Boston, Massachusetts
+Denver, Colorado
+Washington, District of Columbia
+Nashville, Tennessee
+Baltimore, Maryland
+Portland, Oregon
+Oklahoma City, Oklahoma
+Louisville, Kentucky
+Las Vegas, Nevada
+Milwaukee, Wisconsin
+Albuquerque, New Mexico
+Tucson, Arizona
+Fresno, California
+Sacramento, California
+Long Beach, California
+Kansas City, Missouri
+Mesa, Arizona
+Atlanta, Georgia
+Virginia Beach, Virginia
+Colorado Springs, Colorado
+Omaha, Nebraska
+Raleigh, North Carolina
+Miami, Florida
+Oakland, California
+Minneapolis, Minnesota
+Tulsa, Oklahoma
+Cleveland, Ohio
+Wichita, Kansas
+Arlington, Texas
+New Orleans, Louisiana
+Bakersfield, California
+San Juan, Puerto Rico
+Tampa, Florida
+Honolulu, Hawaii
+Aurora, Colorado
+Anaheim, California
+Santa Ana, California
+St. Louis, Missouri
+Corpus Christi, Texas
+Riverside, California
+Lexington, Kentucky
+Pittsburgh, Pennsylvania
+Stockton, California
+Anchorage, Alaska
+Cincinnati, Ohio
+St. Paul, Minnesota
+Toledo, Ohio
+Newark, New Jersey
+Greensboro, North Carolina
+Plano, Texas
+Henderson, Nevada
+Lincoln, Nebraska
+Jersey City, New Jersey
+Buffalo, New York
+Chula Vista, California
+Fort Wayne, Indiana
+Orlando, Florida
+St. Petersburg, Florida
+Chandler, Arizona
+Laredo, Texas
+Durham, North Carolina
+Norfolk, Virginia
+Madison, Wisconsin
+Lubbock, Texas
+Irvine, California
+Winston-Salem, North Carolina
+Glendale, Arizona
+Hialeah, Florida
+Garland, Texas
+Reno, Nevada
+Gilbert, Arizona
+Chesapeake, Virginia
+Baton Rouge, Louisiana
+Irving, Texas
+Scottsdale, Arizona
+Paradise, Nevada
+North Las Vegas, Nevada
+Fremont, California
+Arlington, Virginia

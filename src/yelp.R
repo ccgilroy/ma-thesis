@@ -25,8 +25,8 @@ sig <- sign_oauth1.0(myapp, token = token, token_secret = token_secret)
 ## yelp API v2 search url
 yelp_search <- "https://api.yelp.com/v2/search"
 
-## TODO: programmatically create and read in list of cities
-cities <- c("New York")
+## read in list of cities
+cities <- read_lines("data/census/top100cities.txt")
 
 ## Main function for making requests -------------------------------------------
 ## Note presence of hard-coded values like sleep time (10), 
@@ -53,6 +53,7 @@ make_yelp_request <- function(city, offset = 0) {
     file_name <-
       city %>% 
       str_replace_all(pattern = " ", replacement = "_") %>%
+      str_replace_all(pattern = ",", replacement = "") %>%
       str_to_lower() %>%
       str_c(offset, Sys.Date(), sep = "_") %>%
       str_c(".json")

@@ -6,5 +6,7 @@ doc/notes/
 *.json
 # ignore rds files containing raw data
 *.rds
+# ignore pdf files 
+*.pdf
 .Rproj.user
 .httr-oauth
