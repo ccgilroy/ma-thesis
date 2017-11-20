@@ -85,7 +85,7 @@ lapply(cities, function(city) {
       ## make requests with offsets
       r_offsets <- 
         lapply(1:max_offsets, function(offset) {
-          make_yelp_request(city, offset)
+          make_yelp_request(city, offset*20)
         })
       
       ## return list of responses if > 20 listings
