@@ -10,3 +10,4 @@ doc/notes/
 *.pdf
 .Rproj.user
 .httr-oauth
+.Rhistory
