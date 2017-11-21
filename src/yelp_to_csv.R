@@ -5,6 +5,7 @@ library(stringr)
 library(dplyr)
 library(tidyr)
 library(purrr)
+library(tibble)
 
 # Data set 1 ----
 # names and unique keys for each of top 100 cities searched
@@ -15,7 +16,9 @@ city_ids <-
   str_replace_all(pattern = ",", replacement = "") %>%
   str_to_lower() 
 
-search_cities <- data_frame(search_city = cities, search_city_id = city_ids)
+search_cities <- 
+  data_frame(search_city = cities, search_city_id = city_ids) %>%
+  rowid_to_column(var = "rank")
 
 # Data set 2 ----
 # yelp businesses with keys for cities searched
@@ -53,9 +56,34 @@ region <-
   responses %>%
   map("region") 
 
-businesses %>% 
+total <- 
+  responses %>%
+  map_int("total") %>%
+  data_frame(total_bars = ., search_city_id = names(.))
+
+# requires sacrificing search information
+# and information in list variables
+unique_bars <- 
+  businesses %>% 
   select(-search_city_id) %>% 
   select_if(function(x) !is.list(x)) %>% 
-  select(-ends_with("url"), -starts_with("image")) %>% 
-  distinct() %>% 
-  dim()
+  select(-contains("url")) %>% 
+  distinct()
+
+# this will pick the larger city and keep that
+unique_bars <- 
+  businesses %>% 
+  select(-contains("url"), -deals, -gift_certificates, -starts_with("menu")) %>%
+  left_join(search_cities, by = "search_city_id") %>% 
+  left_join(total, by = "search_city_id") %>%
+  arrange(rank) %>%
+  distinct(id, .keep_all = TRUE) %>%
+  filter(location.country_code == "US")
+
+unique_bars %>%
+  mutate_if(is.list, 
+            function(x) map(x, ~str_c(., collapse = ", "))) %>%
+  mutate_if(is.list, 
+            function(x) ifelse(lengths(x) > 0, x, NA)) %>%
+  mutate_if(is.list, flatten_chr) %>%
+  write_csv("data/gaybars/yelp/yelp_gaybars.csv")
