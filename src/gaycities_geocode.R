@@ -80,3 +80,24 @@ geocode_results %>%
   arrange(id) %>%
   filter(match %in% c("Tie", "No_Match"))
 
+# TODO: geocode ties and no-matches
+
+# merge geocode results with bar information ----
+matched_results <- 
+  geocode_results %>%
+  select(-address) %>%
+  filter(match == "Match")
+
+gaycities_geocoded <- inner_join(gaycities, matched_results, by = "id")
+
+gaycities_geocoded %>% group_by(state, county, tract) %>% count() %>% arrange(desc(n))
+
+gaycities_geocoded %>% 
+  group_by(state, county, tract) %>% 
+  count() %>% 
+  arrange(desc(n)) %>%
+  ungroup() %>%
+  group_by(n) %>%
+  count() 
+
+write_csv(gaycities_geocoded, "data/gaybars/gaycities/gaycities_geocoded.csv")
