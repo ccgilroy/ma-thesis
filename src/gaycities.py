@@ -1,3 +1,4 @@
+import bs4
 import requests
 import os
 import pandas as pd

@@ -189,7 +189,7 @@ econ_2010 <- pmap_df(states_and_counties_condensed, function(state, county) {
 # B25105 median monthly housing costs
 # B25064 median gross rent
 
-# join bar counts with ACS data --- 
+# join bar counts with ACS data ---- 
 
 bars_per_tract <- 
   gaycities_geocoded %>% 

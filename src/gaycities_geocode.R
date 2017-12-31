@@ -76,11 +76,25 @@ geocode_results <-
            col_names = geocode_result_names, 
            trim_ws = TRUE) 
 
-geocode_results %>%
+failure_ids <- 
+  geocode_results %>%
   arrange(id) %>%
-  filter(match %in% c("Tie", "No_Match"))
+  filter(match %in% c("Tie", "No_Match")) %>%
+  .$id
 
 # TODO: geocode ties and no-matches
+gaycities_geocode_failures <- 
+  gaycities %>%
+  filter(id %in% failure_ids)
+
+write_csv(gaycities_geocode_failures, 
+          "data/gaybars/gaycities/gaycities_geocode_failures.csv")
+
+# STEPS:
+# get bar page [python]
+# get zip code [python]
+# use google maps api [python]
+# send lat/long to Census [R?]
 
 # merge geocode results with bar information ----
 matched_results <- 
