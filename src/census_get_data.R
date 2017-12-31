@@ -6,11 +6,12 @@ library(dplyr)
 library(tidyr)
 library(yaml)
 
-gaycities_geocoded <- read_csv("data/gaybars/gaycities/gaycities_geocoded.csv")
+# TODO: rerun this with all bars
+gaycities_geocoded <- read_csv("data/gaybars/gaycities/gaycities_geocoded_all.csv")
 
-gaycities_geocoded <- 
-  gaycities_geocoded %>% 
-  mutate(GEOID = str_c(state, county, tract))
+# gaycities_geocoded <- 
+#   gaycities_geocoded %>% 
+#   mutate(GEOID = str_c(state, county, tract))
 
 states_and_counties <- 
   gaycities_geocoded %>% 

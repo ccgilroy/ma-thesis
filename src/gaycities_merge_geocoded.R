@@ -18,5 +18,12 @@ gaycities_geocoded_all <-
   bind_rows(gaycities_geocoded_by_coordinates) %>%
   arrange(id)
 
+gaycities_geocoded_all <- 
+  gaycities_geocoded_all %>%
+  mutate(lng = map_chr(str_split(coordinates, ","), ~.[1]), 
+         lat = map_chr(str_split(coordinates, ","), ~.[2]), 
+         lng = as.numeric(lng), 
+         lat = as.numeric(lat))
+
 write_csv(gaycities_geocoded_all, 
           "data/gaybars/gaycities/gaycities_geocoded_all.csv")
