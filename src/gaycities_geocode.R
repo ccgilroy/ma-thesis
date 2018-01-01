@@ -191,7 +191,7 @@ failure_ids <-
 
 # TODO: geocode ties and no-matches
 gaycities_geocode_failures <- 
-  gaycities %>%
+  gaycities_gm_geocoded %>%
   filter(id %in% failure_ids)
 
 write_csv(gaycities_geocode_failures, 
@@ -209,7 +209,10 @@ matched_results <-
   select(-address) %>%
   filter(match == "Match")
 
-gaycities_geocoded <- inner_join(gaycities, matched_results, by = "id")
+gaycities_geocoded <- 
+  gaycities_gm_geocoded %>%
+  rename(state_abbrevation = state) %>%
+  inner_join(matched_results, by = "id")
 
 gaycities_geocoded %>% group_by(state, county, tract) %>% count() %>% arrange(desc(n))
 
