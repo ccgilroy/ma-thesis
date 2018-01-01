@@ -115,7 +115,7 @@ gm_multiple_addresses <-
   mutate(zip = map2_chr(postal_code, i, ~.x[[.y]]), 
          formatted_address = map2_chr(formatted_address, i, ~.x[[.y]]), 
          lat = map2_chr(location, i, ~.x$lat[[.y]]), 
-         lng = map2_chr(location, i, ~.x$lat[[.y]]))
+         lng = map2_chr(location, i, ~.x$lng[[.y]]))
 
 vars_to_keep <- c("id", "street_address", "city_address", "state", "zip", 
                   "n_results", "formatted_address", "lat", "lng")
