@@ -211,7 +211,7 @@ matched_results <-
 
 gaycities_geocoded <- 
   gaycities_gm_geocoded %>%
-  rename(state_abbrevation = state) %>%
+  rename(state_abbreviation = state) %>%
   inner_join(matched_results, by = "id")
 
 gaycities_geocoded %>% group_by(state, county, tract) %>% count() %>% arrange(desc(n))
