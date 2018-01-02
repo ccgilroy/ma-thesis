@@ -148,6 +148,7 @@ for index, response in gaycities_geocode_failures.iterrows():
         print(response['id'])
 
 # add Census output to data frame with same structure  as original
+failures = []
 for r in census_responses:
     try:
         block = r['response'].json()['result']['geographies']['2010 Census Blocks'][0]
@@ -158,6 +159,7 @@ for r in census_responses:
         r['block'] = block['BLOCK']
         r['GEOID'] = tract['GEOID']
     except Exception as e:
+        failures.append(r['id'])
         print(r['id'])
         print(r['response'].text)
 
@@ -166,10 +168,10 @@ for r in census_responses:
 check_responses = [r for r in census_responses if r['id'] in [15, 384, 393, 588]]
 #
 for r in census_responses:
-    if r['id'] in [384]:
+    if r['id'] in failures:
         census_responses.remove(r)
 
-rows = gaycities_geocode_failures.loc[gaycities_geocode_failures['id'] == 384]
+rows = gaycities_geocode_failures.loc[gaycities_geocode_failures['id'].isin(failures)]
 
 for index, response in rows.iterrows():
     try:
@@ -188,7 +190,12 @@ for index, response in rows.iterrows():
         print(e)
         print(response['id'])
 
-census_responses
+# [i['response'].json() for i in census_responses if i['id'] == 384]
+#
+# census_ids = [i['id'] for i in census_responses]
+# gc_ids = list(gaycities_geocode_failures['id'])
+#
+# failures = list(set(gc_ids) - set(census_ids))
 
 # join to original data frame
 coords_list = []
