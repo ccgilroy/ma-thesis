@@ -8,6 +8,8 @@ doc/notes/
 *.rds
 # ignore pdf files 
 *.pdf
+# ignore zip files containing shapefiles
+*.zip
 .Rproj.user
 .httr-oauth
 .Rhistory

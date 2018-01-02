@@ -183,13 +183,17 @@ geocode_results <-
            col_names = geocode_result_names, 
            trim_ws = TRUE) 
 
+# handle failures ----
+# failures are ties or no-matches
+# OR exact matches that don't actually have state / county / tract
 failure_ids <- 
   geocode_results %>%
   arrange(id) %>%
-  filter(match %in% c("Tie", "No_Match")) %>%
+  filter(match %in% c("Tie", "No_Match") | 
+           is.na(state) | is.na(county) | is.na(tract)) %>%
   .$id
 
-# TODO: geocode ties and no-matches
+# write failures to file to geocode using lat / lng
 gaycities_geocode_failures <- 
   gaycities_gm_geocoded %>%
   filter(id %in% failure_ids)
@@ -204,10 +208,12 @@ write_csv(gaycities_geocode_failures,
 # send lat/long to Census [R?]
 
 # merge geocode results with bar information ----
+# only use successfully matched results that have values for
+# state, county, and tract
 matched_results <- 
   geocode_results %>%
   select(-address) %>%
-  filter(match == "Match")
+  filter(match == "Match" & !is.na(state) & !is.na(county) & !is.na(tract))
 
 gaycities_geocoded <- 
   gaycities_gm_geocoded %>%

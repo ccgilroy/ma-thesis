@@ -179,8 +179,9 @@ test <-
 # TODO: figure out caching geometries
 # (would like to save to a sensible directory...)
 
-# TODO: compare value to 2015
-# (just read in and filter values; merge d3)
+# compare value to 2015 ----
+# get different variables
+# (just read in and filter values; merge df3)
 merged_proportion_data <- 
   read_csv("data/census/merged_proportion_data.csv", 
            col_types = list(
@@ -249,6 +250,7 @@ test_prop_filtered <-
   test_prop %>%
   filter(variable %in% c("B01001_002", "B03002_003", "B11001_003"))
 
+# make two-way descriptive plots ----
 test_prop_filtered %>%
   spread(variable, prop) 
 ggplot(test_prop_filtered, 
@@ -277,11 +279,8 @@ test_prop_filtered_wide %>%
 # (All of this will involve collecting or recollecting data... or maybe not?)
 # (maybe do again requesting geometries? or only do geometries for total population?)
 
-# TODO: get different variables
 
-# TODO: make plots
-
-# TODO: try on different city (Chicago?)
+# try on different city (Chicago) ----
 
 chicago <- 
   get_acs("tract", table = "B01003", state = "17", county = c("031", "197"),
