@@ -231,7 +231,7 @@ merged_proportion_data <-
   mutate(bars = ifelse(is.na(bars), 0, bars), 
          state = str_sub(GEOID, 1, 2), 
          county = str_sub(GEOID, 3, 5), 
-         tract = str_sub(GEOID, 5, -1), 
+         tract = str_sub(GEOID, 6, -1), 
          gay = ifelse(bars > 0, 1, 0)) 
 
 merged_proportion_data %>%
@@ -257,7 +257,7 @@ merged_count_data <-
   mutate(bars = ifelse(is.na(bars), 0, bars), 
          state = str_sub(GEOID, 1, 2), 
          county = str_sub(GEOID, 3, 5), 
-         tract = str_sub(GEOID, 5, -1), 
+         tract = str_sub(GEOID, 6, -1), 
          gay = ifelse(bars > 0, 1, 0)) 
 
 merged_count_data %>%

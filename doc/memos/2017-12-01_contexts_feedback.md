@@ -23,7 +23,9 @@ Let's talk terminology.
 
 what about {neighborhood, enclave, village, ghetto}?
 
-There's no neutral terminology. But I have to use words to talk about my object.
+fn: Brown 2014 contains an excellent summary of the different terms that have been used in the academic literature.
+
+There's no neutral terminology. But I have to use words to talk about my object. I like neighborhood because it contains fewer assumptions about social dynamics (as with ghetto or village) but it does contain the connotation that I care about: that this space is a *meaningful cultural object*.
 
 The sources I use are likely to bias my project toward (cis, white) gay men. But that is to be shown rather than assumed. Unlike Levine and Castells, I see no reason to exclude women *a priori*. Instead, we can look at *the extent to which* these spaces are *empirically* biased toward men. (We've got theory [Hanhardt] that shows us who is privileged by visibility. And public institutions that I can verify the existences of are by definition visible.)
 
@@ -41,12 +43,14 @@ Let's talk about gay bars.
 - This is about gay neighborhoods.
 - Clusters of gay bars are a reasonable proxy for gay neighborhoods.
 - Since I don't care about the bars for themselves, I don't have to find the entire population of bars. I'm not too concerned about bias and selectivity, unless you think gay bars in gay neighborhoods are *less* likely to be in my data than gay bars elsewhere. You don't think that.
+- In fact, I am going to do the opposite of what you would expect---throw out a lot of the bars in my data. I don't care about isolated gay bars, only about gay bars in gay neighborhoods.
 
 Let's talk about neighborhoods
 
 - A Census tract is not a neighborhood.
 - Neighborhood boundaries could be sharp, or they could be fuzzy. They could be official, or informal. They could be universally accepted, or contested.
-- My project needs boundaries. I'll be using them pragmatically.
+- My project needs boundaries. I'll be using them pragmatically. I do not claim that these boundaries are definitive. In fact, I can show you cases where insider knowledge might dispute the exact boundaries my rules and algorithms come up with.
+- [Can I validate based on whether these clusters correspond to neighborhoods in the GayCities data? That's not a bad idea, and makes the clustering into a "finding". Part of the problem is that bars in the same tract can have different labels or one can be missing a label, but it's okay that the validation labels are noisy, really...]
 
 Let's talk about change
 
@@ -67,6 +71,13 @@ Why am I not doing {X, a totally different project}?
 - for other X: because it's not as interesting as you think it is
 
 I just think it's simpler than people make it out to be: the qual folks are right, constructs are fuzzy, deal with it and move on. you're not gonna get a true/logical/accurate definition of a gay neighborhood that works universally and is empirically feasible to use, so be pragmatic about it
+
+Let's talk about data sources
+
+- We trust convention and authority too much.
+- I want to call this into question: We know that for studying LGBTQ people, data from the Census have huge shortcomings. For same-sex couples, error rates are incredibly high, in a way that particularly hinders cross-temporal comparisons.
+- I trust random gay people on the internet more than I trust a lot of data sources.
+- There's this meme that you have to have done everything you possibly could in order to validate your choices. That's not true. For this project, it's always going to be possible to think of one more thing I could have done. Why not look at same-sex couples? Or gay community centers? Or interview people? What I'm arguing for is pragmatism, for "good enough." You're welcome to not find that satisfactory, but then I'd point you to other moves that you accept without question.
 
 # workshop
 
