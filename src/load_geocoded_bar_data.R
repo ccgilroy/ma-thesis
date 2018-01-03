@@ -42,5 +42,8 @@ join_bars <- function(data) {
 }
 
 join_cities <- function(data) {
+  # filter out Long Beach because it's in the same county as LA
+  # and this results in duplicated observations
+  cities <- cities %>% filter(city != "Long Beach, CA")
   data %>% left_join(cities, by = c("state", "county"))
 }
