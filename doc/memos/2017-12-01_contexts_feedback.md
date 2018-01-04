@@ -51,6 +51,7 @@ Let's talk about neighborhoods
 - Neighborhood boundaries could be sharp, or they could be fuzzy. They could be official, or informal. They could be universally accepted, or contested.
 - My project needs boundaries. I'll be using them pragmatically. I do not claim that these boundaries are definitive. In fact, I can show you cases where insider knowledge might dispute the exact boundaries my rules and algorithms come up with.
 - [Can I validate based on whether these clusters correspond to neighborhoods in the GayCities data? That's not a bad idea, and makes the clustering into a "finding". Part of the problem is that bars in the same tract can have different labels or one can be missing a label, but it's okay that the validation labels are noisy, really...]
+- [Michele's point: quant people know that Census tracts aren't good proxies, they just don't have a better alternative. In this case, I do have a better alternative: aggregations of Census tracts based on locations of anchor institutions.]
 
 Let's talk about change
 

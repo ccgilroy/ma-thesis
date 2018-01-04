@@ -130,14 +130,26 @@ geometry_gay_components %>%
   addTiles() %>%
   addPolygons(label = ~as.character(component), 
               opacity = 1, fillOpacity = .5, 
-              color = ~colorBin("YlOrRd", csize)(csize)) %>%
+              color = ~colorBin("YlOrRd", bars)(bars)) %>%
   addMarkers(data = gaycities_geocoded_all, label = ~name, popup = ~description)
 
+# comparison of number of bars and cluster size
+geometry_gay_components %>%
+  group_by(state, county, city, component, csize, variable) %>%
+  summarise(estimate = sum(estimate),
+  moe = moe_sum(moe),
+  bars = sum(bars)) %>%
+  ungroup() %>% 
+  ggplot(aes(x = csize, y = bars)) + 
+  geom_point(color = alpha("black", .5)) +
+  theme_minimal()
+
+
 # do something about downtowns
-# do something about tracts that only touch in corners
+# DONE: do something about tracts that only touch in corners
 # (e.g. phoenix looks really weird)
 
-# exploratory ----
+# exploratory geometry ----
 geometry_b01003_2010_gay %>% 
   filter(city == "Phoenix") %>%
   select(geometry) %>%

@@ -24,6 +24,13 @@ bars_per_tract <-
   count() %>%
   rename(bars = n) 
 
+bars_per_tract_no_downtown <-
+  gaycities_geocoded_all %>% 
+  filter(!str_detect(neighborhood, "Downtown") | is.na(neighborhood)) %>%
+  group_by(GEOID) %>%
+  count() %>%
+  rename(bars = n) 
+
 cities <- 
   gaycities_geocoded_all %>% 
   group_by(state, county, city) %>% 
@@ -34,6 +41,16 @@ cities <-
 join_bars <- function(data) {
   data %>% 
     left_join(bars_per_tract, by = "GEOID") %>%
+    mutate(bars = ifelse(is.na(bars), 0, bars),
+           state = str_sub(GEOID, 1, 2), 
+           county = str_sub(GEOID, 3, 5), 
+           tract = str_sub(GEOID, 6, -1), 
+           gay = ifelse(bars > 0, 1, 0)) 
+}
+
+join_bars_no_downtown <- function(data) {
+  data %>% 
+    left_join(bars_per_tract_no_downtown, by = "GEOID") %>%
     mutate(bars = ifelse(is.na(bars), 0, bars),
            state = str_sub(GEOID, 1, 2), 
            county = str_sub(GEOID, 3, 5), 
