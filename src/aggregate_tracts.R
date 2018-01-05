@@ -79,6 +79,8 @@ geometry_b01003_2010 <- reduce(
   }), rbind
 )
 
+write_rds(geometry_b01003_2010, "data/census/geometry_b01003_2010.rds")
+
 # add bars and cities to ACS data ----
 geometry_b01003_2010_bc <- 
   geometry_b01003_2010 %>%
@@ -88,22 +90,40 @@ geometry_b01003_2010_bc <-
 # save this file to rds
 write_rds(geometry_b01003_2010_bc, "data/census/geometry_2010.rds")
 
+# alternate version, excluding bars in neighborhoods labeled "Downtown"
+geometry_b01003_2010_bc_nd <- 
+  geometry_b01003_2010 %>%
+  join_bars_no_downtown() %>%
+  join_cities()
+
+write_rds(geometry_b01003_2010_bc_nd, 
+          "data/census/geometry_2010_no_downtown.rds")
+
+
 # filter to gay tracts only ----
 geometry_b01003_2010_gay <- 
   geometry_b01003_2010_bc %>% 
   filter(gay == 1)
 
+geometry_b01003_2010_gay_nd <- 
+  geometry_b01003_2010_bc_nd %>% 
+  filter(gay == 1)
+
 # cluster adjacent tracts and identify components ----
 geometry_graph <- sf_to_graph(geometry_b01003_2010_gay)
 geometry_graph_strict <- sf_to_graph_strict(geometry_b01003_2010_gay)
+geometry_graph_strict_nd <- sf_to_graph_strict(geometry_b01003_2010_gay_nd)
 
 geometry_components <- graph_to_components(geometry_graph)
 geometry_components_strict <- graph_to_components(geometry_graph_strict)
+geometry_components_strict_nd <- graph_to_components(geometry_graph_strict_nd)
 
 # save components data frame
 write_csv(geometry_components, "data/census/geometry_components.csv")
 write_csv(geometry_components_strict, 
           "data/census/geometry_components_strict.csv")
+write_csv(geometry_components_strict_nd, 
+          "data/census/geometry_components_strict_nd.csv")
 
 
 # exploratory plots ----
@@ -119,8 +139,21 @@ geometry_b01003_2010_gay %>%
 geometry_gay_components <- 
   geometry_b01003_2010_gay %>% 
   left_join(geometry_components_strict, by = "GEOID") 
+
+geometry_gay_components_nd <- 
+  geometry_b01003_2010_gay_nd %>% 
+  left_join(geometry_components_strict_nd, by = "GEOID") 
+
 # pal <- colorFactor("Paired", geometry_gay_components$csize)
-geometry_gay_components %>%
+
+# popup can't display NAs, so replace with string
+bars_for_map <- 
+  gaycities_geocoded_all %>%
+  mutate_at(c("neighborhood", "description"), function(x) {
+    ifelse(is.na(x), "", x)
+  })
+
+geometry_gay_components_nd %>%
   group_by(state, county, city, component, csize, variable) %>%
   summarise(estimate = sum(estimate), 
             moe = moe_sum(moe),
@@ -131,7 +164,10 @@ geometry_gay_components %>%
   addPolygons(label = ~as.character(component), 
               opacity = 1, fillOpacity = .5, 
               color = ~colorBin("YlOrRd", bars)(bars)) %>%
-  addMarkers(data = gaycities_geocoded_all, label = ~name, popup = ~description)
+  addMarkers(data = bars_for_map, label = ~name, 
+             popup = ~str_c("Neighborhood: ", neighborhood, "<br/>",
+                            "Address: ", address, "<br/>", 
+                            description))
 
 # comparison of number of bars and cluster size
 geometry_gay_components %>%
