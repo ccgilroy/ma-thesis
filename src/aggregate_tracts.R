@@ -99,7 +99,6 @@ geometry_b01003_2010_bc_nd <-
 write_rds(geometry_b01003_2010_bc_nd, 
           "data/census/geometry_2010_no_downtown.rds")
 
-
 # filter to gay tracts only ----
 geometry_b01003_2010_gay <- 
   geometry_b01003_2010_bc %>% 
@@ -146,6 +145,20 @@ geometry_gay_components_nd <-
 
 # pal <- colorFactor("Paired", geometry_gay_components$csize)
 
+# can't include county! because some clusters span counties
+# (namely, one in Atlanta)
+# ... do any span states? I don't think so
+geometry_gay_components_nd_summarised <-
+  geometry_gay_components_nd %>%
+  group_by(state, city, component, csize, variable) %>%
+  summarise(estimate = sum(estimate), 
+            moe = moe_sum(moe),
+            bars = sum(bars)) %>%
+  ungroup()
+
+write_rds(geometry_gay_components_nd_summarised, 
+          "data/census/geometry_gay_components_nd_summarised.rds")
+
 # popup can't display NAs, so replace with string
 bars_for_map <- 
   gaycities_geocoded_all %>%
@@ -154,7 +167,7 @@ bars_for_map <-
   })
 
 geometry_gay_components_nd %>%
-  group_by(state, county, city, component, csize, variable) %>%
+  group_by(state, city, component, csize, variable) %>%
   summarise(estimate = sum(estimate), 
             moe = moe_sum(moe),
             bars = sum(bars)) %>%
@@ -164,6 +177,19 @@ geometry_gay_components_nd %>%
   addPolygons(label = ~as.character(component), 
               opacity = 1, fillOpacity = .5, 
               color = ~colorBin("YlOrRd", bars)(bars)) %>%
+  addMarkers(data = bars_for_map, label = ~name, 
+             popup = ~str_c("Neighborhood: ", neighborhood, "<br/>",
+                            "Address: ", address, "<br/>", 
+                            description)) %>%
+  addScaleBar()
+
+geometry_b01003_2010_gay %>%
+  leaflet() %>%
+  addTiles() %>%
+  addPolygons(label = ~as.character(GEOID), 
+              opacity = 1, fillOpacity = .5, 
+              color = ~colorBin("YlOrRd", bars)(bars), 
+              popup = ~as.character(GEOID)) %>%
   addMarkers(data = bars_for_map, label = ~name, 
              popup = ~str_c("Neighborhood: ", neighborhood, "<br/>",
                             "Address: ", address, "<br/>", 

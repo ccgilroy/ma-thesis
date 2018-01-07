@@ -26,7 +26,18 @@ bars_per_tract <-
 
 bars_per_tract_no_downtown <-
   gaycities_geocoded_all %>% 
+  # all bars in Long Beach are classified as being "Downtown"
+  # which does not appear to be accurate
+  # The largest cluster is called Alamitos Beach or Broadway, 
+  # and it is east of the actual downtown
+  mutate(neighborhood = ifelse(city == "Long Beach, CA", NA, neighborhood)) %>%
   filter(!str_detect(neighborhood, "Downtown") | is.na(neighborhood)) %>%
+  # manually filter out downtowns in Columbus and San Antonio
+  # In Columbus, one census tract covers both Downtown 
+  # and a tiny part of Short North. Another tract covers Downtown and 
+  # overlaps with German Village.
+  # In San Antonio, the downtown neighborhood is labeled "Alamo"
+  filter(!GEOID %in% c("39049003000", "39049004000", "48029110100")) %>%
   group_by(GEOID) %>%
   count() %>%
   rename(bars = n) 
