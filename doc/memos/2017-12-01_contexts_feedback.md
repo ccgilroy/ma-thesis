@@ -77,6 +77,7 @@ Let's talk about data sources
 
 - We trust convention and authority too much.
 - I want to call this into question: We know that for studying LGBTQ people, data from the Census have huge shortcomings. For same-sex couples, error rates are incredibly high, in a way that particularly hinders cross-temporal comparisons.
+- I'm taking advantage of the Census's strengths by looking at the center rather than the margins, at more normative categories: different-sex married couples, white people, etc.
 - I trust random gay people on the internet more than I trust a lot of data sources.
 - There's this meme that you have to have done everything you possibly could in order to validate your choices. That's not true. For this project, it's always going to be possible to think of one more thing I could have done. Why not look at same-sex couples? Or gay community centers? Or interview people? What I'm arguing for is pragmatism, for "good enough." You're welcome to not find that satisfactory, but then I'd point you to other moves that you accept without question.
 
