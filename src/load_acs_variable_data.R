@@ -15,7 +15,8 @@ merged_proportion_data <-
 merged_count_data <- 
   read_csv("data/census/merged_count_data.csv", 
            col_types = list(
-             moe = col_double()
+             moe = col_double(), 
+             tract = col_character()
            ))
 
 # important variables ----
@@ -27,7 +28,8 @@ variable_labels <- tribble(
   "B11001_003", "married",
   "B01003_001", "total population",
   "B19013_001", "median income",
-  "B25064_001", "median rent"
+  "B25064_001", "median rent",
+  "B07009_005_006", "college educated"
 )
 
 prop_vars <- c(
@@ -37,15 +39,33 @@ prop_vars <- c(
   # college-educated goes here
 )
 
+educ_vars <- c(
+  "B07009_005",  # bachelors
+  "B07009_006"   # graduate
+)
+
 count_vars <- c(
   "B01003_001", # total
   "B19013_001", # median hh income
   "B25064_001" # median rent 
 )
 
+educ_data <- 
+  merged_proportion_data %>%
+  filter(variable %in% educ_vars) %>%
+  group_by(GEOID, NAME, summary_est, summary_moe, 
+           year, bars, state, county, tract, gay) %>%
+  summarise(estimate = sum(estimate), 
+            moe = moe_sum(moe)) %>%
+  mutate(variable = "B07009_005_006") %>%
+  mutate(prop = estimate/summary_est, 
+         prop_moe = moe_prop(estimate, summary_est, moe, summary_moe)) %>%
+  ungroup()
+
 prop_data <- 
   merged_proportion_data %>%
-  filter(variable %in% prop_vars)
+  filter(variable %in% prop_vars) %>%
+  bind_rows(educ_data)
 
 count_data <- 
   merged_count_data %>%
@@ -57,7 +77,8 @@ main_data <-
   bind_rows(proportion = prop_data, count = count_data, .id = "type") %>%
   select(-c(state, county, tract, bars, gay)) %>%
   left_join(variable_labels, by = "variable") %>%
-  join_bars_no_downtown() %>%
+  # TODO: decide if better to include or exclude downtowns here
+  join_bars() %>%
   join_cities() %>%
   # rearrange columns
   select(GEOID, NAME, 
