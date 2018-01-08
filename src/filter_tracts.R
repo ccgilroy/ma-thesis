@@ -9,6 +9,7 @@ library(forcats)
 library(yaml)
 
 library(sf)
+library(leaflet)
 
 # qualitative filtering ----
 # cap cities
@@ -137,6 +138,13 @@ neighborhood_labels <- tribble(
   249, "Capitol Hill",
   252, "Walkers Point"
 )
+
+qual_filtered_components_labeled <- 
+  qual_filtered_components %>%
+  left_join(neighborhood_labels, by = "component")
+
+write_rds(qual_filtered_components_labeled, 
+          "data/census/qual_filtered_components_labeled.rds")
 
 # filter GEOIDs by component information ----
 geometry_components_strict_nd <- 
