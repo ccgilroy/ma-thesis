@@ -64,6 +64,8 @@ the other is quantitative
 
 # ... say things about models here?
 
+[This is where to talk about RESEARCH DESIGN, like Kate suggested]
+
 Descriptive plots of variables are not sufficient
 
 why gay neighborhoods are different

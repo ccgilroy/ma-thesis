@@ -1,13 +1,15 @@
 ---
 ---
 
-# clustering and filtering
+# Results
+
+## Clustering and filtering
 
 [show maps - result of clustering AND filtering]
 
-![Chicago](../../output/figures/chicago.png)
+![Chicago, suburbs not shown.](../../output/figures/chicago.png)
 
-![Seattle](../../output/figures/seattle.png)
+![Seattle, adjacent downtown bar excluded.](../../output/figures/seattle.png)
 
 my point is not that these couldn't be contested! they could!
 
@@ -39,7 +41,7 @@ smallest by number of tracts are Northcentral, San Antonio, and Ybor City, Tampa
 
 smallest by number of bars is South Beach, Miami, with 4
 
-# descriptives
+## Descriptive results
 
 [present tables]
 
@@ -86,3 +88,7 @@ that's okay.
 Okay, education is pretty coherent, especially with income / rent.
 
 Boystown and Andersonville are both pretty flat on the education front. What does this mean for the criticism we made of Ghaziani two years ago?
+
+## Model results
+
+[put a sad note here about running out of time]
