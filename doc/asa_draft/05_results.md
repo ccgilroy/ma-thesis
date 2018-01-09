@@ -7,6 +7,10 @@
 
 [show maps - result of clustering AND filtering]
 
+In the maps in Figure [NUMBER], I show the result of the clustering and filtering process described above for two cities, Chicago and Seattle.
+
+[These are the two cities that, based on my own residential history, I am most confident in my ability to interpret.]
+
 ![Chicago, suburbs not shown.](../../output/figures/chicago.png)
 
 ![Seattle, adjacent downtown bar excluded.](../../output/figures/seattle.png)
@@ -19,35 +23,25 @@ talk about types and failures
 
 See [APPENDIX] for more maps
 
-I choose the 24 cities that most clearly have
-
-This is done inductively, based on literature and inspection of the clusters
-
-New York has three, San Francisco and Chicago have two, and all other included cities have one.
+I choose the 24 cities that most clearly have discernible clusters of bars corresponding to known or probable gay neighborhoods. I exclude the other 24 US cities and the nine resort towns. This is done inductively, based both on my interpretation of prior literature and on my inspection of the clusters. I assign three clusters to New York, two to San Francisco and Chicago, and one to all other cities that I include.
 
 [FOOTNOTE] Long Beach, in Los Angeles County, is collapsed together with Los Angeles proper for discussions of context. This nominally gives LA two neighborhoods, as well.
 
-[FOOTNOTE] Alternative specifications using the largest cluster for each city, or all clusters, regardless of size or relevance, and finally as individual tracts---which would be the conventional demographic approach. At the moment, I can only claim that my approach is preferable to these in a qualitative sense.
+[FOOTNOTE] I plan to implement and evaluate alternative specifications for aggregation and inclusion. To address the concern that my qualitative approach based on consideration of the literature and data is too subjective, I will also employ a filtering approach using only quantitative thresholds for inclusion. For example, I might use the largest cluster for each city. To compare and justify the filtering and aggregation processes as a whole, I will perform baseline analyses using all clusters, regardless of size or relevance, and finally as individual, unclustered tracts. This latter would be the conventional approach in the demographic urban literature (with, perhaps, some allowance for spatial autocorrelation). These are not robustness checks, in the sense that I *do* expect to see differences, but they are an important part of sensitivity analysis. At the moment, I can only claim that my current approach is preferable to these in a qualitative sense.
 
-tracts: 488, 461 with downtowns excluded, and 146 in filtered components.
+This gives me 28 clusters ("components") to use as data points in the analyses that I present below. The 488 tracts I begin with fall to 461 once downtowns are excluded. Of these, 146 tracts (29.9% of the original number) remain in the filtered components that I use in my analysis.
 
-range of components:
-
-largest by number of tracts is West Village - Chelsea, NY with 13
-
-largest by number of bars is Castro - Mission - Folsom - SOMA, SF with 33.
-
-smallest by number of tracts are Northcentral, San Antonio, and Ybor City, Tampa, with 1 each.
-
-smallest by number of bars is South Beach, Miami, with 4
+I briefly describe the range of components, with a full lists in [APPENDIX]. The largest by number of tracts is West Village - Chelsea, New York with 13 tracts, while the largest by number of bars is Castro - Mission - Folsom - SOMA, SF with 33 bars. This shows that the historical prominence accorded to these areas as gay centers persisted---at least institutionally---in 2007. At the other end of the range, the smallest clusters by number of tracts are Northcentral, San Antonio, and Ybor City, Tampa, with one tract each, while the smallest by number of bars is South Beach, Miami, with four bars.
 
 ## Descriptive results
 
-[present tables]
+[present tables of averages, because they're expected]
 
 - [present two-way plot of education and rent]
 - [present two-way plot of married and white]
 - [present plot of demographics relative to cities]
+
+This comes first
 
 ![](../../output/figures/demographic_comparison.png)
 
@@ -96,3 +90,7 @@ What exactly this means varies. Counties are clustered tightly at a little under
 ## Model results
 
 [put a sad note here about running out of time]
+
+based on the descriptive results for
+
+but not race gender and household type
