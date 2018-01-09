@@ -70,15 +70,19 @@ the specific variables I select are vari[???]
 
 Driven by two factors: the kinds of changes I expect to see, and the categories of norms/privilege.
 
+"male"
+
 "white" means non-Hispanic white
 
 "college-educated" means with a bachelors degree or graduate/professional degree
 
 "married" refers only to different-sex married couples; the Census Bureau recodes same-sex married couples to unmarried partners.
 
-simple average of medians;
+median rent and median income
 
-[FOOTNOTE] More sophisticated approaches, such as weighted averages. will do better with medians later!
+Where I combine tracts, I take a simple average of medians.
+
+[FOOTNOTE] I will improve this later using more sophisticated approaches, such as weighted averages. I do not yet show median data for counties.
 
 ## Modeling strategies
 
