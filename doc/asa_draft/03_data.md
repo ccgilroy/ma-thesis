@@ -11,7 +11,7 @@ To use gay bars as an indicator or proxy for the locations of gay neighborhoods 
 
 Gay travel guides
 
-Damron's travel guides [CITE Levine, CITE Mattson], the most prominent, have a more than 50-year history. They have been used in both classic [@levine_gay_1979] and contemporary [@mattson_counting_2017] work.
+Damron's travel guides [CITE Levine, CITE Mattson], the most prominent, have a more than 50-year history. They have been used in both classic [@levine_gay_1979; @castells_city_1983, 148 Map 14.3] and contemporary [@mattson_counting_2017] work.
 
 @castells_city_1983 [358] refers to a list of "specialized publications" as a source for gay bar locations in San Francisco, including the Advocate, among others. @hayslett_out_2011 use a 2000 guide called the Gayellow Pages to locate gay bars in their quantitative analysis of Columbus, OH.
 
@@ -30,6 +30,8 @@ allows users to contribute crowdsourced information about places
 which has the advantages of being novel, scalable, and accessible
 
 [i.e., already digitized]
+
+because I am interested in a relatively contemporary time period, using an Internet resource is both feasible and logical
 
 To my knowledge, this is a novel data source, but the idea is not without precedent.
 

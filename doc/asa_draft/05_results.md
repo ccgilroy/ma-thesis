@@ -91,6 +91,8 @@ Boystown and Andersonville are both pretty flat on the education front. What doe
 
 Do these neighborhoods systematically differ from their contexts? Yes. They are whiter, more male, more educated, and less married. All of this conforms to our expectations and preconceptions for gay neighborhoods.
 
+What exactly this means varies. Counties are clustered tightly at a little under 50% male; gay neighborhoods range from 50% to 60% male. By contrast, there is much more heterogeneity in how white a county and its corresponding gay neighborhoods are.
+
 ## Model results
 
 [put a sad note here about running out of time]

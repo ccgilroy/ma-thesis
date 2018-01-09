@@ -66,7 +66,19 @@ the other is quantitative
 
 ## Variable selection
 
-the specific variables I select are vari
+the specific variables I select are vari[???]
+
+Driven by two factors: the kinds of changes I expect to see, and the categories of norms/privilege.
+
+"white" means non-Hispanic white
+
+"college-educated" means with a bachelors degree or graduate/professional degree
+
+"married" refers only to different-sex married couples; the Census Bureau recodes same-sex married couples to unmarried partners.
+
+simple average of medians;
+
+[FOOTNOTE] More sophisticated approaches, such as weighted averages. will do better with medians later!
 
 ## Modeling strategies
 
