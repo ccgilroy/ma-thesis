@@ -89,6 +89,8 @@ Okay, education is pretty coherent, especially with income / rent.
 
 Boystown and Andersonville are both pretty flat on the education front. What does this mean for the criticism we made of Ghaziani two years ago?
 
+Do these neighborhoods systematically differ from their contexts? Yes. They are whiter, more male, more educated, and less married. All of this conforms to our expectations and preconceptions for gay neighborhoods.
+
 ## Model results
 
 [put a sad note here about running out of time]

@@ -3,7 +3,7 @@
 
 This section should generate and justify my expectations
 
-# gay neighborhoods
+# Gay neighborhoods
 
 Terminology matters.
 
@@ -13,6 +13,8 @@ Go straight for Levine's definition, which has four parts
 
 use the term "gay neighborhood"
 
+not because it is neutral, but because it contains, I believe, the fewest connotations at odds with my purposes.
+
 fn: Brown 2014 contains an excellent summary of the different terms that have been used in the academic literature.
 
 prototypes do not have to be *representative*, either. The median gay neighborhood---if such a thing is even meaningful---would not look like Greenwich Village or the Castro.
@@ -21,9 +23,13 @@ Neighborhood boundaries could be sharp, or they could be fuzzy. They could be of
 
 [In fact, I can show you cases where insider knowledge might dispute the exact boundaries my rules and algorithms come up with.]
 
-# bars as institutions
+[acknowledge problems of reputation and analogy and categorization, @brown-saracino_what_2017]
+
+# Bars as institutions
 
 Mattson, Ghaziani, Brown go here
+
+Ghaziani calls these "anchor institutions"
 
 ; in fact, queer women's bars appear in my data (which are, nevertheless, biased toward men)
 
@@ -31,7 +37,7 @@ I regard this bias toward men as something to be demonstrated rather than assume
 
 If the archetypical gay neighborhood is, or was, a space for middle-class cis white gay men, that should be reflected in the demographic attributes I can measure.
 
-# gay neighborhood change
+# Change in gay neighborhoods
 
 *Gentrification* is the elephant in the room.
 

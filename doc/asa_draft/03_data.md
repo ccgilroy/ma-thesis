@@ -9,49 +9,64 @@ In this section, I describe the two data sources on which I rely, and the proces
 
 To use gay bars as an indicator or proxy for the locations of gay neighborhoods across multiple cities, I need a consistent source for the locations of gay bars. This source should be from *before* the point in time at which I am measuring the outcomes of potential change.
 
-
 Gay travel guides
 
-Damron's travel guides [CITE Levine, CITE Mattson], the most prominent, have a 50-year history.
+Damron's travel guides [CITE Levine, CITE Mattson], the most prominent, have a more than 50-year history. They have been used in both classic [@levine_gay_1979] and contemporary [@mattson_counting_2017] work.
 
-Castells used ???. @hayslett_out_2011 use a 2000 guide called the Gayellow Pages to locate gay bars in their quantitative analysis of Columbus, OH.
+@castells_city_1983 [358] refers to a list of "specialized publications" as a source for gay bar locations in San Francisco, including the Advocate, among others. @hayslett_out_2011 use a 2000 guide called the Gayellow Pages to locate gay bars in their quantitative analysis of Columbus, OH.
+
+Of course, any archival source is bound to be selective.
+
+precisely in spaces that are public and visible
+
+more focused on the core than the periphery
+
+I believe the impact of these kinds of errors on my project are mitigated
 
 explain GayCities
 
 allows users to contribute crowdsourced information about places
 
+which has the advantages of being novel, scalable, and accessible
+
+[i.e., already digitized]
+
 To my knowledge, this is a novel data source, but the idea is not without precedent.
 
-[I have also considered and collected Yelp data using their "gay bars" category, but only for 2017. These data are not available historically, only currently, rendering them unsuitable.]
+[I have also considered other online sources. I collected Yelp data using their "gay bars" category, but only for 2017. These data are not available historically, only currently, rendering them less suitable for this purpose.]
 
 [As I discuss below in the methods section. *could* validate, but it doesn't really matter, which I'll explain when I get to the clustering bit. I don't need individual bar listings to be accurate---I just need clusters of them to be accurate! That's more likely/believable.]
 
 *About GayCities*.
 
-GayCities (www.gaycities.com) was founded in 2005, and relaunched in 2008.
+GayCities (www.gaycities.com) was founded in 2005, and relaunched in 2008. Their About page in 2007 describes them as a "gay city guide site with the power of the community as its driving force." In other words, they solicit crowdsourced opinions, reviews, and information from the LGBTQ community to provide a more complete picture of the places that they list. [SAY SOMETHING about crowdsourcing and reliability.]
 
-GayCities bought Queerty in 2011. After acquiring Queerty, they grew into q.digital, an LGBTQ marketing and media conglomerate (and, by their claim, one of the largest).
+GayCities bought Queerty in 2011. After acquiring Queerty, they grew into q.digital, an LGBTQ marketing and media conglomerate (and, by their claim, one of the largest). [LINK]
 
-In other words, they have persisted since their founding more than a decade ago, and they constitute a prominent source
+In other words, they have persisted since their founding more than a decade ago, and they have evolved into a prominent media source within the LGBTQ community.
 
-*Historical data*. I obtain historical data from the Internet Archive's Wayback Machine [CITE]. I use the earliest complete record of the site, from July 28, 2007.
+[Informally, this fact was surprising to me.]
 
-*Web scraping*. These data were acquired through web scraping using Python and extracted from the web pages of bar listings using the `beautifulsoup` module [CITE]. GayCities' terms prohibit only commercial use of their data. The Wayback Machine itself collects URLs for archiving via web scraping.
+*Historical data*. I obtain historical data from the Internet Archive's Wayback Machine [CITE]. The Internet Archive is a non-profit organization dedicated to archiving the web.[LINK]
 
+
+I use the earliest relatively complete record of the site www.gaycities.com, from July 28, 2007. This date precedes the point in time at which I measure my outcomes, as discussed below.
+
+[LINK] https://archive.org/about/
+
+*Web scraping*. These data were acquired through web scraping [DEFINE]. I wrote a Python script to download the relevant web pages and used the `beautifulsoup` module [CITE] to extract bar listings and other data from the pages.
+
+The Wayback Machine itself collects URLs for archiving via web scraping; Gaycities' robots.txt is permissive and GayCities' terms prohibit only commercial use of their data.
 
 *Description of the data set*.
 
-In all, there are 902 bar listings, of which 840 are located in the US, with the remainder in Canada and Mexico.
+In all, there are 902 bar listings in the GayCities 2007 data set, of which 840 are located in the US, with the remainder in Canada and Mexico. 63 cities are included, of which six are Canadian and nine are what I classify as LGBTQ resort towns (for instance, Provincetown and Fire Island).[FOOTNOTE] The remaining 48 US cities are candidates for my analysis. The number of bars per city ranges from 62 in New York City to 3 in Hartford, CT. See [Appendix] for a complete listing of cities.
 
-63 cities are included, of which six are Canadian and nine are what I classify as LGBTQ resort towns (for instance, Provincetown and Fire Island).[FOOTNOTE] The remaining 48 US cities are candidates for my analysis. The number of bars per city ranges from 62 in New York City to 3 in Hartford, CT. See [Appendix] for a complete listing of cities.
+Each GayCities web page includes informative city-level and bar-level descriptions. The city-level descriptions often refer explicitly to a marked gay neighborhood, or to the absence of one, while the bars themselves are (sometimes) labeled as being within particular neighborhoods. For instance, the page for Seattle notes that "Gay Seattle is primarily centered around Capitol Hill, a quaint, friendly neighborhood...", while the description of Portland, OR, begins by stating that "Although it has no gay district, Portland makes up for that with all that it does have to offer." Qualitative inspection of these descriptions provides important context for my quantitative analyses.
 
-Each GayCities web page includes informative city-level and bar-level descriptions. The city-level descriptions often refer explicitly to a marked gay neighborhood, or to the absence of one, while the bars themselves are (sometimes) labeled as being within particular neighborhoods
+The most significant limitation of the GayCities 2007 data set would seem to be the number of cities. However, I observe qualitatively that the largest city to be excluded for which I can document the existence of a gay neighborhood is Oklahoma City. Moreover, the cities that a gay website chooses to include on launch would logically be more likely to have gay neighborhoods, if anything. On this basis, I contend that the set of cities available through these data are reasonable. Moreover, in my analysis I will actually remove cities that I consider to be marginal cases.
 
-The most significant limitation would seem to be the number of cities; however, I observe qualitatively that the largest city to be excluded for which I can document the existence of a gay neighborhood is Oklahoma City. I contend that the set of cities available through these data are reasonable; in my analysis I will actually remove cities that I consider to be marginal cases.
-
-[The cities that a gay website chooses to include on launch would logically be more likely to have gay neighborhoods, if anything.]
-
-[at present they have 187 US cities, 215 in North America, and 229 worldwide]
+[They have since expanded. At present in 2018 GayCities covers 229 cities worldwide. This number includes 215 in North America, and 187 in the US alone.]
 
 [FOOTNOTE] It is possible to study community change in small towns along with neighborhoods in large cities. Provincetown, in particular, has been studied alongside Andersonville [CITE Japonica]. My framing, however, is concerned with urban neighborhoods. Moreover, my focus on population characteristics makes including non-urban tracts with extensive seasonal migration perilous.
 

@@ -31,7 +31,7 @@ First, I must state clearly what this project is not. It is not a macro-level an
 
 Instead, this project is a meso-level take, a small-N study. It combines a qualitative sensibility and quantitative techniques.
 
-I am directly inspired by questions left open by Ghaziani [CITE] and others in the qualitative literature. I am further attempting to respond to calls to broaden the way we study gay urban geographies within sociology [CITE Amy Stone somehow]
+I am directly inspired by questions left open by Ghaziani [CITE] and others in the qualitative literature. I am further attempting to respond to calls to broaden the way we study gay urban geographies within sociology [CITE Amy Stone somehow - and also maybe G Brown 2008]
 
 I'm not even concerned with whether these neighborhoods are becoming less *gay*. I am asking a simpler and broader question.
 

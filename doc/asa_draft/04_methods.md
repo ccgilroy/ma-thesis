@@ -21,7 +21,7 @@ In this way, I am able to successfully geocode all 840 bars within Census tracts
 
 [FOOTNOTE] Individual bar pages contain addresses with zip codes. These, however, were not captured as frequently by the Wayback Machine, and might therefore be more recent addresses. In cases of uncertainty, I do use these individual pages to help make qualitative judgments.
 
-[NOTE] What this means is that Google is better than the Census at figuring out where an address is.
+[NOTE] What this means is that Google is better than the Census at figuring out where an address is. Specifically, I developed this process after noting via manual inspection of an initial map that the Census was failing to correctly code directional addresses (e.g. East Pine Street in Seattle).
 
 ## Clustering
 
