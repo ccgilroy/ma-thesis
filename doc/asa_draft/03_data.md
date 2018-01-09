@@ -1,15 +1,27 @@
 ---
 ---
 
+# Data
+
 mechanism to link the two, and to designate neighborhoods from clusters of bars.
 
-# Bars: GayCities
+## Bars: GayCities
+
+need a consistent source for the locations of gay bars.
+
+Gay travel guides
+
+this should be from *before* the point in time where I am measuring change
 
 explain GayCities
 
 To my knowledge, this is a novel data source, but the idea is not without precedent.
 
+[I have also collected Yelp data, but only from 2017.]
 
+Damron's travel guides [CITE Levine, CITE Mattson]
+
+Gayellow Pages [CITE Hayslett and Kane 2011]
 
 [As I discuss below in the methods section. *could* validate, but it doesn't really matter, which I'll explain when I get to the clustering bit. I don't need individual bar listings to be accurate---I just need clusters of them to be accurate! That's more likely]
 
@@ -51,7 +63,7 @@ See [Appendix] for a complete listing.
 
 [FOOTNOTE] It is possible to study community change in small towns along with neighborhoods in large cities. Provincetown, in particular, has been studied alongside Andersonville [CITE Japonica]. My framing, however, is concerned with urban neighborhoods. Moreover, my focus on population characteristics makes including non-urban tracts with extensive seasonal migration perilous.
 
-# Variables: the ACS
+## Variables: the ACS
 
 economic and demographic variables,
 
@@ -63,15 +75,15 @@ Looking at combined data from a five-year period, however, could obscure the dis
 
 The most salient limitation is on the use of same-sex couples data.
 
-The Census improved
+The Census Bureau improved its form design and made changes to its coding practices, resulting in a decreased error rate, between 2007 and 2008 [CITE].
 
-What this means is that it is not justifiable or meaningful (or possible) to compare counts of same-sex couples between the 2006-2010 5-year data and the 2011-2015 5-year data.
+What this means is that it is not justifiable or meaningful (or possible) to compare counts of same-sex couples between the 2006-2010 5-year data and the 2011-2015 5-year data [LINK].
 
 Explain why same-sex couples is bad idea.
 
 Talk about decennial Census, maybe use later. [FOOTNOTE] In subsequent analyses, I plan to incorporate 2000 and 2010 decennial Census data.
 
-regular and recent; disadvantage of being a survey
+regular and recent; disadvantage of being a survey, with a margin of error
 
 [footnote: better account for margin of error]
 

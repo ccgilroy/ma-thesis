@@ -5,6 +5,10 @@
 
 [show maps - result of clustering AND filtering]
 
+![Chicago](../../output/figures/chicago.png)
+
+![Seattle](../../output/figures/seattle.png)
+
 my point is not that these couldn't be contested! they could!
 
 and this is *almost* enough that the margins of error don't overlap on some things! which is good.
@@ -41,8 +45,11 @@ smallest by number of bars is South Beach, Miami, with 4
 
 - [present two-way plot of education and rent]
 - [present two-way plot of married and white]
+- [present plot of demographics relative to cities]
 
-See [APPENDIX] for select one-way plots.
+![](../../output/figures/demographic_comparison.png)
+
+See [APPENDIX] for select one-way plots of these, as well as median income and male.
 
 I think I have a narrative for these now.
 
@@ -67,8 +74,6 @@ To confirm, would need to look at
 
 
 I expect to see economic and demographic changes to go along with {X}
-
-
 
 It sounds like emphasizing heterogeneity is going to be important. Even among this, the set of neighborhoods I've chosen to be most clearly
 
