@@ -30,3 +30,9 @@ macro, micro, meso
 First, I must state clearly what this project is not. It is not a macro-level analysis on what urban change is, or where same-sex couples are located in metropolitan areas, or how that's changed, as would be typical of quantitative approaches. Neither is it a micro-level examination of the stories of individual gay/LGBTQ/queer neighborhoods, whether their recent history or their distant past, as a qualitative approach might favor.
 
 Instead, this project is a meso-level take, a small-N study. It combines a qualitative sensibility and quantitative techniques.
+
+I am directly inspired by questions left open by Ghaziani [CITE] and others in the qualitative literature. I am further attempting to respond to calls to broaden the way we study gay urban geographies within sociology [CITE Amy Stone somehow]
+
+I'm not even concerned with whether these neighborhoods are becoming less *gay*. I am asking a simpler and broader question.
+
+do we see coherent _ change? is that change different? can we ascribe it to the fact that these neighborhoods are distinguished or marked as gay?

@@ -51,6 +51,8 @@ The most significant limitation would seem to be the number of cities; however, 
 
 [The cities that a gay website chooses to include on launch would logically be more likely to have gay neighborhoods, if anything.]
 
+[at present they have 187 US cities, 215 in North America, and 229 worldwide]
+
 [FOOTNOTE] It is possible to study community change in small towns along with neighborhoods in large cities. Provincetown, in particular, has been studied alongside Andersonville [CITE Japonica]. My framing, however, is concerned with urban neighborhoods. Moreover, my focus on population characteristics makes including non-urban tracts with extensive seasonal migration perilous.
 
 ## Variables: the American Community Survey

@@ -5,6 +5,10 @@ This section should generate and justify my expectations
 
 # gay neighborhoods
 
+Terminology matters.
+
+"queer" might speak to a political orientation that is absent; "LGBTQ" to an inclusiveness that is missing
+
 Go straight for Levine's definition, which has four parts
 
 use the term "gay neighborhood"
