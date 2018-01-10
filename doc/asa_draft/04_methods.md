@@ -45,6 +45,8 @@ See [APPENDIX] for a network graph of these clusters
 
 ## Filtering
 
+operationalize
+
 Far-flung, isolated bars are not part of gay neighborhoods.
 
 rule of no downtowns
@@ -57,9 +59,9 @@ LGBTQ people do not dominate the CBD of any city of which the author is aware.
 
 ones and zeros.
 
-The largest cluster by number of bars.
+The largest cluster or clusters by number of bars.
 
-[in the only case wherein this results in a tie, between the South End and Fenway in Boston, I choose the South End, which has more tracts.]
+[In the only case wherein this metric results in a tie, between the South End and Fenway in Boston, I choose the South End, which has more tracts. I note that GayCities observes the South End to be highly gentrified in 2007, and my data support this observation. They do not mention Fenway.]
 
 See [APPENDIX] for these labels. (Or present them in main body of text?)
 
