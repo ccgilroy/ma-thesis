@@ -11,8 +11,6 @@ From the GayCities listings, I programmatically extract each bar's address. I fi
 
 Finally, I geocode the 38 addresses for which the Census returns a tie or a failure to match an address through individual API calls. These calls uses the latitude and longitude provided by Google Maps instead of addresses. In this way, I am able to successfully geocode all 840 bars within Census tracts.
 
-[is that methods or results?]
-
 [FOOTNOTE] Individual bar pages contain addresses with zip codes. These, however, were not captured as frequently by the Wayback Machine, and might therefore be more recent addresses. In cases of uncertainty, I do use these individual pages to help make qualitative judgments.
 
 [NOTE] What this means is that Google is better than the Census at figuring out where an address is. Specifically, I developed this process after noting via manual inspection of an initial map that the Census was failing to correctly code directional addresses (e.g. East Pine Street in Seattle).
@@ -21,39 +19,45 @@ Finally, I geocode the 38 addresses for which the Census returns a tie or a fail
 
 The previous step gives me a set of 488 Census tracts with varying numbers of bars. However, the object of sociological interest for this study is not Census tracts, but neighborhoods.
 
-Gay bars frequently occur in spatially contiguous clusters of tracts. I use this fact to produce clusters of tracts which I argue will roughly correspond to gay neighborhoods. Achieving this correspondence is the primary motivation for taking this step. Additionally, this *regionalization* process has the ancillary advantage of reducing the margin of error in ACS variable estimates, which can be substantial at the tract level [@spielman_reducing_2015].
+Gay bars frequently occur in spatially contiguous clusters of tracts. I use this fact to produce clusters of tracts which I argue will roughly correspond to gay neighborhoods. Achieving this correspondence is the primary motivation for taking this step. Furthermore, this *regionalization* process has the ancillary advantage of reducing the margin of error in ACS variable estimates, which can be substantial at the tract level [@spielman_reducing_2015].
 
-For my clustering process, I only consider the geometries of tracts containing gay bars.
+For my clustering process, I only consider the geometries of tracts containing gay bars. I take a simple spatial approach: groups of adjacent, contiguous tracts form a cluster or neighborhood. Tracts that share only a corner, not a line border, are not considered adjacent.
 
-adjacent tracts
-
-Tracts that share only a corner, not a line border, are not considered adjacent.
-
-[These exist, for example, in Denver and Phoenix.]
+[FOOTNOTE] These exist, for example, in Denver and Phoenix.
 
 I use the `sf` and `sp` packages for spatial data in R to generate lists of adjacent tracts, and I use the `igraph` package [CITE] to assign numeric identifiers to the clusters produced by this adjacency list. See [APPENDIX] for a network graph of these clusters.
 
 ## Filtering
 
-I visually inspect the output of the above clustering process.
+I visually inspect the output of the above clustering process, which produces 253 clusters ranging in size from single tracts to 13 grouped tracts.
 
 operationalize
 
-Far-flung, isolated bars are not part of gay neighborhoods.
+The key assumption is that *far-flung, isolated bars are not part of gay neighborhoods.* Therefore, for each city
+
+
 
 rule of no downtowns
 
+A second rule,
+
 *A city's central business district is not its gay neighborhood.*
 
-This is an operationalization of Levine's third criterion for gay neighborhoods, that they be a "culture area" wherein
+This is an operationalization of Levine's third criterion for gay neighborhoods, that they be a "culture area" wherein LGBTQ people are "locally dominant" [@levine_gay_1979].
+
+I rerun
 
 LGBTQ people do not dominate the CBD of any city of which the author is aware.
+
+(Except perhaps Palm Springs)
 
 ones and zeros.
 
 The largest cluster or clusters by number of bars.
 
 [In the only case wherein this metric results in a tie, between the South End and Fenway in Boston, I choose the South End, which has more tracts. I note that GayCities observes the South End to be highly gentrified in 2007, and my data support this observation. They do not mention Fenway.]
+
+A second aspect of filtering my data is to curate the number of cities I include.
 
 See [APPENDIX] for these labels. (Or present them in main body of text?)
 

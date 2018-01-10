@@ -69,6 +69,6 @@ The most salient limitation this creates is on the use of same-sex couples data.
 
 [FOOTNOTE] In subsequent analyses, I plan to incorporate 2000 and 2010 decennial Census data. Tract geographies change between 2000 and 2010.
 
-[FOOTNOTE: better account for margin of error]
+[FOOTNOTE] I will better account for margin of error later.
 
 I use the `tidycensus` R package to retrieve ACS data for all tracts in all counties containing gay bars [CITE].
