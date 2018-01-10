@@ -108,63 +108,11 @@ Figure [NUMBER] presents two demographic characteristics without a single cohere
 
 The second plot, Figure [NUMBER] shows median rent, an economic indicator, and education, a demographic trait associated with class. Both of these are associated with processes of gentrification. For these, the trajectories for the majority of gay neighborhoods is clear: they are becoming more educated and more expensive. Recall, as shown above, that these neighborhood begin in the first time period with a more highly educated population than average for their contexts, and with more expensive rents. It appears, descriptively, that gay neighborhoods in recent times are generally experiencing changes that strongly resemble gentrification.
 
-In summary
+In summary, I have described what gay neighborhoods were like in the recent past, and how they have changed. Gay neighborhoods look different from their contexts, and they share similarities with each other. On some axes of structural change---those consistent with what we might call gentrification---they exhibit consistent trends. On others---those that would allow us to assign a clear narrative about the culprits for this change---they do not.
 
-While I have deliberately broadened my sample beyond the most commonly considered set of cities, I have taken care to exclude cities and neighborhoods that do not clearly belong.
+While I have deliberately broadened my sample beyond the most commonly considered set of cities, I have taken care to exclude cities and neighborhoods that do not clearly belong. As a result, the heterogeneity and coherence of different aspects of these neighborhoods are both striking.
 
-the heterogeneity and coherence of different aspects
-
-are both striking
-
-"Gay neighborhoods are experiences changes that look an awful lot like gentrification." Um, yeah.
-
-I did not want to presume gentrification
-
-
-See [APPENDIX] for select one-way plots of these, as well as median income and male.
-
-I think I have a narrative for these now.
-
-I'm concerned about the (lack of) coherence in the results I have so far. But how clear was I expecting it to be? Also, I ostensibly planned for this.
-
-Story I'd like to be able to tell: starts out as a mess, but then a narrative emerges when we cluster the data sensibly.
-
-Seems clear that part of the problem is I don't know how these neighborhoods are doing relative to their contexts.
-
-PCA: kind of have to decide that variation on different axes is equally important.
-
-Correlation:
-
-Could just look at whether these are different from all other tracts in same city, but then I lose the effect of the aggregation
-
-Talk about building synthetic controls from other census tracts in "conclusions" if I don't get to it. "I plan to..."
-
-
-Where do these neighborhoods start? Where do they wind up? In absolute terms? and relative to their contexts? and relative to comparable neighborhoods at the beginning?
-
-To confirm, would need to look at
-
-I expect to see economic and demographic changes to go along with {X}
-
-It sounds like emphasizing heterogeneity is going to be important. Even among this, the set of neighborhoods I've chosen to be most clearly
-
-gay neighborhoods
-
-This point holds up looking at one-way plots and at diffs for individual tracts (which I don't want to use, because measurement error)
-
-if the story winds up being: demographics are pretty muddled, but economics show clear trends
-
-that's okay.
-
-Okay, education is pretty coherent, especially with income / rent.
-
-Boystown and Andersonville are both pretty flat on the education front. What does this mean for the criticism we made of Ghaziani two years ago?
-
-this section is an argument for looking carefully at data
-
-before rushing into modeling or analyzing it
-
-thinking critically about what it means to present it meaningfully
+In this section, I have carefully looked at the available data, before moving to model or analyze it. I have departed from convention [innovated?] by relying on quantitative aggregation and qualitative prior knowledge to present the data in a meaningful way.
 
 ## Model results
 
@@ -177,3 +125,5 @@ I expect to find
 impacts for education rent and income
 
 but not race gender and household type
+
+Talk about building synthetic controls from other census tracts in "conclusions" if I don't get to it. "I plan to..."

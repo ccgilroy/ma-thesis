@@ -20,3 +20,5 @@ places and populations
 (spaces and)
 
 (and communities)
+
+Richard Florida attempted to make LGBTQ people into a symbol of "coolness", creativity, and diversity. Perhaps that is a negative thing for gay spaces.

@@ -19,7 +19,7 @@ Go straight for Levine's definition, which has four parts
 
 The multifaceted nature of this definition is important.
 
-Both he and @castells_city_1983, however, 
+Both he and @castells_city_1983, however,
 
 prototypes do not have to be *representative*, either. The median gay neighborhood---if such a thing is even meaningful---would not look like Greenwich Village or the Castro.
 
