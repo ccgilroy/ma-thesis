@@ -213,13 +213,21 @@ qual_count_wide %>%
   geom_text(aes(x = white, y = male, label = city), 
             data = filter(qual_count_wide, year == "2006-2010"))
 
-qual_prop_wide %>%
+plot_white_married_2way <- 
+  qual_prop_wide %>%
   ggplot(aes(x = white, y = married, group = component)) + 
   geom_path(arrow = arrow(angle = 15, ends = "last", length = unit(.05, "inches"), type = "closed")) +
-  ggtitle("Changes in proportion white and proportion married") +
-  theme_minimal() +
-  geom_text(aes(x = white, y = married, label = str_c(city, component)), 
-            data = filter(qual_prop_wide, year == "2006-2010"))
+  labs(title = "Changes in proportion white and proportion married in gay neighborhoods", 
+       subtitle = "Comparing neighborhood-level values for each characteristic",
+       caption = "Arrows connect a neighborhood in 2006-2010\nto the same neighborhood in 2011-2015", 
+       x = "proportion white", 
+       y = "proportion in different-sex marriage") + 
+  theme_minimal() # +
+  # geom_text(aes(x = white, y = married, label = str_c(city, component)), 
+  #           data = filter(qual_prop_wide, year == "2006-2010"))
+
+ggsave("output/figures/white_married_2way.png", plot_white_married_2way,
+       width = 8, height = 5)
 
 qual_count_wide %>%
   ggplot(aes(x = `median income`, y = `median rent`, group = component)) + 
@@ -249,9 +257,13 @@ plot_rent_education_2way <-
   qual_prop_wide %>%
   ggplot(aes(x = `median rent`, y = `college educated`, group = component)) + 
   geom_path(arrow = arrow(angle = 15, ends = "last", length = unit(.05, "inches"), type = "closed")) +
-  ggtitle("Changes in median rent and proportion college educated") +
+  labs(title = "Changes in median rent and proportion college educated in gay neighborhoods", 
+       subtitle = "Comparing neighborhood-level values for each characteristic",
+       caption = "Arrows connect a neighborhood in 2006-2010\nto the same neighborhood in 2011-2015", 
+       x = "median rent, 2015 dollars", 
+       y = "proportion college-educated") +
   theme_minimal() # +
-  # geom_text(aes(label = str_c(city, component)), 
+  # geom_text(aes(label = str_c(city, component)),
   #           data = filter(qual_prop_wide, year == "2006-2010"))
 
 ggsave("output/figures/rent_education_2way.png", plot_rent_education_2way,

@@ -117,13 +117,14 @@ geometry_components <- graph_to_components(geometry_graph)
 geometry_components_strict <- graph_to_components(geometry_graph_strict)
 geometry_components_strict_nd <- graph_to_components(geometry_graph_strict_nd)
 
+write_rds(geometry_graph_strict_nd, "data/census/geometry_graph_strict_nd.rds")
+
 # save components data frame
 write_csv(geometry_components, "data/census/geometry_components.csv")
 write_csv(geometry_components_strict, 
           "data/census/geometry_components_strict.csv")
 write_csv(geometry_components_strict_nd, 
           "data/census/geometry_components_strict_nd.csv")
-
 
 # exploratory plots ----
 library(leaflet)
