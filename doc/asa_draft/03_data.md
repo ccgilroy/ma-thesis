@@ -9,46 +9,47 @@ In this section, I describe the two data sources on which I rely, and the proces
 
 To use gay bars as an indicator or proxy for the locations of gay neighborhoods across multiple cities, I need a consistent source for the locations of gay bars. This source should be from *before* the point in time at which I am measuring the outcomes of potential change.
 
-Gay travel guides and city guides are a data source with ample precedent.
+For gay bars, gay travel guides and city guides are a data source with ample precedent. Damron's travel guides, the most prominent, have a more than 50-year history [@mattson_counting_2017]. They have been used in both classic [@levine_gay_1979; @castells_city_1983, 148 Map 14.3] and contemporary [@mattson_counting_2017] work. In a similar vein, @hayslett_out_2011 use a 2000 guide called the Gayellow Pages to locate gay bars in their quantitative analysis of Columbus, OH.
 
-Damron's travel guides [CITE Levine, CITE Mattson], the most prominent, have a more than 50-year history. They have been used in both classic [@levine_gay_1979; @castells_city_1983, 148 Map 14.3] and contemporary [@mattson_counting_2017] work.
+While I have investigated these print sources, I choose instead to use an online gay city and travel guide, GayCities. Though it follows the precedent established above, to my knowledge this is a novel data source. As a digital data source, it has the advantages of being scalable and accessible, traits which are crucial for a quantitative analysis covering dozens of cities. Moreover, because I am interested in a relatively contemporary time period, using an Internet resource is both feasible and logical. To be thorough, I have also considered other online sources, going so far as to collect data from Yelp using their "gay bars" category in 2017. These data are not available historically, only in real time, rendering them less suitable than GayCities for this purpose.
 
-@castells_city_1983 [358] refers to a list of "specialized publications" as a source for gay bar locations in San Francisco, including the Advocate, among others. @hayslett_out_2011 use a 2000 guide called the Gayellow Pages to locate gay bars in their quantitative analysis of Columbus, OH.
+Of course, any archival source is bound to be selective. I believe the impact of these kinds of biases on my project are mitigated due to the project's emphasis on precisely on those spaces that are public and visible, and that are more on the core than the periphery.
 
-Of course, any archival source is bound to be selective.
+Visible, well-known gay neighborhoods are likely to be included
 
-I believe the impact of these kinds of biases [errors] on my project are mitigated by the fact that it is focused precisely on those spaces that are public and visible, that are more on the core than the periphery.
+in these guides
 
-explain GayCities
+I am
 
-allows users to contribute crowdsourced information about places
+[The converse error, classifying a neighborhood as a gay neighborhood when it is not, is of greater concern to me. I discuss the steps I take to mitigate this error later.]
 
-which has the advantages of being novel, scalable, and accessible
 
+
+
+
+would be possible, but not critical, to digitize and compare
 [i.e., already digitized]
 
-because I am interested in a relatively contemporary time period, using an Internet resource is both feasible and logical
 
 To my knowledge, this is a novel data source, but the idea is not without precedent.
 
-[I have also considered other online sources. I collected Yelp data using their "gay bars" category, but only for 2017. These data are not available historically, only currently, rendering them less suitable for this purpose.]
-
-[As I discuss below in the methods section. *could* validate, but it doesn't really matter, which I'll explain when I get to the clustering bit. I don't need individual bar listings to be accurate---I just need clusters of them to be accurate! That's more likely/believable.]
+[As I discuss below in the methods section. *could* validate, but it doesn't really matter, which I'll explain when I get to the clustering bit. I don't need individual bar listings to be accurate---I just need clusters of them to be accurate! In terms of face validity, I find that prospect to be more likely and believable.]
 
 *About GayCities*.
 
 GayCities (www.gaycities.com) was founded in 2005, and relaunched in 2008. Their About page in 2007 describes them as a "gay city guide site with the power of the community as its driving force." In other words, they solicit crowdsourced opinions, reviews, and information from the LGBTQ community to provide a more complete picture of the places that they list. [SAY SOMETHING about crowdsourcing and reliability.]
 
-GayCities has expanded over time, most significantly by purchasing the blog Queerty in 2011. After acquiring Queerty, they grew into q.digital, an LGBTQ marketing and media conglomerate (and, by their claim, one of the largest). [LINK]
+[Damron's, for instance, also attempts to keep up to date by soliciting information from readers.]
 
-In other words, they have persisted since their founding more than a decade ago, and they have evolved into a prominent media source within the LGBTQ community.
+GayCities has expanded over time, most significantly by purchasing the blog Queerty in 2011. After acquiring Queerty, they grew into q.digital, an LGBTQ marketing and media conglomerate (and, by their claim, one of the largest).[LINK] In other words, they have persisted since their founding more than a decade ago, and they have evolved into a prominent media source within the LGBTQ community. This trajectory increases my confidence that GayCities, even in the past, would have had the resources and community knowledge to constitute a reliable data source.
 
 [Informally, this fact was surprising to me.]
 
-*Historical data*. I obtain historical data from the Internet Archive's Wayback Machine [CITE]. The Internet Archive is a non-profit organization dedicated to archiving the web.[LINK]
+*Historical data*.
 
+I do not draw my data from the present-day edition of the GayCities website. Instead, I use the listings of bars as they existed on a past version of the site. I obtain this historical data from the Internet Archive's Wayback Machine [CITE]. The Internet Archive is a non-profit organization dedicated to archiving the web.[LINK] Their repositories have served as a resource for other types of social science research [@gade_.gov_2017].
 
-I use the earliest relatively complete record of the site www.gaycities.com, from July 28, 2007. This date precedes the point in time at which I measure my outcomes, as discussed below.
+From the Wayback Machine, I use the earliest relatively complete record of the site www.gaycities.com, dated July 28, 2007. This date precedes the point in time at which I measure my outcomes, as discussed below.
 
 [LINK] https://archive.org/about/
 
