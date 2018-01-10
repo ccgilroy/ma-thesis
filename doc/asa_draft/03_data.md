@@ -9,7 +9,7 @@ In this section, I describe the two data sources on which I rely, and the proces
 
 To use gay bars as an indicator or proxy for the locations of gay neighborhoods across multiple cities, I need a consistent source for the locations of gay bars. This source should be from *before* the point in time at which I am measuring the outcomes of potential change.
 
-Gay travel guides
+Gay travel guides and city guides are a data source with ample precedent.
 
 Damron's travel guides [CITE Levine, CITE Mattson], the most prominent, have a more than 50-year history. They have been used in both classic [@levine_gay_1979; @castells_city_1983, 148 Map 14.3] and contemporary [@mattson_counting_2017] work.
 
@@ -17,11 +17,7 @@ Damron's travel guides [CITE Levine, CITE Mattson], the most prominent, have a m
 
 Of course, any archival source is bound to be selective.
 
-precisely in spaces that are public and visible
-
-more focused on the core than the periphery
-
-I believe the impact of these kinds of errors on my project are mitigated
+I believe the impact of these kinds of biases [errors] on my project are mitigated by the fact that it is focused precisely on those spaces that are public and visible, that are more on the core than the periphery.
 
 explain GayCities
 
@@ -43,7 +39,7 @@ To my knowledge, this is a novel data source, but the idea is not without preced
 
 GayCities (www.gaycities.com) was founded in 2005, and relaunched in 2008. Their About page in 2007 describes them as a "gay city guide site with the power of the community as its driving force." In other words, they solicit crowdsourced opinions, reviews, and information from the LGBTQ community to provide a more complete picture of the places that they list. [SAY SOMETHING about crowdsourcing and reliability.]
 
-GayCities bought Queerty in 2011. After acquiring Queerty, they grew into q.digital, an LGBTQ marketing and media conglomerate (and, by their claim, one of the largest). [LINK]
+GayCities has expanded over time, most significantly by purchasing the blog Queerty in 2011. After acquiring Queerty, they grew into q.digital, an LGBTQ marketing and media conglomerate (and, by their claim, one of the largest). [LINK]
 
 In other words, they have persisted since their founding more than a decade ago, and they have evolved into a prominent media source within the LGBTQ community.
 
@@ -58,7 +54,7 @@ I use the earliest relatively complete record of the site www.gaycities.com, fro
 
 *Web scraping*. These data were acquired through web scraping [DEFINE]. I wrote a Python script to download the relevant web pages and used the `beautifulsoup` module [CITE] to extract bar listings and other data from the pages.
 
-The Wayback Machine itself collects URLs for archiving via web scraping; Gaycities' robots.txt is permissive and GayCities' terms prohibit only commercial use of their data.
+While the popularity of web scraping as a computational data-gathering technique has receded with the proliferation of APIs, and there are increasingly concerns about its permissibility, I believe it is a justifiable tool for this project. The Wayback Machine itself collects URLs for archiving via web scraping or crawling; Gaycities' robots.txt is permissive and GayCities' terms prohibit only commercial use of their data.
 
 *Description of the data set*.
 
@@ -68,9 +64,9 @@ Each GayCities web page includes informative city-level and bar-level descriptio
 
 The most significant limitation of the GayCities 2007 data set would seem to be the number of cities. However, I observe qualitatively that the largest city to be excluded for which I can document the existence of a gay neighborhood is Oklahoma City. Moreover, the cities that a gay website chooses to include on launch would logically be more likely to have gay neighborhoods, if anything. On this basis, I contend that the set of cities available through these data are reasonable. Moreover, in my analysis I will actually remove cities that I consider to be marginal cases.
 
-[They have since expanded. At present in 2018 GayCities covers 229 cities worldwide. This number includes 215 in North America, and 187 in the US alone.]
+[They have since expanded. At present in 2018 GayCities covers 229 cities worldwide. This number includes 215 in North America, and 187 in the US alone, so the site remains US-centric.]
 
-[FOOTNOTE] It is possible to study community change in small towns along with neighborhoods in large cities. Provincetown, in particular, has been studied alongside Andersonville [CITE Japonica]. My framing, however, is concerned with urban neighborhoods. Moreover, my focus on population characteristics makes including non-urban tracts with extensive seasonal migration perilous.
+[FOOTNOTE] It is possible to study community change in small towns along with neighborhoods in large cities. Provincetown, in particular, has been studied alongside Andersonville [@brown-saracino_neighborhood_2010]. My framing, however, is concerned with urban neighborhoods. Moreover, my focus on the population characteristics of these spaces makes including non-urban tracts with extensive seasonal migration perilous. These tracts are, however, included in the summaries of Table 1 for completeness.
 
 ## Variables: the American Community Survey
 

@@ -14,3 +14,9 @@ This paper has taken advantage of the strengths of ACS data from the Census Bure
 I can do this by shifting the question from *what's happening to gay people* to *what's happening in gay spaces*.
 
 Implicitly, the latter tells us something about the former.
+
+places and populations
+
+(spaces and)
+
+(and communities)
