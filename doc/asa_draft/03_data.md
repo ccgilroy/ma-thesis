@@ -13,27 +13,9 @@ For gay bars, gay travel guides and city guides are a data source with ample pre
 
 While I have investigated these print sources, I choose instead to use an online gay city and travel guide, GayCities. Though it follows the precedent established above, to my knowledge this is a novel data source. As a digital data source, it has the advantages of being scalable and accessible, traits which are crucial for a quantitative analysis covering dozens of cities. Moreover, because I am interested in a relatively contemporary time period, using an Internet resource is both feasible and logical. To be thorough, I have also considered other online sources, going so far as to collect data from Yelp using their "gay bars" category in 2017. These data are not available historically, only in real time, rendering them less suitable than GayCities for this purpose.
 
-Of course, any archival source is bound to be selective. I believe the impact of these kinds of biases on my project are mitigated due to the project's emphasis on precisely on those spaces that are public and visible, and that are more on the core than the periphery.
+Of course, any archival source is bound to be selective. I believe the impact of these kinds of biases on my project is mitigated due to the project's emphasis on precisely on those spaces that are public and visible, and that are more on the core than the periphery. If a neighborhood goes wholly unmarked in gay resources, it is---in some sense by definition---neither visible nor well-known. I am therefore less concerned that using a bar-based index will cause me to miss neighborhoods that are "really" gay. The converse error, classifying a neighborhood as a gay neighborhood when it is not, is of greater concern to me, but I discuss the steps I take to mitigate that error later.
 
-Visible, well-known gay neighborhoods are likely to be included
-
-in these guides
-
-I am
-
-[The converse error, classifying a neighborhood as a gay neighborhood when it is not, is of greater concern to me. I discuss the steps I take to mitigate this error later.]
-
-
-
-
-
-would be possible, but not critical, to digitize and compare
-[i.e., already digitized]
-
-
-To my knowledge, this is a novel data source, but the idea is not without precedent.
-
-[As I discuss below in the methods section. *could* validate, but it doesn't really matter, which I'll explain when I get to the clustering bit. I don't need individual bar listings to be accurate---I just need clusters of them to be accurate! In terms of face validity, I find that prospect to be more likely and believable.]
+Moreover, because I ultimately aim to locate neighborhoods, not bars, I do not need the listings of individual bars to be entirely complete or totally accurate. Rather, as I explain below in the methods section, I only need groups or clusters of bars to be accurate. In terms of face validity, I find that prospect to be more likely and believable. While it would be possible to digitize a print source like the Damron guides for comparison and validation, I do not believe this to be critical.
 
 *About GayCities*.
 
