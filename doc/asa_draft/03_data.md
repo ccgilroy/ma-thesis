@@ -55,28 +55,20 @@ The most significant limitation of the GayCities 2007 data set would seem to be 
 
 [who am I talking to with this?]
 
-To assess the structural contexts of gay neighborhoods and how they might be changing, I use counts and proportions of various demographic and economic characteristics [for spatial units].
-
-These economic and demographic variables, as well as the geographies of the Census tracts to which they pertain, come from the American Community Survey (ACS).
+To assess the structural contexts of gay neighborhoods and how they might be changing, I use counts and proportions of various demographic and economic characteristics. These measures are ecological, i.e., associated with spatial units and contexts rather than individuals. These economic and demographic variables, as well as the geographies of the Census tracts to which they pertain, come from the United States Census Bureau's American Community Survey (ACS).
 
 ACS estimates are available in 1-year, 3-year, and 5-year data sets, at differing geographic resolutions. I use the 5-year ACS, because for this analysis I need tract-level data only available at this temporal resolution. Looking at combined data from a five-year period, however, could obscure the distinctness of trends. This is a necessary tradeoff between spatial and temporal resolution.
 
-Because the ACS has been performed every year since 2006, with data publicly available, I can obtain data for two non-overlapping five year periods, 2006-2010 and 2011-2015.
+Because the ACS has been performed every year since 2006, with data from these years publicly available, I can obtain data for two non-overlapping five year periods, 2006-2010 and 2011-2015.[FOOTNOTE] This positions me to use the ACS to assess change over time on a variety of characteristics in a recent time frame. The ACS has the significant advantages of being regular, frequent, and recent.
 
-This positions me to use the ACS to assess change over time on a variety of characteristics in a recent time frame.
+[FOOTNOTE] As of December 2017, these data are available through 2016.
 
-[FOOTNOTE] as of December 2017, through 2016
+However, the fact that the ACS is a survey and not a complete count comes with limitations.[FOOTNOTE] As a survey, it has relatively large margins of error, particularly for small areas like Census tracts [@spielman_studying_2015]. Because this problem of error is more acute for small counts than large counts, it influences the variables I choose, described in the Methods section below.
 
-The fact that the ACS is a survey and not a complete count comes with limitations. The most salient limitation is on the use of same-sex couples data.
+The most salient limitation this creates is on the use of same-sex couples data. Even in tracts with relatively large numbers of same-sex couple households, they remain only a small proportion of the population [CITE]. Due to the disparity in group sizes, small random errors in different-sex couples recording the genders of spouses or partners result in a large inflation in counts of same-sex couples [CITE]. To attempt to mitigate this problem, the Census Bureau improved its form design and made changes to its coding practices, resulting in a decreased error rate, between 2007 and 2008 [CITE]. A consequence of this change is that it is not meaningful to compare counts of same-sex couples between the 2006-2010 5-year data and the 2011-2015 5-year data [LINK]. Therefore, I do not make this comparison.
 
-Moreover, the Census Bureau improved its form design and made changes to its coding practices, resulting in a decreased error rate, between 2007 and 2008 [CITE]. What this means is that it is not justifiable or meaningful (or possible) to compare counts of same-sex couples between the 2006-2010 5-year data and the 2011-2015 5-year data [LINK].
+[FOOTNOTE] In subsequent analyses, I plan to incorporate 2000 and 2010 decennial Census data. Tract geographies change between 2000 and 2010.
 
-Explain why same-sex couples is bad idea.
-
-Talk about decennial Census, maybe use later. [FOOTNOTE] In subsequent analyses, I plan to incorporate 2000 and 2010 decennial Census data.
-
-regular and recent; disadvantage of being a survey, with a margin of error
-
-[footnote: better account for margin of error]
+[FOOTNOTE: better account for margin of error]
 
 I use the `tidycensus` R package to retrieve ACS data for all tracts in all counties containing gay bars [CITE].

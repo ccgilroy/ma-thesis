@@ -23,6 +23,8 @@ Recall that the boundaries being imposed are an artificial construct driven by t
 
 In these cases, my method identifies a recognizable cultural object, centered in a gay culture area with gay institutions. This is the important thing. The overall way to judge the success of my approach for each city is how well it accomplishes this goal. My point is not that the boundaries I have drawn are incontestable. In fact, I think for any case additional qualitative knowledge will have constructive critiques to offer. (The challenge, and eventual goal, is figuring out how to incorporate that knowledge!) What matters is that a bar-based approach produces a good first-order approximation of the locations of gay neighborhoods. It is clearer, even, than using the continuous measure of prevalences of same-sex couples, which requires arbitrary cutoffs [@gates_gay_2004; @brown_places_2006]. This pragmatic choice enables an analysis of gay spaces rather than gay populations.
 
+[To reiterate: I do not claim that these boundaries are definitive. They are not. Do not interpret this as "This is the shape of Boystown", interpret it as "This is roughly where Boystown is".]
+
 [In other words, it's way better than anything else we've got!]
 
 [and this is *almost* enough that the margins of error don't overlap on some things! which is good.]

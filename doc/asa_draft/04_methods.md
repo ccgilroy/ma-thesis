@@ -21,21 +21,21 @@ Finally, I geocode the 38 addresses for which the Census returns a tie or a fail
 
 The previous step gives me a set of 488 Census tracts with varying numbers of bars. However, the object of sociological interest for this study is not Census tracts, but neighborhoods.
 
-Gay bars frequently occur in spatially contiguous clusters of tracts. I use this fact to produce clusters of tracts which I argue will roughly correspond to gay neighborhoods.
+Gay bars frequently occur in spatially contiguous clusters of tracts. I use this fact to produce clusters of tracts which I argue will roughly correspond to gay neighborhoods. Achieving this correspondence is the primary motivation for taking this step. Additionally, this *regionalization* process has the ancillary advantage of reducing the margin of error in ACS variable estimates, which can be substantial at the tract level [@spielman_reducing_2015].
 
-This is the primary motivation for taking this step
-
-Furthermore, this *regionalization* process has the additional advantage of reducing the margin of error in ACS variable estimates [CITE].
-
-I only consider the geometries of tracts with bars
+For my clustering process, I only consider the geometries of tracts containing gay bars.
 
 adjacent tracts
 
 Tracts that share only a corner, not a line border, are not considered adjacent.
 
+[These exist, for example, in Denver and Phoenix.]
+
 I use the `sf` and `sp` packages for spatial data in R to generate lists of adjacent tracts, and I use the `igraph` package [CITE] to assign numeric identifiers to the clusters produced by this adjacency list. See [APPENDIX] for a network graph of these clusters.
 
 ## Filtering
+
+I visually inspect the output of the above clustering process.
 
 operationalize
 
