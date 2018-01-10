@@ -36,3 +36,12 @@ I am directly inspired by questions left open by Ghaziani [CITE] and others in t
 I'm not even concerned with whether these neighborhoods are becoming less *gay*. I am asking a simpler and broader question.
 
 do we see coherent _ change? is that change different? can we ascribe it to the fact that these neighborhoods are distinguished or marked as gay?
+
+
+I am not considering changes in prevalence or numbers of same-sex couples at all.
+
+I am taking a broader, contextual view of neighborhood change, with the assumption that if contextual factors are changing, this will have some influence on or relation to changes on the ground, or at the level of culture and institutions.
+
+We, queer academics, have stories we tell ourselves. What's the story? How justified is it?
+
+Is it really about gay neighborhoods at all? Or are these places getting swept up in broader contextual trends?

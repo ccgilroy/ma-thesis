@@ -100,4 +100,4 @@ regular and recent; disadvantage of being a survey, with a margin of error
 
 [footnote: better account for margin of error]
 
-`tidycensus` [CITE]
+I use the `tidycensus` R package to retrieve ACS data for all tracts in all counties containing gay bars [CITE].

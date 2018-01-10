@@ -15,14 +15,35 @@ In the maps in Figure [NUMBER], I show the result of the clustering and filterin
 
 ![Seattle, adjacent downtown bar excluded.](../../output/figures/seattle.png)
 
+overall way to think about things
+
+How well does this work, anyway?
+
 my point is not that these couldn't be contested! they could!
 
 and this is *almost* enough that the margins of error don't overlap on some things! which is good.
 
 talk about types and failures
 
+In some cities with larger gay neighborhoods, qualitatively distinct neighborhoods that are adjacent blur and merge together. Significant examples of this are the Castro, the Mission, and SOMA in San Francisco, West Village and Chelsea in New York, and Dupont Circle, Logan Circle, and Shaw/U Street in Washington, DC. By treating each of these as a single unit, I could be effacing important distinctions. For instance, @hanhardt_safe_2013 and @greene_gay_2014 both take care to characterize the differences between those three DC neighborhoods, which could turn out to matter for the kinds of changes they experience.
+
+I am setting that possibility aside. Perhaps with more detailed on-the-ground knowledge, these clusters could be subdivided more finely, but I do not attempt that here. [FOOTNOTE?] Or perhaps not. For instance, @compton_beyond_2012 discuss the difficulty of drawing a precise boundary between the Castro and the Mission, despite these being well-defined enclaves associated strongly with gay men and lesbians, respectively.
+
+In other cases, what would appear to be a single neighborhood, based on the neighborhood labels associated with the bars in the original data, is fragmented among two or more noncontiguous clusters of tracts. Examples of this fragmentation occur for Capitol Hill in Denver and South Beach in Miami. I do not attempt to unify these fragments; rather, as I describe below [ABOVE?], I choose only the largest cluster to represent the neighborhood as a whole.
+
+Denver + Miami
+
+Austin + Portland?
+
+Dallas + Atlanta
+
+Again, the point is not that *these* boundaries are incontestable.
+
 See [APPENDIX] for more maps
 
+[MOVE PARAGRAPH BELOW TO METHODS?]
+
+For my analyses,
 I choose the 24 cities that most clearly have discernible clusters of bars corresponding to known or probable gay neighborhoods. I exclude the other 24 US cities and the nine resort towns. This is done inductively, based both on my interpretation of prior literature and on my inspection of the clusters. I assign three clusters to New York, two to San Francisco and Chicago, and one to all other cities that I include.
 
 [FOOTNOTE] Long Beach, in Los Angeles County, is collapsed together with Los Angeles proper for discussions of context. This nominally gives LA two neighborhoods, as well.
@@ -31,11 +52,13 @@ I choose the 24 cities that most clearly have discernible clusters of bars corre
 
 This gives me 28 clusters ("components") to use as data points in the analyses that I present below. The 488 tracts I begin with fall to 461 once downtowns are excluded. Of these, 146 tracts (29.9% of the original number) remain in the filtered components that I use in my analysis.
 
-I briefly describe the range of components, with a full lists in [APPENDIX]. The largest by number of tracts is West Village - Chelsea, New York with 13 tracts, while the largest by number of bars is Castro - Mission - Folsom - SOMA, SF with 33 bars. This shows that the historical prominence accorded to these areas as gay centers persisted---at least institutionally---in 2007. At the other end of the range, the smallest clusters by number of tracts are Northcentral, San Antonio, and Ybor City, Tampa, with one tract each, while the smallest by number of bars is South Beach, Miami, with four bars.
+I briefly describe the range of clusters, with a full list in [APPENDIX]. I have assigned these descriptive names based on the neighborhood labels and descriptions in the GayCities data and on knowledge from prior literature. The largest gay neighborhood by number of tracts is West Village - Chelsea, New York with 13 tracts, while the largest by number of bars is Castro - Mission - Folsom - SOMA, SF with 33 bars. This shows that the historical prominence accorded to these areas as gay centers persisted---at least institutionally---in 2007. At the other end of the range, the smallest clusters by number of tracts are Northcentral, San Antonio, and Ybor City, Tampa, with one tract each, while the smallest by number of bars is South Beach, Miami, with four bars.
 
 ## Descriptive results
 
 [present tables of averages, because they're expected]
+
+This is a typical, but not terribly meaningful, way of presenting these results.
 
 - [present two-way plot of education and rent]
 - [present two-way plot of married and white]
@@ -43,7 +66,23 @@ I briefly describe the range of components, with a full lists in [APPENDIX]. The
 
 This comes first
 
-![](../../output/figures/demographic_comparison.png)
+![Red lines represent parity.](../../output/figures/demographic_comparison.png)
+
+Do these neighborhoods look like their contexts? No, they do not.
+
+Two way plots:
+
+One without clear trajectories ("demographics")
+
+![](../../output/figures/white_married_2way.png)
+
+"Gay neighborhoods are experiencing an influx of straight, white, married couples." No, not necessarily.
+
+One with clear trajectories ("gentrification")
+
+![](../../output/figures/rent_education_2way.png)
+
+"Gay neighborhoods are experiences changes that look an awful lot like gentrification." Um, yeah.
 
 See [APPENDIX] for select one-way plots of these, as well as median income and male.
 
@@ -92,5 +131,7 @@ What exactly this means varies. Counties are clustered tightly at a little under
 [put a sad note here about running out of time]
 
 based on the descriptive results for
+
+I expect to find
 
 but not race gender and household type

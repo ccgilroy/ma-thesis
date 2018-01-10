@@ -5,17 +5,21 @@ This section should generate and justify my expectations
 
 # Gay neighborhoods
 
-Terminology matters.
-
-"queer" might speak to a political orientation that is absent; "LGBTQ" to an inclusiveness that is missing
-
-Go straight for Levine's definition, which has four parts
-
-use the term "gay neighborhood"
+Terminology matters. I use the term "gay neighborhood" pragmatically to refer to the object of my study,
 
 not because it is neutral, but because it contains, I believe, the fewest connotations at odds with my purposes.
 
-fn: Brown 2014 contains an excellent summary of the different terms that have been used in the academic literature.
+"queer" might speak to a radical political orientation that is absent in a space that is ultimately homonormative [CITE Hanhardt]; "LGBTQ" to an inclusiveness or diversity that is missing or insufficient.
+
+fn: Brown 2014 contains an excellent summary of the different terms that have been used in the academic literature to name gay neighborhoods.
+
+drawing on the urban sociology of the Chicago school, @levine_gay_1979 uses four criteria to define a gay neighborhood ()
+
+Go straight for Levine's definition, which has four parts
+
+The multifaceted nature of this definition is important.
+
+Both he and @castells_city_1983, however, 
 
 prototypes do not have to be *representative*, either. The median gay neighborhood---if such a thing is even meaningful---would not look like Greenwich Village or the Castro.
 

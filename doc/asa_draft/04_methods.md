@@ -57,6 +57,9 @@ LGBTQ people do not dominate the CBD of any city of which the author is aware.
 
 ones and zeros.
 
+The largest cluster by number of bars.
+
+[in the only case wherein this results in a tie, between the South End and Fenway in Boston, I choose the South End, which has more tracts.]
 
 See [APPENDIX] for these labels. (Or present them in main body of text?)
 
