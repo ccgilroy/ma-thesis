@@ -366,4 +366,75 @@ loadings(pca)
 # one with props as counts
 
 # then plot 
-  
+
+# make a table ----
+table_data <- 
+  main_data %>%
+  left_join(geometry_components_qual_filtered, by = "GEOID") %>%
+  mutate(tract_type = case_when(
+    gay == 0 ~ "Tracts without gay bars",
+    gay == 1 & is.na(component) ~ "Other tracts with gay bars",
+    gay == 1 & !is.na(component) ~ "Tracts in gay neighborhoods"
+  )) %>%
+  mutate(estimate = ifelse(label %in% usd_vars & year == "2006-2010", 
+                           estimate*conversion_factor, estimate)) %>%
+  mutate(estimate = ifelse(is.na(prop), estimate, prop), 
+         moe = ifelse(is.na(prop), moe, prop_moe)) %>%
+  select(-c(summary_est, summary_moe, prop, prop_moe))
+
+
+library(xtable)
+library(forcats)
+table_data_wide <- 
+  table_data %>%
+  filter(label != "total population") %>%
+  group_by(year, label, tract_type) %>%
+  summarise(estimate = mean(estimate, na.rm = TRUE)) %>%
+  ungroup() %>%
+  spread(key = year, value = estimate) %>%
+  mutate(label = as.factor(label), 
+         label = fct_relevel(label, "white", after = 3)) %>%
+  arrange(label)
+
+gay_tracts <- 
+  table_data_wide %>% 
+  filter(tract_type == "Tracts in gay neighborhoods") %>%
+  select(-tract_type) %>%
+  column_to_rownames("label") %>%
+  as.matrix()
+
+other_gay_tracts <- 
+  table_data_wide %>% 
+  filter(tract_type == "Other tracts with gay bars") %>%
+  select(-tract_type) %>%
+  column_to_rownames("label") %>%
+  as.matrix()
+
+other_tracts <- 
+  table_data_wide %>% 
+  filter(tract_type == "Tracts without gay bars") %>%
+  select(-tract_type) %>%
+  column_to_rownames("label") %>%
+  as.matrix()
+
+mx <- cbind(gay_tracts, other_gay_tracts, other_tracts)
+
+library(knitr)
+library(kableExtra)
+kable(mx, 
+      format = "latex", 
+      booktabs = TRUE, 
+      caption = "Average values for tracts", 
+      align = "r", 
+      digits = 2) %>%
+  add_header_above(c(" ", 
+                     "N = 146" = 2, 
+                     "N = 342" = 2, 
+                     "N = 22519" = 2),
+                   italic = TRUE) %>%
+  add_header_above(c(" ", 
+                     "Gay neighborhood tracts" = 2, 
+                     "Other tracts with gay bars" = 2, 
+                     "Tracts without gay bars" = 2)) %>%
+  write_lines("output/tables/averages.md")
+

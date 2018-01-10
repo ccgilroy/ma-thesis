@@ -19,6 +19,8 @@ In Seattle, Capitol Hill covers four tracts and 11 bars, centered around the Pik
 
 Recall that the boundaries being imposed are an artificial construct driven by the needs of quantitative analysis, and that the true boundaries could be fuzzy or sharp on the ground.
 
+[DOES THIS PARAGRAPH GO AFTER THE OTHER TYPES OF CITIES?]
+
 In these cases, my method identifies a recognizable cultural object, centered in a gay culture area with gay institutions. This is the important thing. The overall way to judge the success of my approach for each city is how well it accomplishes this goal. My point is not that the boundaries I have drawn are incontestable. In fact, I think for any case additional qualitative knowledge will have constructive critiques to offer. (The challenge, and eventual goal, is figuring out how to incorporate that knowledge!) What matters is that a bar-based approach produces a good first-order approximation of the locations of gay neighborhoods. It is clearer, even, than using the continuous measure of prevalences of same-sex couples, which requires arbitrary cutoffs [@gates_gay_2004; @brown_places_2006]. This pragmatic choice enables an analysis of gay spaces rather than gay populations.
 
 [In other words, it's way better than anything else we've got!]
@@ -27,7 +29,7 @@ In these cases, my method identifies a recognizable cultural object, centered in
 
 [I am certain that readers more knowledgeable than I will find flaws. I want to discuss them explicitly.]
 
-To further illustrate the strengths and shortcomings of my approach, I discuss two [???] additional types of clusters emerging from my method. In each set of cases, it identifies gay neighborhoods in a way that is useful but perhaps not entirely satisfying. Pragmatism, not perfection.
+To further illustrate the strengths and shortcomings of my approach, I discuss two [???] additional types of clusters emerging from my method. In each set of cases, it identifies gay neighborhoods in a way that is useful but perhaps not entirely satisfying. What I offer is pragmatism, not perfection.
 
 In some cities with larger gay neighborhoods, qualitatively distinct neighborhoods that are adjacent blur and merge together. Significant examples of this are the Castro, the Mission, and SOMA in San Francisco, West Village and Chelsea in New York, Rittenhouse Square and Washington Square West in Philadelphia, and Dupont Circle, Logan Circle, and Shaw/U Street in Washington, DC. By treating each of these as a single unit, I could be effacing important distinctions. For instance, @hanhardt_safe_2013 and @greene_gay_2014 both take care to characterize the differences between those three DC neighborhoods, which could turn out to matter for the kinds of changes they experience.
 
@@ -37,9 +39,7 @@ In other cases, what would appear to be a single neighborhood, based on the neig
 
 [Austin + Portland? Dallas + Atlanta? Do I need to talk about these examples, or are the above sufficient? What to do with Loring Park in Minneapolis, with only a single gay bar?]
 
-
-
-See [APPENDIX] for more maps
+See [APPENDIX] for maps of these cases.
 
 [MOVE PARAGRAPH BELOW TO METHODS?]
 
@@ -55,6 +55,8 @@ This gives me 28 clusters ("components") to use as data points in the analyses t
 I briefly describe the range of clusters, with a full list in [APPENDIX]. I have assigned these descriptive names based on the neighborhood labels and descriptions in the GayCities data and on knowledge from prior literature. The largest gay neighborhood by number of tracts is West Village - Chelsea, New York with 13 tracts, while the largest by number of bars is Castro - Mission - Folsom - SOMA, SF with 33 bars. This shows that the historical prominence accorded to these areas as gay centers persisted---at least institutionally---in 2007. At the other end of the range, the smallest clusters by number of tracts are Northcentral, San Antonio, and Ybor City, Tampa, with one tract each, while the smallest by number of bars is South Beach, Miami, with four bars.
 
 ## Descriptive results
+
+In Table [NUMBER], I present 
 
 [present tables of averages, because they're expected]
 
