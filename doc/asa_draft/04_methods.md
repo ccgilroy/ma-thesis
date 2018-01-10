@@ -73,7 +73,7 @@ the other is quantitative
 
 the specific variables I select are vari[???]
 
-Driven by two factors: the kinds of changes I expect to see, and the categories of norms/privilege.
+Driven by two factors: the kinds of changes I expect to see, and normative or privileged categories.
 
 "male"
 
@@ -83,9 +83,7 @@ Driven by two factors: the kinds of changes I expect to see, and the categories 
 
 "married" refers only to different-sex married couples; the Census Bureau recodes same-sex married couples to unmarried partners.
 
-median rent and median income
-
-Where I combine tracts, I take a simple average of medians.
+I select two variables as economic indicators, "median rent" and "median income." The latter is median household income. Where I present numbers, I have converted the 2010 values to 2015 dollars, using the conversion factor recommended by the Census for comparison. Where I combine tracts, I take a simple average of medians.
 
 [FOOTNOTE] I will improve this later using more sophisticated approaches, such as weighted averages. I do not yet show median data for counties.
 

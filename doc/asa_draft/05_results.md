@@ -50,51 +50,68 @@ I choose the 24 cities that most clearly have discernible clusters of bars corre
 
 [FOOTNOTE] I plan to implement and evaluate alternative specifications for aggregation and inclusion. To address the concern that my qualitative approach based on consideration of the literature and data is too subjective, I will also employ a filtering approach using only quantitative thresholds for inclusion. For example, I might use the largest cluster for each city. To compare and justify the filtering and aggregation processes as a whole, I will perform baseline analyses using all clusters, regardless of size or relevance, and finally as individual, unclustered tracts. This latter would be the conventional approach in the demographic urban literature (with, perhaps, some allowance for spatial autocorrelation). These are not robustness checks, in the sense that I *do* expect to see differences, but they are an important part of sensitivity analysis. At the moment, I can only claim that my current approach is preferable to these in a qualitative sense.
 
-This gives me 28 clusters ("components") to use as data points in the analyses that I present below. The 488 tracts I begin with fall to 461 once downtowns are excluded. Of these, 146 tracts (29.9% of the original number) remain in the filtered components that I use in my analysis.
+This gives me 28 clusters ("components") to use as data points in the analyses that I present below. The 488 tracts I begin with that contain gay bars fall to 461 candidate tracts once downtowns are excluded. Of these, 146 tracts (29.9% of the original number) remain in the filtered components that I use in my analysis.
 
 I briefly describe the range of clusters, with a full list in [APPENDIX]. I have assigned these descriptive names based on the neighborhood labels and descriptions in the GayCities data and on knowledge from prior literature. The largest gay neighborhood by number of tracts is West Village - Chelsea, New York with 13 tracts, while the largest by number of bars is Castro - Mission - Folsom - SOMA, SF with 33 bars. This shows that the historical prominence accorded to these areas as gay centers persisted---at least institutionally---in 2007. At the other end of the range, the smallest clusters by number of tracts are Northcentral, San Antonio, and Ybor City, Tampa, with one tract each, while the smallest by number of bars is South Beach, Miami, with four bars.
 
 ## Descriptive results
 
-In Table [NUMBER], I present 
+In Table [NUMBER], I present average tract-level characteristics, four demographic and two economic, for three kinds of tracts: tracts in gay neighborhoods, by my criteria above, other tracts with gay bars that are not classified as being part of gay neighborhoods, and all tracts in the relevant counties that do not contain gay bar. Importantly, for the tracts containing gay bars, these traits were not the criteria for selection into one group or the other. (Of course, I anticipated that they would not be the same: the expectation that these different spaces would have different characteristics was a motivation for making the distinction.)
 
-[present tables of averages, because they're expected]
+\begin{table}
 
-This is a typical, but not terribly meaningful, way of presenting these results.
+\caption{\label{tab:}Average values for tracts}
+\centering
+\begin{tabular}[t]{lrrrrrr}
+\toprule
+\multicolumn{1}{c}{ } & \multicolumn{2}{c}{Gay neighborhood tracts} & \multicolumn{2}{c}{Other tracts with gay bars} & \multicolumn{2}{c}{Tracts without gay bars} \\
+% \cmidrule(l{2pt}r{2pt}){2-3} \cmidrule(l{2pt}r{2pt}){4-5} \cmidrule(l{2pt}r{2pt}){6-7}
+\multicolumn{1}{c}{\em  } & \multicolumn{2}{c}{\em N = 146} & \multicolumn{2}{c}{\em N = 342} & \multicolumn{2}{c}{\em N = 22519} \\
+\cmidrule(l{2pt}r{2pt}){2-3} \cmidrule(l{2pt}r{2pt}){4-5} \cmidrule(l{2pt}r{2pt}){6-7}
+  & 2006-2010 & 2011-2015 & 2006-2010 & 2011-2015 & 2006-2010 & 2011-2015\\
+\midrule
+college educated & 0.54 & 0.60 & 0.35 & 0.39 & 0.31 & 0.33\\
+male & 0.54 & 0.54 & 0.53 & 0.52 & 0.48 & 0.48\\
+married & 0.19 & 0.20 & 0.27 & 0.27 & 0.44 & 0.43\\
+white & 0.60 & 0.60 & 0.51 & 0.51 & 0.48 & 0.46\\
+median income & 63916.50 & 68341.77 & 48446.03 & 50195.39 & 64326.67 & 61341.20\\
+median rent & 1229.51 & 1319.33 & 1000.13 & 1056.72 & 1167.82 & 1194.26\\
+\bottomrule
+\end{tabular}
+\end{table}
 
-- [present two-way plot of education and rent]
-- [present two-way plot of married and white]
-- [present plot of demographics relative to cities]
+[say words about these results]
 
-Averages do not tell the whole story. What is more informative is to look at each neighborhood relative to its context. This is what I show in Figure [NUMBER] for the four demographic characteristics, plotting neighborhood-level characteristics against those same characteristics at the county level.
+On average, tracts in gay neighborhoods are more educated, and have become more educated. They are skewed more male than other tracts, have fewer different-sex married couples, and are whiter, but these characteristics do not change much, on average, in the short window of time covered by my data. Economically, they start off with higher median incomes and rents, and these also increase. The excluded tracts with gay bars fall between on demographic characteristics, and below on economic characteristics.
+
+[FOOTNOTE] present standard deviations, account for margins of error.
+
+Averages do not tell the whole story. What is more informative is to look at each neighborhood relative to its own context. This is what I show in Figure [NUMBER] for the four demographic characteristics, plotting neighborhood-level characteristics against those same characteristics at the county level. Here I move from presenting results about Census tracts to presenting results for gay neighborhoods, which are clusters of tracts as defined previously.
 
 [FOOTNOTE] I have not yet obtained county-level data for median income or median rent, but plan to do so. These cannot be calculated directly from tract-level data.
 
 ![Red lines represent parity.](../../output/figures/demographic_comparison.png)
 
-Do these neighborhoods look like their contexts? No, they do not.
-
-These gay neighborhoods systematically differ from their contexts. They are whiter, more male, more educated, and less married. All of this conforms to our expectations and preconceptions for gay neighborhoods.
+These gay neighborhoods systematically differ from their contexts. They are whiter, more male, more educated, and less married. All of this conforms to our expectations and preconceptions for gay neighborhoods. Though I do not measure the individual cooccurrence of these traits, and I of course cannot measure sexual orientation, these trends are consistent with the idea that these neighborhoods are spaces for white, middle-class, gay men.
 
 What exactly this means varies. Counties are clustered tightly at a little under 50% male; gay neighborhoods range from 50% to 60% male. By contrast, there is much more heterogeneity in how white a county and its corresponding gay neighborhoods are.
 
-From Figure [NUMBER] above, we also begin to see what change in these neighborhoods looks like.
-
-Two way plots:
-
-One without clear trajectories ("demographics")
-
-Here both axes are neighborhood-level characteristics.
+From Figure [NUMBER] above, we also begin to see what change in these neighborhoods looks like. To highlight this process more clearly, I now present bivariate plots of different sets of variables. In these, both axes are neighborhood-level characteristics. Each point is a single neighborhood in either 2006-2010 or 2011-2015, and an arrow connects the earlier observation to the later one for the same neighborhood.
 
 ![](../../output/figures/white_married_2way.png)
 
-"Gay neighborhoods are experiencing an influx of straight, white, married couples." No, not necessarily.
+Figure [NUMBER] presents two demographic characteristics without a single coherent trajectory: the proportion of white individuals and the proportion of different-sex married couple households. One structural implication of the "there goes the gayborhood" trope is the idea that gay neighborhoods are experiencing an influx and increased prevalence of straight, white, married couples across the board, and that this is what poses a general threat to gay culture and institutions in these spaces. From these data, this is not necessarily true. Of course, this descriptive finding is subject to the caveat that I am observing a short period of time with noisy data. Further investigation could confirm or undermine this.
 
-One with clear trajectories ("gentrification")
+[FOOTNOTE] Strictly speaking, an influx would refer to counts, and increase prevalence would refer to proportions. If in-migration and displacement is the primary concern, the former matters more; if change in the culture or tone of an area matters more, the latter does. I present the latter here, but intend to do justice to both ways of looking at the data.
 
 ![](../../output/figures/rent_education_2way.png)
 
+The second plot, Figure [NUMBER] shows median rent, an economic indicator, and education, a demographic trait associated with class. Both of these are associated with processes of gentrification. For these, the trajectories for the majority of gay neighborhoods is clear: they are becoming more educated and more expensive. Recall, as shown above, that these neighborhood begin in the first time period with a more highly educated population than average for their contexts, and with more expensive rents. It appears, descriptively, that gay neighborhoods in recent times are generally experiencing changes that strongly resemble gentrification.
+
 "Gay neighborhoods are experiences changes that look an awful lot like gentrification." Um, yeah.
+
+I did not want to presume gentrification
+
 
 See [APPENDIX] for select one-way plots of these, as well as median income and male.
 
