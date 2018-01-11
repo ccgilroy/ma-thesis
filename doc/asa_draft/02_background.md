@@ -3,17 +3,11 @@
 
 # Background
 
-This section should generate and justify my expectations
-
 ## Gay neighborhoods
 
-Terminology matters. I use the term "gay neighborhood" pragmatically to refer to the object of my study,
+Terminology matters. I use the term "gay neighborhood" pragmatically to refer to the object of my study.[^gay_terminology] "Queer" might speak to a radical political orientation that is absent in a space that is ultimately homonormative [@hanhardt_safe_2013]; "LGBTQ" to an inclusiveness or diversity that is missing or insufficient.
 
-not because it is neutral, but because it contains, I believe, the fewest connotations at odds with my purposes.
-
-"queer" might speak to a radical political orientation that is absent in a space that is ultimately homonormative [CITE Hanhardt]; "LGBTQ" to an inclusiveness or diversity that is missing or insufficient.
-
-fn: Brown 2014 contains an excellent summary of the different terms that have been used in the academic literature to name gay neighborhoods.
+[^gay_terminology]: @brown_gender_2014 contains an excellent summary of the different terms that have been used in the academic literature to name gay neighborhoods.
 
 drawing on the urban sociology of the Chicago school, @levine_gay_1979 uses four criteria to define a gay neighborhood ()
 
@@ -21,9 +15,9 @@ Go straight for Levine's definition, which has four parts
 
 The multifaceted nature of this definition is important.
 
-Both he and @castells_city_1983, however, find that these are generally *consistent*.
+Castelle  @castells_city_1983, however, find that these are generally *consistent*.
 
-using one criterion, rather than all four; because it is widespread and measurable, which enables an analysis across multiple cities
+In this work, I will use one criterion---the locations of gay bars---rather than multiple, because it is widespread and measurable, enabling an analysis across multiple cities. 
 
 prototypes do not have to be *representative*, either. The median gay neighborhood---if such a thing is even meaningful---would not look like Greenwich Village or the Castro.
 

@@ -5,8 +5,6 @@
 
 ## Clustering and filtering
 
-[Or, how well does this work, anyway?]
-
 In the maps in Figure [NUMBER], I show the results of the clustering and filtering process described above for two cities, Chicago and Seattle. These are the two cities that, based on my own residential history, I am most confident in my ability to interpret. They also exemplify what I would consider clear and interpretable clusters.
 
 ![Chicago, suburbs not shown.](../../output/figures/chicago.png)
@@ -25,21 +23,11 @@ In these cases, my method identifies a recognizable cultural object, centered in
 
 [To reiterate: I do not claim that these boundaries are definitive. They are not. Do not interpret the above map as "This is the shape of Boystown." Rather, interpret it as "This is roughly where Boystown is".]
 
-[In other words, it's way better than anything else we've got!]
+To further illustrate the strengths and shortcomings of my approach, I discuss two additional types of clusters emerging from my method. In each set of cases, it identifies gay neighborhoods in a way that is useful but perhaps not entirely satisfying. What I offer is pragmatism, not perfection.
 
-[and this is *almost* enough that the margins of error don't overlap on some things! which is good.]
+In some cities with larger gay neighborhoods, qualitatively distinct neighborhoods that are adjacent blur and merge together. Significant examples of this are the Castro, the Mission, and SOMA in San Francisco, West Village and Chelsea in New York, Rittenhouse Square and Washington Square West in Philadelphia, and Dupont Circle, Logan Circle, and Shaw/U Street in Washington, DC. By treating each of these as a single unit, I could be effacing important distinctions. For instance, @hanhardt_safe_2013 and @greene_gay_2014 both take care to characterize the differences between those three DC neighborhoods, which could turn out to matter for the kinds of changes they experience. I am setting that possibility aside. Perhaps with more detailed on-the-ground knowledge, these clusters could be subdivided more finely, but I do not attempt that here. (Or perhaps not. For instance, @compton_beyond_2012 discuss the difficulty of drawing a precise boundary between the Castro and the Mission, despite these being well-defined enclaves associated strongly with gay men and lesbians, respectively.)
 
-[I am certain that readers more knowledgeable than I will find flaws. I want to discuss them explicitly.]
-
-To further illustrate the strengths and shortcomings of my approach, I discuss two [???] additional types of clusters emerging from my method. In each set of cases, it identifies gay neighborhoods in a way that is useful but perhaps not entirely satisfying. What I offer is pragmatism, not perfection.
-
-In some cities with larger gay neighborhoods, qualitatively distinct neighborhoods that are adjacent blur and merge together. Significant examples of this are the Castro, the Mission, and SOMA in San Francisco, West Village and Chelsea in New York, Rittenhouse Square and Washington Square West in Philadelphia, and Dupont Circle, Logan Circle, and Shaw/U Street in Washington, DC. By treating each of these as a single unit, I could be effacing important distinctions. For instance, @hanhardt_safe_2013 and @greene_gay_2014 both take care to characterize the differences between those three DC neighborhoods, which could turn out to matter for the kinds of changes they experience.
-
-I am setting that possibility aside. Perhaps with more detailed on-the-ground knowledge, these clusters could be subdivided more finely, but I do not attempt that here. [FOOTNOTE?] Or perhaps not. For instance, @compton_beyond_2012 discuss the difficulty of drawing a precise boundary between the Castro and the Mission, despite these being well-defined enclaves associated strongly with gay men and lesbians, respectively.
-
-In other cases, what would appear to be a single neighborhood, based on the neighborhood labels associated with the bars in the original GayCities data, is fragmented among two or more noncontiguous clusters of tracts. Examples of this fragmentation occur for Capitol Hill in Denver and South Beach in Miami. I do not attempt to unify these fragments; rather, as I describe below [ABOVE?], I choose only the largest cluster to represent the neighborhood as a whole.
-
-[Austin + Portland? Dallas + Atlanta? Do I need to talk about these examples, or are the above sufficient? What to do with Loring Park in Minneapolis, with only a single gay bar?]
+In other cases, what would appear to be a single neighborhood, based on the neighborhood labels associated with the bars in the original GayCities data, is fragmented among two or more noncontiguous clusters of tracts. Examples of this fragmentation occur for Capitol Hill in Denver and South Beach in Miami. I do not attempt to unify these fragments; rather, as I describe above, I choose only the largest cluster to represent the neighborhood as a whole.
 
 See [APPENDIX] for maps of these cases.
 
@@ -75,13 +63,11 @@ median rent & 1229.51 & 1319.33 & 1000.13 & 1056.72 & 1167.82 & 1194.26\\
 
 On average, tracts in gay neighborhoods are more educated, and have become more educated. They are skewed more male than other tracts, have fewer different-sex married couples, and are whiter, but these characteristics do not change much, on average, in the short window of time covered by my data. Economically, they start off with higher median incomes and rents, and these also increase. The excluded tracts with gay bars fall between on demographic characteristics, and below on economic characteristics.
 
-[FOOTNOTE] present standard deviations, account for margins of error.
+Averages do not tell the whole story. What is more informative is to look at each neighborhood relative to its own context. This is what I show in Figure [NUMBER] for the four demographic characteristics, plotting neighborhood-level characteristics against those same characteristics at the county level.[^county_medians] Here I move from presenting results about Census tracts to presenting results for gay neighborhoods, which are clusters of tracts as defined previously.
 
-Averages do not tell the whole story. What is more informative is to look at each neighborhood relative to its own context. This is what I show in Figure [NUMBER] for the four demographic characteristics, plotting neighborhood-level characteristics against those same characteristics at the county level. Here I move from presenting results about Census tracts to presenting results for gay neighborhoods, which are clusters of tracts as defined previously.
+[^county_medians]: I have not yet obtained county-level data for median income or median rent, but plan to do so. These cannot be calculated directly from tract-level data.
 
-[FOOTNOTE] I have not yet obtained county-level data for median income or median rent, but plan to do so. These cannot be calculated directly from tract-level data.
-
-![Red lines represent parity.](../../output/figures/demographic_comparison.png)
+![Gay neighborhoods in context. Red lines represent parity.](../../output/figures/demographic_comparison.png)
 
 These gay neighborhoods systematically differ from their contexts. They are whiter, more male, more educated, and less married. All of this conforms to our expectations and preconceptions for gay neighborhoods. Though I do not measure the individual cooccurrence of these traits, and I of course cannot measure sexual orientation, these trends are consistent with the idea that these neighborhoods are spaces for white, middle-class, gay men.
 
@@ -91,9 +77,9 @@ From Figure [NUMBER] above, we also begin to see what change in these neighborho
 
 ![](../../output/figures/white_married_2way.png)
 
-Figure [NUMBER] presents two demographic characteristics without a single coherent trajectory: the proportion of white individuals and the proportion of different-sex married couple households. One structural implication of the "there goes the gayborhood" trope is the idea that gay neighborhoods are experiencing an influx and increased prevalence of straight, white, married couples across the board, and that this is what poses a general threat to gay culture and institutions in these spaces. From these data, this is not necessarily true. Of course, this descriptive finding is subject to the caveat that I am observing a short period of time with noisy data. Further investigation could confirm or undermine this.
+Figure [NUMBER] presents two demographic characteristics without a single coherent trajectory: the proportion of white individuals and the proportion of different-sex married couple households. One structural implication of the "there goes the gayborhood" hypothesis is the idea that gay neighborhoods are experiencing an influx and increased prevalence of straight, white, married couples across the board, and that this is what poses a general threat to gay culture and institutions in these spaces.[^prevalence] From these data, this is not necessarily true. Of course, this descriptive finding is subject to the caveat that I am observing a short period of time with noisy data. Further investigation could confirm or undermine this.
 
-[FOOTNOTE] Strictly speaking, an influx would refer to counts, and increase prevalence would refer to proportions. If in-migration and displacement is the primary concern, the former matters more; if change in the culture or tone of an area matters more, the latter does. I present the latter here, but intend to do justice to both ways of looking at the data.
+[^prevalence]: Strictly speaking, an influx would refer to counts, and increase prevalence would refer to proportions. If in-migration and displacement is the primary concern, the former matters more; if change in the culture or tone of an area matters more, the latter does. I present the latter here, but intend to do justice to both ways of looking at the data.
 
 ![](../../output/figures/rent_education_2way.png)
 
@@ -103,7 +89,7 @@ In summary, I have described what gay neighborhoods were like in the recent past
 
 While I have deliberately broadened my sample beyond the most commonly considered set of cities, I have taken care to exclude cities and neighborhoods that do not clearly belong. As a result, the heterogeneity and coherence of different aspects of these neighborhoods are both striking.
 
-In this section, I have carefully looked at the available data, before moving to model or analyze it. I have departed from convention [innovated?] by relying on quantitative aggregation and qualitative prior knowledge to present the data in a meaningful way.
+In this section, I have carefully looked at the available data, before moving to model or analyze it. I have innovated by relying on quantitative aggregation and qualitative prior knowledge to present the data in a meaningful way.
 
 ## Model results
 
