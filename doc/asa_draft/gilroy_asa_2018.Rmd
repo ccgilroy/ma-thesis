@@ -1,6 +1,6 @@
 ---
-title: | 
-    | The distinctness of gay neighborhood change: 
+title: |
+    | The distinctness of gay neighborhood change:
     | Coherence and divergence in trajectories among gay and other neighborhoods
 author: "Connor Gilroy"
 date: "January 11, 2018"
@@ -21,6 +21,11 @@ csl: american-sociological-association.csl
 \setlength{\parskip}{0em}
 \linespread{1.6}\selectfont
 \def\UrlBreaks{\do\/\do-\do\.}
+
+```{r child='00_abstract.md'}
+```
+
+\newpage
 
 ```{r child='01_intro.md'}
 ```

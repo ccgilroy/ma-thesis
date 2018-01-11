@@ -3,6 +3,14 @@
 
 # Discussion and conclusion
 
+enough to justify concerns and perceptions of coherence
+
+be wary of ascribing too much unity to the category of gay neighborhood
+
+we cannot conclude that these neighborhoods, as a trend, are getting whiter or straighter
+
+of course, 
+
 Talk about bridging quantitative and qualitative approaches here.
 
 Ultimately, though my techniques are quantitative, my sensibilities are qualitative.

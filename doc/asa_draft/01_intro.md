@@ -18,11 +18,3 @@ I would go one step further, and argue that the idea that gay neighborhoods are 
 If precise mechanisms are hard to identify, these explanations should nevertheless be associated with different patterns of change. In the former case, gay neighborhoods should look similar to each other in terms of how they are changing, across cities and contexts. They should differ from neighborhoods in their same city. In the latter case, gay neighborhoods should look similar to other neighborhoods in their same city in terms of how they change, and less like other gay neighborhoods in different places.
 
 To build up toward answering the initial, motivating question, there are a number of smaller necessary questions to address. Can a set of gay neighborhoods to study be identified? Are they structurally similar to each other? Are they really changing at all, and, if so, are they changing in similar ways? Are they changing in ways that differ from their respective contexts? In this paper, I take on these questions sequentially, by combining institutional and contextual data about gay neighborhoods, and come up with at least provisional or pragmatic answers.
-
-[Below might go to background]
-
-First, I must state clearly what this project is not. It is not a macro-level analysis of what urban change is, or of where same-sex couples are located in metropolitan areas and how that has changed, as would be typical of quantitative approaches. Neither is it a micro-level examination of the stories of individual gay, LGBTQ, or queer neighborhoods, whether their recent history or their distant past, as a qualitative approach might favor.
-
-Instead, this project is a meso-level investigation, a small-N study. It combines a qualitative approach to the incorporation of knowledge with quantitative techniques of analysis.
-
-I am directly inspired by questions left open by Ghaziani [CITE] and others in the qualitative literature. I am further attempting to respond to calls to broaden the way we study gay urban geographies within sociology [CITE Amy Stone somehow - and also maybe G Brown 2008]

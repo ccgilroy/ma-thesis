@@ -25,51 +25,14 @@ The approach I adopt based on clusters of gay bars deliberately focuses attentio
 
 ## Change in gay neighborhoods
 
-change in spaces, not populations. micro/macro scales
+My work charts a course between different ways of conceptualizing how urban change affects LGBTQ people and gay neighborhoods. These conceptual models loosely align with different scales (micro and macro) and methods (qualitative and quantitative) for examining change.
 
 *Gentrification* is a particular kind of neighborhood change, with contested definitions and a significant debate over its prevalence and impact [@brown-saracino_explicating_2017]. I do not want to presume that this is the process operating across all gay spaces, but when discussing change in gay neighborhoods the specter of gentrification is unavoidable [@castells_city_1983; @lauria_toward_1985; @knopp_theoretical_1990; @collins_sexual_2004; @ruting_economic_2008; @hanhardt_safe_2013; @mattson_style_2014]. In particular, the four-stage model of gay neighborhood development and decline articulated by @collins_sexual_2004, beginning with an influx of gay institutions and people into a "declining" area and ending with integration and emigration, provides an implicit backdrop for any work in this area, including mine. Where this current work fits in is not in terms of testing how generalizable that proposed theoretical process is. Rather, it empirically establishes the range of changes than can be seen---or not seen---in gay neighborhoods, and how distinct those changes are.
 
 A framing more common in demographic approaches is *residential segregation*. Two important quantitative studies, @spring_declining_2013 and @poston_jr_residential_2017, have examined the existence of and change in residential segregation between different-sex and same-sex couples using Census data. My point is that, though it is conceptually and logically related, residential segregation at the city or metropolitan-area level does not measure the same thing as neighborhood change. Though her work is adopted by @ghaziani_there_2014 and others, @spring_declining_2013 in particular explicitly states that her work is not meant to draw inferences about neighborhoods. I depart from this demographic approach to look at neighborhoods directly. My analysis, instead of looking at the fates of gay and lesbian *populations*, shifts the question to examining what is happening to gay *spaces*.
 
-Therefore, my work occupies this space
+In this way, the works that come the closest to the spirit of what I attempt here are @doan_demise_2011, @hayslett_out_2011, and @smart_there_2016. I trade their nuanced focuses on single cities---Atlanta, Columbus, and Dallas, respectively---for breadth of comparison. I share their concern with expanding the study of gay neighborhoods outside the core of the gay urban imaginary, moving beyond a narrow focus on cities like New York, San Francisco, and Chicago.
 
-does NOT get at neighborhood change. it's a different thing. that's okay.
+This project is not a macro-level analysis of urban change or segregation, nor a micro-level examination of processes or narratives of gentrification in individual gay neighborhoods. Instead, I undertake a meso-level investigation, a small-N study incorporating nearly 30 gay neighborhoods from two dozen cities. Using gay bars and Census data, I combine a qualitative approach to the incorporation of knowledge with quantitative techniques of analysis.
 
-the thing they care about is gay and lesbian *populations*, what I care about is what is happening to gay *spaces*.
-
-Cite Spring, D'Lane...
-
-This study attempts neither of those things
-
-rather
-
-## recap: what I hope to accomplish
-
-To recapitulate what I aim to accomplish,
-
-propose radical idea that we *look at the object we purport to care about*
-
-This is not totally new. In some ways it is a throwback to the work of Levine and Castells from the beginnings of the study of gay neighborhoods.
-
-One important innovation I will make is to cluster and filter observations
-
-What they got out of using multiple measures, I will attempt to extract from one, more or less.
-
-I will do this by applying a level of skepticism to the data: one gay bar does not make a gay neighborhood; a cluster of them does.
-
-The reason to make this tradeoff is that it makes it feasible to include many more cities (than one, two, or five).
-
-@doan_demise_2011, @hayslett_out_2011, and @smart_there_2016 come closest to the spirit of what I attempt to do here.
-
-I trade their nuanced focuses on single cities---Atlanta, Columbus, and Dallas, respectively---for breadth of comparison.
-
-(What also distinguishes these studies from others is their focus on cities outside the core of the gay urban imaginary of New York, San Francisco, and Chicago.)
-
-
-it isn't possible to create a perfectly accurate definition of "gay neighborhood" that both works universally and is empirically feasible.
-
-The definition I use is tailored to my problem and my project.
-
-I trust random gays on the internet to tell me where gay bars are more than I trust the Census to tell me where same-sex couples are. If you don't, I can't help you.
-
-[@brown_gender_2014] is part of the call I am responding to!
+To recapitulate, I aim to adjudicate between competing explanations for neighborhood change, , using their implied patterns of contextual change. These theories carry distinct implications for the role of LGBTQ people and other socially marginalized communities in navigating their own fates. Directly inspired by questions opened up by @ghaziani_there_2014 and others about why gay neighborhoods are changing, I address the need for more empirical research about the nature of gay neighborhood change [@brown_gender_2014]. Further, I contribute a response to calls to broaden the way we study gay urban geographies within sociology.[@stone_where_2017]
