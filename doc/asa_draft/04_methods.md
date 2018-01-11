@@ -27,7 +27,7 @@ For my clustering process, I only consider the geometries of tracts containing g
 
 [^corners]: These exist, for example, in Denver and Phoenix.
 
-I use the `sf` and `sp` packages for spatial data in R to generate lists of adjacent tracts, and I use the `igraph` package to assign numeric identifiers to the clusters produced by this adjacency list [CITE]. See [APPENDIX] for a network graph of these clusters.
+I use the `sf` and `sp` packages for spatial data in R to generate lists of adjacent tracts, and I use the `igraph` package to assign numeric identifiers to the clusters produced by this adjacency list. See Appendix B for a network graph of these clusters.
 
 ## Filtering
 
