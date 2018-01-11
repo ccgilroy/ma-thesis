@@ -15,13 +15,7 @@ In Chicago, Boystown, with eight tracts and 18 bars, can be seen on the North Si
 
 In Seattle, Capitol Hill covers four tracts and 11 bars, centered around the Pike-Pine corridor [@atkins_gay_2011]. Like Boystown, Capitol Hill is a prominent example of a gay neighborhood, one that would be expected to appear in the results of an approach like this. While successful, this case also illustrates some of the challenges of a bar-based approach and the constraints of Census tract boundaries, which do not have to map onto local knowledge. In the case of Seattle, the more residential areas of Capitol Hill to the north of Pike-Pine are not included in what I am labeling Seattle's gay neighborhood. Meanwhile, pieces of the First Hill and Central District neighborhoods to the south and east are included.
 
-Recall that the boundaries being imposed are an artificial construct driven by the needs of quantitative analysis, and that the true boundaries could be fuzzy or sharp on the ground.
-
-[DOES THIS PARAGRAPH GO AFTER THE OTHER TYPES OF CITIES?]
-
-In these cases, my method identifies a recognizable cultural object, centered in a gay culture area with gay institutions. This is the important thing. The overall way to judge the success of my approach for each city is how well it accomplishes this goal. My point is not that the boundaries I have drawn are incontestable. In fact, I think for any case additional qualitative knowledge will have constructive critiques to offer. (The challenge, and eventual goal, is figuring out how to incorporate that knowledge!) What matters is that a bar-based approach produces a good first-order approximation of the locations of gay neighborhoods. It is clearer, even, than using the continuous measure of prevalences of same-sex couples, which requires arbitrary cutoffs [@gates_gay_2004; @brown_places_2006]. This pragmatic choice enables an analysis of gay spaces rather than gay populations.
-
-[To reiterate: I do not claim that these boundaries are definitive. They are not. Do not interpret the above map as "This is the shape of Boystown." Rather, interpret it as "This is roughly where Boystown is".]
+In these cases, my method identifies a recognizable cultural object, centered in a gay culture area with gay institutions. This is the important thing. The overall way to judge the success of my approach for each city is how well it accomplishes this goal. My point is not that the boundaries I have drawn are incontestable. In fact, I think for any case additional qualitative knowledge will have constructive critiques to offer. (The challenge, and eventual goal, is figuring out how to incorporate that knowledge!) What matters is that a bar-based approach produces a good first-order approximation of the locations of gay neighborhoods. It is clearer, even, than using the continuous measure of prevalences of same-sex couples, which requires arbitrary cutoffs [@gates_gay_2004; @brown_places_2006]. This pragmatic choice to impose boundaries enables an analysis of gay spaces rather than gay populations.
 
 To further illustrate the strengths and shortcomings of my approach, I discuss two additional types of clusters emerging from my method. In each set of cases, it identifies gay neighborhoods in a way that is useful but perhaps not entirely satisfying. What I offer is pragmatism, not perfection.
 
@@ -75,13 +69,13 @@ What exactly this means varies. Counties are clustered tightly at a little under
 
 From Figure [NUMBER] above, we also begin to see what change in these neighborhoods looks like. To highlight this process more clearly, I now present bivariate plots of different sets of variables. In these, both axes are neighborhood-level characteristics. Each point is a single neighborhood in either 2006-2010 or 2011-2015, and an arrow connects the earlier observation to the later one for the same neighborhood.
 
-![Divergent trajectories](../../output/figures/white_married_2way.png)
+![Divergent trajectories.](../../output/figures/white_married_2way.png)
 
 Figure [NUMBER] presents two demographic characteristics without a single coherent trajectory: the proportion of white individuals and the proportion of different-sex married couple households. One structural implication of the "there goes the gayborhood" hypothesis is the idea that gay neighborhoods are experiencing an influx and increased prevalence of straight, white, married couples across the board, and that this is what poses a general threat to gay culture and institutions in these spaces.[^prevalence] From these data, this is not necessarily true. Of course, this descriptive finding is subject to the caveat that I am observing a short period of time with noisy data. Further investigation could confirm or undermine this.
 
 [^prevalence]: Strictly speaking, an influx would refer to counts, and increase prevalence would refer to proportions. If in-migration and displacement is the primary concern, the former matters more; if change in the culture or tone of an area matters more, the latter does. I present the latter here, but intend to do justice to both ways of looking at the data.
 
-![Coherent trajectories](../../output/figures/rent_education_2way.png)
+![Coherent trajectories.](../../output/figures/rent_education_2way.png)
 
 The second plot, Figure [NUMBER] shows median rent, an economic indicator, and education, a demographic trait associated with class. Both of these are associated with processes of gentrification. For these, the trajectories for the majority of gay neighborhoods is clear: they are becoming more educated and more expensive. Recall, as shown above, that these neighborhood begin in the first time period with a more highly educated population than average for their contexts, and with more expensive rents. It appears, descriptively, that gay neighborhoods in recent times are generally experiencing changes that strongly resemble gentrification.
 
@@ -93,8 +87,6 @@ In this section, I have carefully looked at the available data, before moving to
 
 ## Model results[^modeling2]
 
-[^modeling2]: Because I have yet to implement and run these models, I describe anticipated results here.
+[^modeling2]: Because I have yet to implement and run these models, I describe anticipated results here. I am confident in my ability to implement matching and multilevel modeling techniques for this paper, and to do sufficient sensitivity analyses so as to have robust findings.
 
-Based on the descriptive results for, I expect to find impacts for a neighborhood being marked as gay on increases in education level, rent, and income over time. I do not expect clear results for race, gender, or household type.
-
-Talk about building synthetic controls from other census tracts in "conclusions" if I don't get to it. "I plan to..."
+Based on the descriptive results above, I expect to find impacts for a neighborhood being marked as gay on increases in education level, rent, and income over time. By contrast, I do not expect clear results for race, gender, or household type. City-level differences will drive anywhere from a moderate to substantial portion of the variation observed.

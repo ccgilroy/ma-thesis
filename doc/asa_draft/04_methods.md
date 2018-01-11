@@ -71,4 +71,4 @@ Two other complexities to potentially implement are to allow for the correlation
 
 [^complexity]: To incorporate correlations among different regression equations, and measurement error from the ACS observations, I would need to write Bayesian model specifications from scratch in Stan [@carpenter_stan:_2017]. I do not yet know whether my data are sufficient to estimate models of that level of complexity. Again, these are ideal steps, but not critical ones.
 
-[The models I will estimate answer question, incorporate theoretical assumptions, and make the most justifiable use of my data while remaining robust.]
+[The models I will estimate answer the question, incorporate my principle theoretical assumptions, and make the most justifiable use of my data while remaining robust.]
