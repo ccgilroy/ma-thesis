@@ -5,21 +5,15 @@
 
 ## Gay neighborhoods
 
-Terminology matters. I use the term "gay neighborhood" pragmatically to refer to the object of my study.[^gay_terminology] "Queer" might speak to a radical political orientation that is absent in a space that is ultimately homonormative [@hanhardt_safe_2013]; "LGBTQ" to an inclusiveness or diversity that is missing or insufficient.
+I use the term "gay neighborhood" pragmatically to refer to the object of my study.[^gay_terminology] "Queer" might speak to a radical political orientation that is absent in a space that is ultimately homonormative [@hanhardt_safe_2013]; "LGBTQ" to an inclusiveness or diversity that is missing or insufficient.
 
 [^gay_terminology]: @brown_gender_2014 contains an excellent summary of the different terms that have been used in the academic literature to name gay neighborhoods.
 
-drawing on the urban sociology of the Chicago school, @levine_gay_1979 uses four criteria to define a gay neighborhood ()
+Drawing on the urban sociology of the Chicago school, @levine_gay_1979 [364] uses four criteria to define a gay neighborhood: gay institutions, gay culture, gay residents, and a level of social isolation. The multifaceted nature of this definition is important, because it allows for gradations wherein some neighborhoods are more prototypically or clearly gay neighborhoods than others. Prototypes for a social category, however, do not have to be *representative*. The median gay neighborhood---if such a thing is even meaningful---would not look exactly like Greenwich Village or the Castro, though it would be recognize to have something in common.
 
-Go straight for Levine's definition, which has four parts
+@castells_city_1983, however, who also uses multiple criteria in his classic study, finds that his are generally consistent with each other. This raises the possibility of using one aspect of a gay neighborhood as a proxy for the whole. In this work, I will use one criterion---the locations of gay bars---rather than multiple, because it is widespread and measurable, enabling an analysis across multiple cities.
 
-The multifaceted nature of this definition is important.
-
-Castelle  @castells_city_1983, however, find that these are generally *consistent*.
-
-In this work, I will use one criterion---the locations of gay bars---rather than multiple, because it is widespread and measurable, enabling an analysis across multiple cities. 
-
-prototypes do not have to be *representative*, either. The median gay neighborhood---if such a thing is even meaningful---would not look like Greenwich Village or the Castro.
+---
 
 Neighborhood boundaries could be sharp, or they could be fuzzy. They could be official, or informal. They could be universally accepted, or contested. In any case, my project needs boundaries. I use these boundaries pragmatically, and I do not claim that they are definitive.
 
@@ -35,22 +29,32 @@ I am distinguishing between neighborhoods with a visible and marked gay presence
 
 ## Bars as institutions
 
-This paper is not about gay bars.
+This paper is about gay neighborhoods, not gay bars.
+
+But gay bars are what @ghaziani_measuring_2014 calls "anchor institutions."
+
+Neighborhoods and bars are closely enough associated that Pew, in their survey of LGBT Americans, asks about the importance of the two in the same question [@pew_research_center_survey_2013].
 
 Mattson, Ghaziani, Brown go here
 
 Ghaziani calls these "anchor institutions"
 
-; in fact, queer women's bars, like the Wildrose in Seattle or the Lexington in San Francisco, appear in my data (which are, nevertheless, biased toward men).
+[@mattson_style_2014; ]
 
-I regard this bias toward men as something to be demonstrated rather than assumed.
 
-If the archetypical gay neighborhood is, or was, a space for middle-class cis white gay men, that should be reflected in the demographic attributes I can measure.
+[@ghaziani_measuring_2014]
 
-[FOOTNOTE] On lesbian bars and queer women's spaces see [LONG LIST: Podmore, Enke, Mattson], among others.
+[@]
 
+bias toward men
+
+I will not a priori restrict the domain of my research to men. Instead, I regard this potential bias toward gay men as something to be demonstrated rather than assumed.[^lesbian_bars] If the archetypical gay neighborhood is, or was, a space for middle-class, cisgender, white gay men, that should be reflected in the demographic attributes I can measure.
+
+[^lesbian_bars]: In fact, queer women's bars, like the Wildrose in Seattle or the Lexington in San Francisco, appear in my data (which are, nevertheless, biased toward men). On lesbian bars and queer women's spaces see @podmore_gone_2006 and @enke_finding_2007, among others.
 
 ## Change in gay neighborhoods: spaces, not populations
+
+
 
 *Gentrification* is the elephant in the room.
 

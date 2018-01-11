@@ -95,12 +95,6 @@ In this section, I have carefully looked at the available data, before moving to
 
 [put a sad note here about running out of time]
 
-based on the descriptive results for
-
-I expect to find
-
-impacts for education rent and income
-
-but not race gender and household type
+Based on the descriptive results for, I expect to find impacts for a neighborhood being marked as gay on increases in education level, rent, and income over time. I do not expect clear results for race, gender, or household type. 
 
 Talk about building synthetic controls from other census tracts in "conclusions" if I don't get to it. "I plan to..."
