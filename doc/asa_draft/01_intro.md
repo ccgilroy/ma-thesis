@@ -17,7 +17,7 @@ I would go one step further, and argue that the idea that gay neighborhoods are 
 
 If precise mechanisms are hard to identify, these explanations should nevertheless be associated with different patterns of change. In the former case, gay neighborhoods should look similar to each other in terms of how they are changing, across cities and contexts. They should differ from neighborhoods in their same city. In the latter case, gay neighborhoods should look similar to other neighborhoods in their same city in terms of how they change, and less like other gay neighborhoods in different places.
 
-To build up toward answering the initial, motivating question, there are a number of smaller necessary questions to address. Can a set of gay neighborhoods to study be identified? Are they structurally similar to each other? Are they changing in similar ways? Are they changing in ways that differ from their respective contexts? In this paper, I take on these questions sequentially, by combining institutional and contextual data about gay neighborhoods, and come up with at least provisional or pragmatic answers.
+To build up toward answering the initial, motivating question, there are a number of smaller necessary questions to address. Can a set of gay neighborhoods to study be identified? Are they structurally similar to each other? Are they really changing at all, and, if so, are they changing in similar ways? Are they changing in ways that differ from their respective contexts? In this paper, I take on these questions sequentially, by combining institutional and contextual data about gay neighborhoods, and come up with at least provisional or pragmatic answers.
 
 [Below might go to background]
 
