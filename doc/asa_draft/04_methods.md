@@ -53,9 +53,23 @@ I select two variables as economic indicators, *median rent* and *median income.
 
 ## Modeling strategies[^modeling]
 
-[^modeling]: I have not yet implemented these models in all their variations.
+[^modeling]: I have not yet implemented these models in all their variations. I plan to fit a range of models, beginning with ordinary least squares regression, and moving toward more complex multilevel models. In addition to models using matched neighborhoods, I plan to fit models incorporating all tracts as a baseline and robustness check.
+
+These models will take the following form:
+
+$$x_{t+1} \sim \mathcal{N}(\alpha_{city} + \beta_1 gay_{t} + \beta_2 x_{t} + X\beta_{controls}, \sigma^2)$$
+
+$$\alpha_{city} \sim \mathcal{N}(\alpha, \sigma_\alpha^2)$$
+
+Using the variables above and an indicator for whether or not a neighborhood is a gay neighborhood.
 
 [This is where to talk about RESEARCH DESIGN, like Kate suggested]
+
+to accomplish this purpose, a series
+
+the models I will build toward conform to the following characteristics
+
+matching
 
 multilevel model
 
@@ -63,10 +77,22 @@ Two sets of models, one against all other tracts as a baseline,
 
 regressions of the form
 
-and one using matched neighborhoods synthetically constructed to be comparable to each gay neighborhood at the firs time point.
+and one using matched neighborhoods synthetically constructed to be comparable to each gay neighborhood at the first time point.
 
 Descriptive plots of variables are not sufficient
 
 why gay neighborhoods are different, whether this can be attributed to something about the fact that they are recognized gay spaces.
 
-Two other complexities to implement are
+Because I am examining neighborhoods grouped within different cities, a *multilevel model* is appropriate.
+
+*matching*
+
+What I describe is already a complex modeling strategy. And I'm not done yet.
+
+Two other complexities to potentially implement are to allow for the correlation of errors and to incorporate uncertainty deriving from measurement. As my earlier discussion of neighborhood change suggests, I expect that different kinds of changes might be correlated with each other. I can allow for that possibility by putting a correlation matrix on the error terms of the equations, creating what economists call Seemingly Unrelated Regressions [@zellner_direct_2010]. Finally, so as not to overstate the certainty of my models, the most appropriate modeling strategy would also incorporate the margins of error associated with the ACS estimates [@mcelreath_statistical_2016].[^complexity] These are important ideas, but not essential ones.
+
+[^complexity]: To incorporate correlations among different regression equations, and measurement error from the ACS observations, I would need to write Bayesian model specifications from scratch in Stan [@carpenter_stan:_2017]. I do not yet know whether my data are sufficient to estimate models of that level of complexity. Again, these are ideal steps, but not critical ones.
+
+I will estimate
+
+answer question, specify theoretical things, most justifiable use of my data.

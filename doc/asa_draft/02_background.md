@@ -5,7 +5,7 @@
 
 ## Gay neighborhoods
 
-I use the term "gay neighborhood" pragmatically to refer to the object of my study.[^gay_terminology] "Queer" might speak to a radical political orientation that is absent in a space that is ultimately homonormative [@hanhardt_safe_2013, @mattson_style_2014]; "LGBTQ" to an inclusiveness or diversity that is missing or insufficient.
+I use the term "gay neighborhood" pragmatically to refer to the object of my study.[^gay_terminology] "Queer" might speak to a radical political orientation that is absent in a space that is ultimately homonormative [@hanhardt_safe_2013; @mattson_style_2014]; "LGBTQ" to an inclusiveness or diversity that is missing or insufficient.
 
 [^gay_terminology]: @brown_gender_2014 contains an excellent summary of the different terms that have been used in the academic literature to name gay neighborhoods.
 
@@ -35,4 +35,4 @@ In this way, the works that come the closest to the spirit of what I attempt her
 
 This project is not a macro-level analysis of urban change or segregation, nor a micro-level examination of processes or narratives of gentrification in individual gay neighborhoods. Instead, I undertake a meso-level investigation, a small-N study incorporating nearly 30 gay neighborhoods from two dozen cities. Using gay bars and Census data, I combine a qualitative approach to the incorporation of knowledge with quantitative techniques of analysis.
 
-To recapitulate, I aim to adjudicate between competing explanations for neighborhood change, , using their implied patterns of contextual change. These theories carry distinct implications for the role of LGBTQ people and other socially marginalized communities in navigating their own fates. Directly inspired by questions opened up by @ghaziani_there_2014 and others about why gay neighborhoods are changing, I address the need for more empirical research about the nature of gay neighborhood change [@brown_gender_2014]. Further, I contribute a response to calls to broaden the way we study gay urban geographies within sociology.[@stone_where_2017]
+To recapitulate, I aim to adjudicate between competing explanations for neighborhood change, using their implied patterns of contextual change. These theories carry distinct implications for the role of LGBTQ people and other socially marginalized communities in navigating their own fates. Directly inspired by questions opened up by @ghaziani_there_2014 and others about why gay neighborhoods are changing, I address the need for more empirical research about the nature of gay neighborhood change [@brown_gender_2014]. Further, I contribute a response to calls to broaden the way we study gay urban geographies within sociology [@stone_where_2017].

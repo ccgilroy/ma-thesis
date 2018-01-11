@@ -75,13 +75,13 @@ What exactly this means varies. Counties are clustered tightly at a little under
 
 From Figure [NUMBER] above, we also begin to see what change in these neighborhoods looks like. To highlight this process more clearly, I now present bivariate plots of different sets of variables. In these, both axes are neighborhood-level characteristics. Each point is a single neighborhood in either 2006-2010 or 2011-2015, and an arrow connects the earlier observation to the later one for the same neighborhood.
 
-![](../../output/figures/white_married_2way.png)
+![Divergent trajectories](../../output/figures/white_married_2way.png)
 
 Figure [NUMBER] presents two demographic characteristics without a single coherent trajectory: the proportion of white individuals and the proportion of different-sex married couple households. One structural implication of the "there goes the gayborhood" hypothesis is the idea that gay neighborhoods are experiencing an influx and increased prevalence of straight, white, married couples across the board, and that this is what poses a general threat to gay culture and institutions in these spaces.[^prevalence] From these data, this is not necessarily true. Of course, this descriptive finding is subject to the caveat that I am observing a short period of time with noisy data. Further investigation could confirm or undermine this.
 
 [^prevalence]: Strictly speaking, an influx would refer to counts, and increase prevalence would refer to proportions. If in-migration and displacement is the primary concern, the former matters more; if change in the culture or tone of an area matters more, the latter does. I present the latter here, but intend to do justice to both ways of looking at the data.
 
-![](../../output/figures/rent_education_2way.png)
+![Coherent trajectories](../../output/figures/rent_education_2way.png)
 
 The second plot, Figure [NUMBER] shows median rent, an economic indicator, and education, a demographic trait associated with class. Both of these are associated with processes of gentrification. For these, the trajectories for the majority of gay neighborhoods is clear: they are becoming more educated and more expensive. Recall, as shown above, that these neighborhood begin in the first time period with a more highly educated population than average for their contexts, and with more expensive rents. It appears, descriptively, that gay neighborhoods in recent times are generally experiencing changes that strongly resemble gentrification.
 
