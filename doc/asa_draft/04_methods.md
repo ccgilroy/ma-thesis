@@ -51,10 +51,22 @@ In terms of demographic characteristics, I select counts and calculate proportio
 
 I select two variables as economic indicators, *median rent* and *median income.* The latter is median household income. Where I present numbers, I have converted the 2010 values to 2015 dollars, using the conversion factor recommended by the Census for comparison. Where I combine tracts, I take a simple average of medians.
 
-## Modeling strategies
+## Modeling strategies[^modeling]
+
+[^modeling]: I have not yet implemented these models in all their variations.
 
 [This is where to talk about RESEARCH DESIGN, like Kate suggested]
+
+multilevel model
+
+Two sets of models, one against all other tracts as a baseline,
+
+regressions of the form
+
+and one using matched neighborhoods synthetically constructed to be comparable to each gay neighborhood at the firs time point.
 
 Descriptive plots of variables are not sufficient
 
 why gay neighborhoods are different, whether this can be attributed to something about the fact that they are recognized gay spaces.
+
+Two other complexities to implement are

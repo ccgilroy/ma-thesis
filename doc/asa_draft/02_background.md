@@ -5,7 +5,7 @@
 
 ## Gay neighborhoods
 
-I use the term "gay neighborhood" pragmatically to refer to the object of my study.[^gay_terminology] "Queer" might speak to a radical political orientation that is absent in a space that is ultimately homonormative [@hanhardt_safe_2013]; "LGBTQ" to an inclusiveness or diversity that is missing or insufficient.
+I use the term "gay neighborhood" pragmatically to refer to the object of my study.[^gay_terminology] "Queer" might speak to a radical political orientation that is absent in a space that is ultimately homonormative [@hanhardt_safe_2013, @mattson_style_2014]; "LGBTQ" to an inclusiveness or diversity that is missing or insufficient.
 
 [^gay_terminology]: @brown_gender_2014 contains an excellent summary of the different terms that have been used in the academic literature to name gay neighborhoods.
 
@@ -54,7 +54,9 @@ I will not a priori restrict the domain of my research to men. Instead, I regard
 
 ## Change in gay neighborhoods: spaces, not populations
 
+@collins_sexual_2004 articulates a four-stage model of gay neighborhood development and decline that situates gay neighborhoods within the context of gentrification.
 
+As @mattson_style_2014 points out, not all gay neighborhoods have the same relationship to gentrification.
 
 *Gentrification* is the elephant in the room.
 
@@ -62,22 +64,29 @@ because that's an expectation, I should acknowledge it. And then say I am going 
 
 I may *expect* to see changes in gay neighborhoods consistent with what we might think of as gentrification, but I do not want to presume that.
 
-What is distinct is that (again, by presumption) these gay neighborhoods start their lives as recognized, visibly gay spaces as middle-class, white neighborhoods---often ones that have *already* gone through one phase of gentrification from working class (white or POC) neighborhoods [CITE: Castells, Hanhardt]. This isn't surprising, though; we've got a proposed four-stage model of gay neighborhood development from Collins 2004. My research is happening against that backdrop, but I'm not actively testing the development process! I'm just looking at what's happening now. We need a better empirical handle on the range of changes we see---or don't see---before we can really examine how generalizable this proposed theoretical process is.
+What is distinct is that (again, by presumption) these gay neighborhoods start their lives as recognized, visibly gay spaces as middle-class, white neighborhoods---often ones that have *already* gone through one phase of gentrification from working class (white or POC) neighborhoods. @castells_city_1983 and @hanhardt_safe_2013 describe this for the Castro and Greenwich Village. This isn't surprising, though; we've got a proposed four-stage model of gay neighborhood development from Collins 2004. My research is happening against that backdrop, but I'm not actively testing the development process! I'm just looking at what's happening now. We need a better empirical handle on the range of changes we see---or don't see---before we can really examine how generalizable this proposed theoretical process is.
 
 Collins
 
-Finally, *residential segregation*
+A framing more common in demographic approaches is *residential segregation*
 
 two important quantitative studies @spring_declining_2013 and @poston_jr_residential_2017
 
-residential segregation does NOT get at neighborhood change. it's a different thing. that's okay.
+Residential segregation at the city or metropolitan-area level does not measure the same thing as neighborhood change
+
+does NOT get at neighborhood change. it's a different thing. that's okay.
 
 the thing they care about is gay and lesbian *populations*, what I care about is what is happening to gay *spaces*.
 
 Cite Spring, D'Lane...
 
+This study attempts neither of those things
+
+rather
 
 ## recap: what I hope to accomplish
+
+To recapitulate what I aim to accomplish,
 
 propose radical idea that we *look at the object we purport to care about*
 
