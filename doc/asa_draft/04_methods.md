@@ -29,41 +29,17 @@ I use the `sf` and `sp` packages for spatial data in R to generate lists of adja
 
 ## Filtering
 
-I visually inspect the output of the above clustering process, which produces 253 clusters ranging in size from single tracts to 13 grouped tracts.
+I visually inspect the output of the above clustering process, which produces 253 clusters ranging in size from single tracts to 13 grouped tracts. Not all of these groups are gay neighborhoods. I use the size of the cluster as a filtering mechanism. The key assumption I make is that *far-flung, isolated bars are not part of gay neighborhoods.* Therefore, for each city I retain only largest cluster or clusters by number of bars.[FOOTNOTE]
 
-operationalize
+[FOOTNOTE] In the only case wherein this metric results in a tie, between the South End and Fenway in Boston, I choose the South End, which has more tracts. I note that GayCities observes the South End to be highly gentrified in 2007 (it "was the traditional gay neighborhood and is still a pleasant area for a walk"), and the ACS data support this observation. They do not discuss Fenway.
 
-The key assumption is that *far-flung, isolated bars are not part of gay neighborhoods.* Therefore, for each city
+A second rule I implement is to exclude downtown Census tracts from consideration. I do this based on the assumption that *a city's central business district is not its gay neighborhood.* This is an operationalization of Levine's third criterion for gay neighborhoods, that they be a "culture area" wherein LGBTQ people are "locally dominant" [@levine_gay_1979]. LGBTQ people do not dominate the CBD of any city of which the author is aware, except perhaps Palm Springs. I rerun my clustering algorithm with this restriction in place.
 
+A second aspect of filtering my data is to curate the number of cities I include, because not all cities have well-defined or established gay neighborhoods. For my analyses, I choose the 24 cities that most clearly have discernible clusters of bars corresponding to known or probable gay neighborhoods. I exclude the other 24 US cities and the nine resort towns. This is done inductively, based both on my interpretation of prior academic literature and on my inspection of the clusters. I assign three clusters to New York, two to San Francisco and Chicago, and one to all other cities that I include. I combine neighborhood labels and descriptions from the GayCities data with information from the literature to assign descriptive names to each of these 28 neighborhoods. See Appendix A for the full list.
 
+[FOOTNOTE] Long Beach, in Los Angeles County, is collapsed together with Los Angeles proper for discussions of context. This nominally gives LA two neighborhoods, as well.
 
-rule of no downtowns
-
-A second rule,
-
-*A city's central business district is not its gay neighborhood.*
-
-This is an operationalization of Levine's third criterion for gay neighborhoods, that they be a "culture area" wherein LGBTQ people are "locally dominant" [@levine_gay_1979].
-
-I rerun
-
-LGBTQ people do not dominate the CBD of any city of which the author is aware.
-
-(Except perhaps Palm Springs)
-
-ones and zeros.
-
-The largest cluster or clusters by number of bars.
-
-[In the only case wherein this metric results in a tie, between the South End and Fenway in Boston, I choose the South End, which has more tracts. I note that GayCities observes the South End to be highly gentrified in 2007, and my data support this observation. They do not mention Fenway.]
-
-A second aspect of filtering my data is to curate the number of cities I include.
-
-See [APPENDIX] for these labels. (Or present them in main body of text?)
-
-This approach is qualitative and inductive
-
-the other is quantitative
+[FOOTNOTE] I plan to implement and evaluate alternative specifications for aggregation and inclusion. To address the concern that my qualitative approach based on consideration of the literature and data is too subjective, I will also employ a filtering approach using only quantitative thresholds for inclusion. For example, I might use the largest cluster for each city. To compare and justify the filtering and aggregation processes as a whole, I will perform baseline analyses using all clusters, regardless of size or relevance, and finally as individual, unclustered tracts. This latter would be the conventional approach in the demographic urban literature (with, perhaps, some allowance for spatial autocorrelation). These are not robustness checks, in the sense that I *do* expect to see differences, but they are an important part of sensitivity analysis. At the moment, I can only claim that my current approach is preferable to these in a qualitative sense.
 
 ## Variable selection
 
