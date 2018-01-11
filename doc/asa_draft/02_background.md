@@ -15,28 +15,11 @@ The categorization problem of dichotomizing neighborhoods into those marked as g
 
 @castells_city_1983, who like Levine uses multiple criteria in his classic study of gay territoriality in San Francisco, finds that his are generally consistent with each other. This raises the possibility of using one aspect of a gay neighborhood as a proxy for the whole. In this work, I will use one criterion---the locations of gay bars---rather than multiple, because it is widespread and measurable, enabling an analysis across multiple cities.
 
-core or central gay spaces, rather than the periphery
-
-[@brown_queering_2008]
-
-I hear the calls to focus on the most peripheral spaces, and I am disregarding them. A key part of understanding the relationship between the core and the periphery is better characterizing the processes affecting the core. (I am, however, broadening my understanding of "core" from what is conventional.)
-
-[CITE: Brown, Brown-Saracino, Mattson, Halberstam, Gray]
-
-I am distinguishing between neighborhoods with a visible and marked gay presence and those where a queer presence undoubtedly exists, but is less visible or salient. (reluctant to call the rest of the neighborhoods "non-gay")
-
 ## Bars as institutions
 
 This paper is about gay neighborhoods, not gay bars. But gay bars are what @ghaziani_measuring_2014 calls "anchor institutions," proposing that they be used to measure the ties of urban sexual cultures to particular places. Gay neighborhoods and gay bars are closely enough associated that Pew, in their survey of LGBT Americans, asks about the continuing importance of the two in the same question [@pew_research_center_survey_2013].
 
-Mattson, Ghaziani, Brown go here
-
-Gay bar cultures and styles can be heterogeneous [@mattson_style_2014], so using them as a proxy should uncover a range of gay neighborhoods.
-
-
-bias toward queer men over queer women
-
-Unlike the classic works of @levine_gay_1979 and @castells_city_1983, I will not a priori restrict the domain of my research to men. Instead, I regard this potential bias toward gay men as something to be demonstrated rather than assumed.[^lesbian_bars] If the archetypical gay neighborhood is, or was, a space for middle-class, cisgender, white gay men, that should be reflected in the demographic attributes I can measure.
+The approach I adopt based on clusters of gay bars deliberately focuses attention on what I would think of as core or central gay spaces rather than the periphery [@brown_queering_2008; @halberstam_queer_2005]. At the same time, gay bar cultures and styles can be heterogeneous [@mattson_style_2014], so using them as a proxy should uncover a range of gay neighborhoods. Nevertheless, potential biases of my chosen approach must be acknowledged, the most significant of these being a bias toward queer men over queer women. Unlike the classic works of @levine_gay_1979 and @castells_city_1983, I will not a priori restrict the domain of my research to men. Instead, I regard this potential bias toward gay men as something to be demonstrated rather than assumed.[^lesbian_bars] If the archetypical gay neighborhood is, or was, a space for middle-class, cisgender, white gay men, that should be reflected in the demographic attributes I can measure.
 
 [^lesbian_bars]: In fact, queer women's bars, like the Wildrose in Seattle or the Lexington in San Francisco, appear in my data (which are, nevertheless, biased toward men on the whole). On lesbian bars and queer women's spaces see @podmore_gone_2006 and @enke_finding_2007, among others.
 
