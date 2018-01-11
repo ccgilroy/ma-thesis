@@ -55,44 +55,20 @@ I select two variables as economic indicators, *median rent* and *median income.
 
 [^modeling]: I have not yet implemented these models in all their variations. I plan to fit a range of models, beginning with ordinary least squares regression, and moving toward more complex multilevel models. In addition to models using matched neighborhoods, I plan to fit models incorporating all tracts as a baseline and robustness check.
 
-These models will take the following form:
+My overarching question is whether gay neighborhoods show patterns of change like each other, because they are gay neighborhoods, or whether they are instead more similar to other neighborhoods in their respective cities. Another way to put this is, does the fact that these are specifically gay neighborhoods matter for the kinds of contextual changes they experience?
+
+The research design for my proposed modeling strategy is oriented toward answering the theoretical question I posed in two principal ways. First, because I am examining neighborhoods across different cities, a *multilevel model* is appropriate [@mcelreath_statistical_2016]. Neighborhoods, both gay and otherwise, are grouped together statistically within their respective cities. This allows me to assess whether between-city variation is more important than variation between gay and other neighborhoods.
+
+Second, a *matching* strategy is necessary. Using Mahalanobis distance or propensity score matching [@stuart_matching_2010] within cities, I will construct neighborhoods that are contextually comparable to each gay neighborhood during the 2006-2010 time period, except in terms of the presence or absence of gay bars, and use only this subset in my models. By focusing on comparison with a subset of neighborhoods that are generally similar, I improve my ability to make claims about whether or not the cultural and institutional gayness of these neighborhoods is an important factor for change.
+
+These models will take the following form, using the variables above and an indicator for whether or not a neighborhood is a gay neighborhood:
 
 $$x_{t+1} \sim \mathcal{N}(\alpha_{city} + \beta_1 gay_{t} + \beta_2 x_{t} + X\beta_{controls}, \sigma^2)$$
 
 $$\alpha_{city} \sim \mathcal{N}(\alpha, \sigma_\alpha^2)$$
 
-Using the variables above and an indicator for whether or not a neighborhood is a gay neighborhood.
-
-[This is where to talk about RESEARCH DESIGN, like Kate suggested]
-
-to accomplish this purpose, a series
-
-the models I will build toward conform to the following characteristics
-
-matching
-
-multilevel model
-
-Two sets of models, one against all other tracts as a baseline,
-
-regressions of the form
-
-and one using matched neighborhoods synthetically constructed to be comparable to each gay neighborhood at the first time point.
-
-Descriptive plots of variables are not sufficient
-
-why gay neighborhoods are different, whether this can be attributed to something about the fact that they are recognized gay spaces.
-
-Because I am examining neighborhoods grouped within different cities, a *multilevel model* is appropriate.
-
-*matching*
-
-What I describe is already a complex modeling strategy. And I'm not done yet.
-
 Two other complexities to potentially implement are to allow for the correlation of errors and to incorporate uncertainty deriving from measurement. As my earlier discussion of neighborhood change suggests, I expect that different kinds of changes might be correlated with each other. I can allow for that possibility by putting a correlation matrix on the error terms of the equations, creating what economists call Seemingly Unrelated Regressions [@zellner_direct_2010]. Finally, so as not to overstate the certainty of my models, the most appropriate modeling strategy would also incorporate the margins of error associated with the ACS estimates [@mcelreath_statistical_2016].[^complexity] These are important ideas, but not essential ones.
 
 [^complexity]: To incorporate correlations among different regression equations, and measurement error from the ACS observations, I would need to write Bayesian model specifications from scratch in Stan [@carpenter_stan:_2017]. I do not yet know whether my data are sufficient to estimate models of that level of complexity. Again, these are ideal steps, but not critical ones.
 
-I will estimate
-
-answer question, specify theoretical things, most justifiable use of my data.
+[The models I will estimate answer question, incorporate theoretical assumptions, and make the most justifiable use of my data while remaining robust.]
