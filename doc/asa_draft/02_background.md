@@ -27,17 +27,11 @@ The approach I adopt based on clusters of gay bars deliberately focuses attentio
 
 change in spaces, not populations. micro/macro scales
 
-*Gentrification* is a particular kind of neighborhood change, with contested definitions and a significant debate over its prevalence and impact [@brown-saracino_explicating_2017]. I do not want to presume that this is the process operating across all gay spaces, but when discussing change in gay neighborhoods the specter of gentrification is unavoidable [@castells_city_1983; @lauria_toward_1985; @knopp_theoretical_1990; @collins_sexual_2004; @ruting_economic_2008; @hanhardt_safe_2013; @mattson_style_2014].
+*Gentrification* is a particular kind of neighborhood change, with contested definitions and a significant debate over its prevalence and impact [@brown-saracino_explicating_2017]. I do not want to presume that this is the process operating across all gay spaces, but when discussing change in gay neighborhoods the specter of gentrification is unavoidable [@castells_city_1983; @lauria_toward_1985; @knopp_theoretical_1990; @collins_sexual_2004; @ruting_economic_2008; @hanhardt_safe_2013; @mattson_style_2014]. In particular, the four-stage model of gay neighborhood development and decline articulated by @collins_sexual_2004, beginning with an influx of gay institutions and people into a "declining" area and ending with integration and emigration, provides an implicit backdrop for any work in this area, including mine. Where this current work fits in is not in terms of testing how generalizable that proposed theoretical process is. Rather, it empirically establishes the range of changes than can be seen---or not seen---in gay neighborhoods, and how distinct those changes are.
 
-In particular, the four-stage model of gay neighborhood development and decline articulated by @collins_sexual_2004, wherein {X}, provides an implicit backdrop for any work in this area, including mine.
+A framing more common in demographic approaches is *residential segregation*. Two important quantitative studies, @spring_declining_2013 and @poston_jr_residential_2017, have examined the existence of and change in residential segregation between different-sex and same-sex couples using Census data. My point is that, though it is conceptually and logically related, residential segregation at the city or metropolitan-area level does not measure the same thing as neighborhood change. Though her work is adopted by @ghaziani_there_2014 and others, @spring_declining_2013 in particular explicitly states that her work is not meant to draw inferences about neighborhoods. I depart from this demographic approach to look at neighborhoods directly. My analysis, instead of looking at the fates of gay and lesbian *populations*, shifts the question to examining what is happening to gay *spaces*.
 
-Where this current work fits in is not in terms of testing how generalizable that proposed theoretical process is. Rather, it empirically establishes the range of changes than can be seen---or not seen---in gay neighborhoods, and how distinct those changes are.
-
-A framing more common in demographic approaches is *residential segregation*. Two important quantitative studies, @spring_declining_2013 and @poston_jr_residential_2017, have examined the existence of and change in residential segregation between different-sex and same-sex couples using Census data. My point is that, though it is conceptually and logically related, residential segregation at the city or metropolitan-area level does not measure the same thing as neighborhood change.
-
-Though her work is adopted by @ghaziani_there_2014 and others, @spring_declining_2013 in particular repeatedly states that
-
-Therefore, my work occupies this space 
+Therefore, my work occupies this space
 
 does NOT get at neighborhood change. it's a different thing. that's okay.
 
@@ -76,5 +70,6 @@ it isn't possible to create a perfectly accurate definition of "gay neighborhood
 
 The definition I use is tailored to my problem and my project.
 
-
 I trust random gays on the internet to tell me where gay bars are more than I trust the Census to tell me where same-sex couples are. If you don't, I can't help you.
+
+[@brown_gender_2014] is part of the call I am responding to!
