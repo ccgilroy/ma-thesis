@@ -3,6 +3,56 @@
 
 # Introduction
 
+Are gay neighborhoods changing because they are gay, or because they are subject to broader urban processes?
+
+
+if precise mechanisms are hard to identify, these explanations should nevertheless be associated with different patterns of change.
+
+in the former case, gay neighborhoods should look similar to each other in terms of how they are changing, across cities and contexts. they should differ from neighborhoods in their same city
+
+in the latter case, gay neighborhoods should look similar to other neighborhoods in their same city in terms of how they change, and less like other gay neighborhoods in different places
+
+There are a number of smaller, necessary questions to build up to answering this big one that I first posed.
+
+Can a set of gay neighborhoods to study be identified? Are they structurally similar to each other? Are they changing in similar ways? Are they changing in ways that differ from their respective contexts?
+
+Underlying this proposed dilemma is the idea that there are different kinds of neighborhood change, and that our prior should be that these kinds of change are related.
+
+On the one hand, there is cultural, institutional, or on-the-ground change. On the other there is structural or contextual change: changes in people, their characteristics, or economic conditions.
+
+For gay neighborhoods, this means not *just* "degaying" [GHAZIANI], but should be experiencing broader urban change, more inclusive or expansive view of change. Certain kinds of change will be invisible through a quantitative lens---but not all kinds of change.
+
+To see massive street-level upheaval that had no impact on or reflection in a neighborhood's demographics would be theoretically surprising. To see a host of bar closures that bore no relation to neighborhood economic conditions would be shocking and absurd
+
+That is not what the "there goes the gayborhood" trope proposes.
+
+that model is based on the presumed attraction, to straights, of queerness. that allure didn't exist before. this is the basis for expecting (bad) change in the gayborhood. we should see change reflected not just in bar closures or bachelorette parties, but in numbers as well.
+
+in effect, we're victims of our own success., which is an intriguing social paradox with broader implications---if it's true.
+
+so, are we? it says different things about what the problem is
+
+why does this matter for queer folks? for marginalized groups in general?
+
+different underlying problems, different solutions
+
+what if the story isn't about us? then that's a different problem. let's talk about the neoliberal city, the right to the city, etc.
+
+Capitol Hill may differ from Belltown in terms of symbolic importance, but not structurally.
+
+the model in how I'd characterize Ghaziani's formulation, because we're in a post-gay era, gay neighborhoods are simultaneously less important to the gays, and more interesting (or at least less threatening) to the straights. this leads to neighborhood change, of both kinds described above.
+
+
+
+
+---
+
+What is different about gay neighborhoods?
+
+What can this tell us about where gay spaces are going?
+
+Is it at all relevant to the position of LGBTQ people?
+
 need to explain here, clearly, what the problem I'm concerned with is and why
 
 [do I bring up Ghaziani immediately, or wait till the background section?]
@@ -25,7 +75,7 @@ In this paper, I begin to...
 
 for instance, hypothetically, if it were the result of a nationwide trend in the changing social position of LGBTQ people
 
-bring up the trope, "there goes the gayborhood" (multiple papers and a book, it's a trope) [@brown_gender_2014; @ghaziani_there_2014; @smart_there_2016]
+By this point, "there goes the gayborhood" is a trope [@brown_gender_2014; @ghaziani_there_2014; @smart_there_2016].
 
 Is it? Shouldn't we be able to see that?
 
