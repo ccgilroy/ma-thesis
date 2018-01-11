@@ -1,6 +1,8 @@
 ---
 ---
 
+# Introduction
+
 need to explain here, clearly, what the problem I'm concerned with is and why
 
 [do I bring up Ghaziani immediately, or wait till the background section?]
@@ -23,13 +25,31 @@ In this paper, I begin to...
 
 for instance, hypothetically, if it were the result of a nationwide trend in the changing social position of LGBTQ people
 
-bring up the trope, "there goes the gayborhood"
+bring up the trope, "there goes the gayborhood" (multiple papers and a book, it's a trope) [@brown_gender_2014; @ghaziani_there_2014; @smart_there_2016]
+
+Is it? Shouldn't we be able to see that?
 
 macro, micro, meso
 
-First, I must state clearly what this project is not. It is not a macro-level analysis on what urban change is, or where same-sex couples are located in metropolitan areas, or how that's changed, as would be typical of quantitative approaches. Neither is it a micro-level examination of the stories of individual gay/LGBTQ/queer neighborhoods, whether their recent history or their distant past, as a qualitative approach might favor.
+First, I must state clearly what this project is not. It is not a macro-level analysis of what urban change is, or of where same-sex couples are located in metropolitan areas and how that has changed, as would be typical of quantitative approaches. Neither is it a micro-level examination of the stories of individual gay, LGBTQ, or queer neighborhoods, whether their recent history or their distant past, as a qualitative approach might favor.
 
-Instead, this project is a meso-level take, a small-N study. It combines a qualitative sensibility and quantitative techniques.
+Instead, this project is a meso-level investigation, a small-N study. It combines a qualitative approach to the incorporation of knowledge with quantitative techniques of analysis.
+
+This is the grail.
+
+But backing up a hot second, it turns out that there are several baseline questions to address first: how do we identify gay neighborhoods? do they look similar to each other? are they changing?
+
+Coming up with at least provisional or pragmatic answer to those questions builds toward answering the big one
+
+if these neighborhoods are changing, is it because they're gay? or is that somehow coincidental?
+
+This could have deep, sensitive implications: *is this really about us?* *or are we victims of urban processes beyond our control?*
+
+if what is happening to gay neighborhoods does not have anything to do with the fact that those neighborhoods are gay, how could it say anything about our position in society?
+
+conversely, if what's happening here looks really different, maybe it is related
+
+In asking this question
 
 I am directly inspired by questions left open by Ghaziani [CITE] and others in the qualitative literature. I am further attempting to respond to calls to broaden the way we study gay urban geographies within sociology [CITE Amy Stone somehow - and also maybe G Brown 2008]
 
@@ -45,3 +65,5 @@ I am taking a broader, contextual view of neighborhood change, with the assumpti
 We, queer academics, have stories we tell ourselves. What's the story? How justified is it?
 
 Is it really about gay neighborhoods at all? Or are these places getting swept up in broader contextual trends?
+
+PUT MY RESEARCH QUESTION SOMEWHERE as clearly as I can state it.

@@ -1,9 +1,11 @@
 ---
 ---
 
+# Background
+
 This section should generate and justify my expectations
 
-# Gay neighborhoods
+## Gay neighborhoods
 
 Terminology matters. I use the term "gay neighborhood" pragmatically to refer to the object of my study,
 
@@ -19,7 +21,9 @@ Go straight for Levine's definition, which has four parts
 
 The multifaceted nature of this definition is important.
 
-Both he and @castells_city_1983, however,
+Both he and @castells_city_1983, however, find that these are generally *consistent*.
+
+using one criterion, rather than all four; because it is widespread and measurable, which enables an analysis across multiple cities
 
 prototypes do not have to be *representative*, either. The median gay neighborhood---if such a thing is even meaningful---would not look like Greenwich Village or the Castro.
 
@@ -35,7 +39,9 @@ I hear the calls to focus on the most peripheral spaces, and I am disregarding t
 
 I am distinguishing between neighborhoods with a visible and marked gay presence and those where a queer presence undoubtedly exists, but is less visible or salient. (reluctant to call the rest of the neighborhoods "non-gay")
 
-# Bars as institutions
+## Bars as institutions
+
+This paper is not about gay bars.
 
 Mattson, Ghaziani, Brown go here
 
@@ -49,7 +55,8 @@ If the archetypical gay neighborhood is, or was, a space for middle-class cis wh
 
 [FOOTNOTE] On lesbian bars and queer women's spaces see [LONG LIST: Podmore, Enke, Mattson], among others.
 
-# Change in gay neighborhoods
+
+## Change in gay neighborhoods: spaces, not populations
 
 *Gentrification* is the elephant in the room.
 
@@ -63,13 +70,16 @@ Collins
 
 Finally, *residential segregation*
 
-two important quantitative studies @spring_declining_2013 and
+two important quantitative studies @spring_declining_2013 and @poston_jr_residential_2017
 
 residential segregation does NOT get at neighborhood change. it's a different thing. that's okay.
 
 the thing they care about is gay and lesbian *populations*, what I care about is what is happening to gay *spaces*.
 
 Cite Spring, D'Lane...
+
+
+## recap: what I hope to accomplish
 
 propose radical idea that we *look at the object we purport to care about*
 
@@ -88,3 +98,11 @@ The reason to make this tradeoff is that it makes it feasible to include many mo
 I trade their nuanced focuses on single cities---Atlanta, Columbus, and Dallas, respectively---for breadth of comparison.
 
 (What also distinguishes these studies from others is their focus on cities outside the core of the gay urban imaginary of New York, San Francisco, and Chicago.)
+
+
+it isn't possible to create a perfectly accurate definition of "gay neighborhood" that both works universally and is empirically feasible.
+
+The definition I use is tailored to my problem and my project.
+
+
+I trust random gays on the internet to tell me where gay bars are more than I trust the Census to tell me where same-sex couples are. If you don't, I can't help you.

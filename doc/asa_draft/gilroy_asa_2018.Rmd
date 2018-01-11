@@ -1,0 +1,46 @@
+---
+title: "Do gay neighborhoods change differently?"
+author: "Connor Gilroy"
+date: "January 11, 2018"
+output:
+    pdf_document:
+        latex_engine: xelatex
+mainfont: Gentium Basic
+monofont: InconsolataGo
+fontsize: 12pt
+header-includes:
+    - \usepackage{booktabs}
+    - \usepackage{indentfirst}
+bibliography: gayborhood_literature.bib
+csl: american-sociological-association.csl
+---
+
+\setlength\parindent{0.5cm}
+\setlength{\parskip}{0em}
+\linespread{1.6}\selectfont
+\def\UrlBreaks{\do\/\do-\do\.}
+
+```{r child='01_intro.md'}
+```
+
+```{r child='02_background.md'}
+```
+
+```{r child='03_data.md'}
+```
+
+```{r child='04_methods.md'}
+```
+
+```{r child='05_results.md'}
+```
+
+```{r child='06_conclusion.md'}
+```
+
+\newpage
+
+# References
+
+\setlength\parindent{-0.5cm}
+\setlength\leftskip{0.5cm}
