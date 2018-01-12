@@ -57,10 +57,16 @@ Canadian cities: Calgary, Edmonton, Montreal, Toronto, Vancouver, Winnipeg
 
 # Appendix B: Network
 
-Network graph of clusters
+Network graph of clusters. Nodes shaded red are included as gay neighborhoods.
 
-![](../../output/figures/network.png)
+![](../../output/figures/network.png){ width=6in }\
+
+\newpage
 
 # Appendix C: Maps
 
-Philadelphia, Denver, New York, San Francisco
+![](../../output/figures/san_francisco.png){ width=50% } ![](../../output/figures/new_york.png){ width=50% }
+
+![](../../output/figures/philadelphia.png){ width=50% } ![](../../output/figures/washington_dc.png){ width=50% }
+
+![](../../output/figures/denver.png){ width=50% } ![](../../output/figures/miami.png){ width=50% }

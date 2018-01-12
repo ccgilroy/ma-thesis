@@ -1,7 +1,7 @@
 ---
 title: |
     | The distinctness of gay neighborhood change:
-    | Coherence and divergence in trajectories among gay and other neighborhoods
+    | Contextual coherence and divergence among gay and other neighborhoods
 author: "Connor Gilroy"
 date: "January 11, 2018"
 output:
