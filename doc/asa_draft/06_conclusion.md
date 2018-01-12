@@ -3,50 +3,12 @@
 
 # Discussion and conclusion
 
-On one hand, I have shown enough to justify concerns and perceptions of contextual coherence
+I return to the contending interpretations and implications I laid out in the beginning. In one case, if whether or not a neighborhood was marked as gay in the past turns out to matter a great deal for what that neighborhood winds up looking like in the present, this implies that change in gay neighborhoods really is about the social position of LGBTQ people in American society, and the corresponding social position of gay neighborhoods in US cities. Conversely, if whether or not a neighborhood is marked as gay is not so predictive of how it changes, then the urban processes operating are more likely to be the same, differing only in terms of symbolic impact: LGBTQ people care about outcomes in these particular neighborhoods because our communities are impacted
 
-At the same time, we should be wary of ascribing too much unity to the category of gay neighborhood.
+Which story is closer to the truth? The evidence I have presented so far is mixed. I have shown enough to justify both the perception of contextual coherence and concern over how that context is changing. The economic conditions and educational class status of the gay neighborhoods in my study are changing in common, in a way that looks like the kind of gentrification ultimately associated with gay neighborhood decline [@collins_sexual_2004]. At the same time, we should be wary of ascribing too much unity to the category of gay neighborhood. While they share certain demographic commonalities, we cannot conclude that these neighborhoods, as a trend, are getting whiter or straighter.
 
-we cannot conclude that these neighborhoods, as a trend, are getting whiter or straighter
+The most important caveat is that I do not measure cultural or institutional change directly. Bar closures are real events. Neighborhoods might really change on the ground such that gay culture is no longer locally dominant. They might come to feel less welcoming, or even hostile, to LGBTQ residents or visitors. It is possible that these kinds of changes are orthogonal to the kinds of demographic shifts I expected to observe, rather than connected.
 
-of course,
+This paper has reached its conclusions by innovating in a number of ways. First, I have taken a broader, meso-scale view of gay neighborhoods across more cities than previous scholars doing either qualitative or quantitative work on one or few cities. Second, relative to demographic analyses, I have shifted the frame of the question from *what is happening to LGBTQ people* to *what is happening in gay spaces*. Implicitly, of course, the latter tells us something novel about the former.
 
-Talk about bridging quantitative and qualitative approaches here.
-
-Ultimately, though my techniques are quantitative, my sensibilities are qualitative.
-
-I don't know how legible this work will be to quantitative researchers.
-
-This paper has taken advantage of the strengths of ACS data from the Census Bureau by looking at the center rather than the margins.
-
-I have accomplished this in two ways:
-
-first, taking a broader, meso-scale view of gay neighborhoods across more cities than previous scholars doing either qualitative or quantitative work on one or few cities.
-
-second, relative to demographic analyses, by shifting the question from *what's happening to gay people* to *what's happening in gay spaces*.
-
-Implicitly, of course, the latter tells us something about the former.
-
-places and populations
-
-(spaces and)
-
-(and communities)
-
-Richard Florida attempted to make LGBTQ people into a symbol of "coolness", creativity, and diversity. Perhaps that is a negative thing for gay spaces.
-
-what are the implications
-
-two implications / interpretations
-
-something that's really about the social position of LGBTQ people in American society, and the corresponding social position of gay neighborhoods in US cities.
-
-or
-
-differ only in terms of symbolic impact: LGBTQ people care about these neighborhoods because our communities are impacted
-
-Which story is closer to the truth?
-
-Do I say I find mixed evidence?
-
-Gay neighborhoods are definitely a thing.
+In addition to carving out this new space for inquiry between two prior bodies of work, I have methodologically bridged qualitative and quantitative approaches to the study of gay spaces. I have drawn on LGBTQ community knowledge of gay institutions, but also made use of the strengths of ACS data from the Census Bureau to interrogate the center rather than the margins. The outcome of integrating these sources is that gay neighborhoods emerge as a clear and distinct sociological object, discernible across a range of contexts. They are an object meriting further study across a multiplicity of methods.
