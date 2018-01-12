@@ -59,16 +59,20 @@
   <macro name="access">
     <group>
       <choose>
-        <if variable="URL">
-          <group delimiter=" ">
-            <choose>
-              <if variable="accessed">
-                <text term="retrieved" text-case="capitalize-first"/>
-                <date variable="accessed" form="text"/>
-              </if>
-            </choose>
-            <text prefix="(" suffix=")" variable="URL"/>
-          </group>
+        <if type="webpage">
+          <choose>
+            <if variable="URL">
+             <group delimiter=" ">
+               <choose>
+                 <if variable="accessed">
+                   <text term="retrieved" text-case="capitalize-first"/>
+                   <date variable="accessed" form="text"/>
+                 </if>
+               </choose>
+             <text prefix="(" suffix=")" variable="URL"/>
+            </group>
+          </if>
+         </choose>
         </if>
       </choose>
     </group>

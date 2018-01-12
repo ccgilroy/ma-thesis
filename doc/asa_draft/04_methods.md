@@ -64,11 +64,8 @@ Second, a *matching* strategy is necessary. Using Mahalanobis distance or propen
 These models will take the following form, using the variables above and an indicator for whether or not a neighborhood is a gay neighborhood:
 
 $$x_{t+1} \sim \mathcal{N}(\alpha_{city} + \beta_1 gay_{t} + \beta_2 x_{t} + X\beta_{controls}, \sigma^2)$$
-
 $$\alpha_{city} \sim \mathcal{N}(\alpha, \sigma_\alpha^2)$$
 
 Two other complexities to potentially implement are to allow for the correlation of errors and to incorporate uncertainty deriving from measurement. As my earlier discussion of neighborhood change suggests, I expect that different kinds of changes might be correlated with each other. I can allow for that possibility by putting a correlation matrix on the error terms of the equations, creating what economists call Seemingly Unrelated Regressions [@zellner_direct_2010]. Finally, so as not to overstate the certainty of my models, the most appropriate modeling strategy would also incorporate the margins of error associated with the ACS estimates [@mcelreath_statistical_2016].[^complexity] These are important ideas, but not essential ones.
 
 [^complexity]: To incorporate correlations among different regression equations, and measurement error from the ACS observations, I would need to write Bayesian model specifications from scratch in Stan [@carpenter_stan:_2017]. I do not yet know whether my data are sufficient to estimate models of that level of complexity. Again, these are ideal steps, but not critical ones.
-
-[The models I will estimate answer the question, incorporate my principle theoretical assumptions, and make the most justifiable use of my data while remaining robust.]

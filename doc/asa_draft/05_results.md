@@ -27,7 +27,7 @@ See Appendix C for maps of these cases.
 
 Selecting gay neighborhoods from 24 cities using a combination of qualitative and quantitative criteria gives me 28 clusters to use as data points in the analyses that I present below. The 488 tracts I begin with that contain gay bars fall to 461 candidate tracts once downtowns are excluded. Of these, 146 tracts (29.9% of the original number) remain in the filtered components that I use in my analysis.
 
-I briefly describe the range of clusters, with a full list in [APPENDIX]. I have assigned these descriptive names based on the neighborhood labels and descriptions in the GayCities data and on knowledge from prior literature. The largest gay neighborhood by number of tracts is West Village - Chelsea, New York with 13 tracts, while the largest by number of bars is Castro - Mission - Folsom - SOMA, SF with 33 bars. This shows that the historical prominence accorded to these areas as gay centers persisted---at least institutionally---in 2007. At the other end of the range, the smallest clusters by number of tracts are Northcentral, San Antonio, and Ybor City, Tampa, with one tract each, while the smallest by number of bars is South Beach, Miami, with four bars.
+I briefly describe the range of clusters, with a full list in Appendix A. The largest gay neighborhood by number of tracts is West Village - Chelsea, New York with 13 tracts, while the largest by number of bars is Castro - Mission - Folsom - SOMA, SF with 33 bars. This shows that the historical prominence accorded to these areas as gay centers persisted---at least institutionally---in 2007. At the other end of the range, the smallest clusters by number of tracts are Northcentral, San Antonio, and Ybor City, Tampa, with one tract each, while the smallest by number of bars is South Beach, Miami, with four bars.
 
 ## Descriptive results
 
@@ -67,7 +67,7 @@ These gay neighborhoods systematically differ from their contexts. They are whit
 
 What exactly this means varies. Counties are clustered tightly at a little under 50% male; gay neighborhoods range from 50% to 60% male. By contrast, there is much more heterogeneity in how white a county and its corresponding gay neighborhoods are.
 
-From Figure 3 above, we also begin to see what change in these neighborhoods looks like. To highlight this process more clearly, I now present bivariate plots of different sets of variables. In these, both axes are neighborhood-level characteristics. Each point is a single neighborhood in either 2006-2010 or 2011-2015, and an arrow connects the earlier observation to the later one for the same neighborhood.
+From Figure 3, we also begin to see what change in these neighborhoods looks like. To highlight this process more clearly, I now present bivariate plots of different sets of variables. In these, both axes are neighborhood-level characteristics. Each point is a single neighborhood in either 2006-2010 or 2011-2015, and an arrow connects the earlier observation to the later one for the same neighborhood.
 
 ![Divergent trajectories.](../../output/figures/white_married_2way.png)
 

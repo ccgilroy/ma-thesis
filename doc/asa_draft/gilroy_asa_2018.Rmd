@@ -1,17 +1,19 @@
 ---
 title: |
-    | The distinctness of gay neighborhood change:
-    | Contextual coherence and divergence among gay and other neighborhoods
+    | The Distinctness of Gay Neighborhood Change:
+    | Contextual Coherence and Divergence among Gay and Other Neighborhoods
 author: "Connor Gilroy"
 date: "January 11, 2018"
 output:
     pdf_document:
         latex_engine: xelatex
+        includes:
+            after_body: 07_appendix.tex
 mainfont: Gentium Basic
 monofont: InconsolataGo
 fontsize: 12pt
 header-includes:
-    - \usepackage{booktabs}
+    - \usepackage{longtable,booktabs}
     - \usepackage{indentfirst}
 bibliography: gayborhood_literature.bib
 csl: american-sociological-association.csl
