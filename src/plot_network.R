@@ -33,7 +33,8 @@ plot(g,
      vertex.color = V(g)$color, 
      vertex.label = NA, 
      vertex.frame.color = adjustcolor("#839496", alpha.f = .7),
-     layout = layout_with_fr, 
-     main = "Clusters of adjacent Census tracts with gay bars", 
-     sub = "Nodes shaded red are included as gay neighborhoods")
+     layout = layout_with_fr #, 
+     # main = "Clusters of adjacent Census tracts with gay bars", 
+     # sub = "Nodes shaded red are included as gay neighborhoods"
+     )
 dev.off()

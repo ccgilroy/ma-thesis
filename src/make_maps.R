@@ -41,7 +41,8 @@ map_chicago <-
 
 
 mapshot(map_chicago, 
-        file = file.path(here::here(), "output/figures/chicago.png"))
+        file = file.path(here::here(), "output/figures/chicago.png"), 
+        vwidth = 496)
 
 # idea: only plot bars NOT in component
 seattle_bars <- 
@@ -61,4 +62,65 @@ map_seattle <-
 # experiment with vwidth and vheight to set viewport
 # defaults are 992 and 744 respectively
 mapshot(map_seattle, 
-        file = file.path(here::here(), "output/figures/seattle.png"))
+        file = file.path(here::here(), "output/figures/seattle.png"), 
+        vwidth = 496)
+
+# appendix maps ----
+map_city <- function(this_city) {
+  city_bars <- 
+    bar_outliers %>%
+    filter(city == this_city)
+  
+  m <- 
+    qual_filtered_components_labeled %>%
+    filter(city == this_city) %>%
+    leaflet() %>%
+    addProviderTiles("CartoDB.Positron") %>%
+    addPolygons(label = ~as.character(bars), 
+                opacity = 1, fillOpacity = .5, 
+                color = "#BD0026")  %>%
+    addCircles(data = city_bars, color = "#BD0026",
+               opacity = 1, fillOpacity = .5)
+  
+  m
+}
+
+map_san_francisco <- map_city("San Francisco")
+map_new_york <- map_city("New York")
+map_washington_dc <- map_city("Washington DC")
+map_philadelphia <- map_city("Philadelphia")
+map_denver <- map_city("Denver")
+map_miami <- map_city("Miami")
+
+mapshot(map_san_francisco, 
+        file = file.path(here::here(), "output/figures/san_francisco.png"), 
+        vwidth = 372, vheight = 372)
+
+mapshot(map_new_york, 
+        file = file.path(here::here(), "output/figures/new_york.png"), 
+        vwidth = 372, vheight = 372)
+
+mapshot(map_washington_dc, 
+        file = file.path(here::here(), "output/figures/washington_dc.png"), 
+        vwidth = 372, vheight = 372)
+
+mapshot(map_philadelphia, 
+        file = file.path(here::here(), "output/figures/philadelphia.png"), 
+        vwidth = 372, vheight = 372)
+
+mapshot(map_denver, 
+        file = file.path(here::here(), "output/figures/denver.png"), 
+        vwidth = 372, vheight = 372)
+
+mapshot(map_miami, 
+        file = file.path(here::here(), "output/figures/miami.png"), 
+        vwidth = 372, vheight = 372)
+
+
+# qual_filtered_components_labeled %>%
+#   filter(city == "New York") %>%
+#   leaflet() %>%
+#   addProviderTiles("CartoDB.Positron") %>%
+#   addPolygons(label = ~as.character(bars), 
+#               opacity = 1, fillOpacity = .5, 
+#               color = "#BD0026") 

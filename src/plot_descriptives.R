@@ -382,8 +382,6 @@ table_data <-
          moe = ifelse(is.na(prop), moe, prop_moe)) %>%
   select(-c(summary_est, summary_moe, prop, prop_moe))
 
-
-library(xtable)
 library(forcats)
 table_data_wide <- 
   table_data %>%
@@ -438,3 +436,21 @@ kable(mx,
                      "Tracts without gay bars" = 2)) %>%
   write_lines("output/tables/averages.md")
 
+qual_filtered_components_labeled %>%
+  as.data.frame() %>% 
+  select(-geometry) %>% 
+  as_tibble() %>% 
+  select(city, neighborhood_label, csize, bars) %>% 
+  mutate(city = as.factor(city)) %>% 
+  mutate(city = fct_relevel(city, 
+                            "New York", 
+                            "San Francisco", 
+                            "Chicago", 
+                            "Los Angeles")) %>%
+  arrange(city, desc(bars)) %>% 
+  # mutate(`sample references` = "") %>%
+  rename(City = city, 
+         Neighborhood = neighborhood_label, 
+         Tracts = csize, 
+         Bars = bars) %>%
+  knitr::kable()
