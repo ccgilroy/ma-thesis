@@ -24,6 +24,14 @@ bar_outliers <-
   gaycities_geocoded_all %>%
   filter(!GEOID %in% geometry_components_qual_filtered$GEOID)
 
+qual_filtered_components_labeled %>%
+  leaflet() %>%
+  addProviderTiles("CartoDB.Positron") %>%
+  addPolygons(label = ~as.character(bars), 
+              opacity = 1, fillOpacity = .5, 
+              color = "#BD0026") %>%
+  addCircles(data = gaycities_geocoded_all, color = "#BD0026", 
+             opacity = 1, fillOpacity = .5)
 
 chicago_bars <- 
   bar_outliers %>%

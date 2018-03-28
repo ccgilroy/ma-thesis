@@ -1,3 +1,4 @@
+library(tidycensus)
 library(readr)
 library(stringr)
 library(dplyr)
@@ -96,3 +97,74 @@ geometry_components_qual_filtered <-
 main_data_gay_qual <- 
   main_data_gay %>%
   inner_join(geometry_components_qual_filtered, by = "GEOID") 
+
+# model data ----
+# need component information
+# only use cities with gay bar components
+# indicator for if component isn't NA
+
+qual_cities <- unique(main_data_gay_qual$city)
+
+model_data <- 
+  main_data %>%
+  filter(city %in% qual_cities) %>% 
+  filter(!GEOID %in% c("06037137000", "06037930401")) %>%
+  left_join(geometry_components_qual_filtered, by = "GEOID") 
+
+# prepare model data
+conversion_factor <- 1.08710584
+usd_vars <- c("median income", "median rent")
+
+model_data_prop <- 
+  model_data %>%
+  # convert to 2015 USD
+  mutate(estimate = ifelse(label %in% usd_vars & year == "2006-2010", 
+                           estimate*conversion_factor, estimate)) %>%
+  # use props for estimates
+  mutate(estimate = ifelse(is.na(prop), estimate, prop), 
+         moe = ifelse(is.na(prop), moe, prop_moe)) %>%
+  select(-c(summary_est, summary_moe, prop, prop_moe))
+
+model_data_prop_wide <- 
+  model_data_prop %>%
+  ungroup() %>%
+  select(GEOID, NAME, state, county, tract, city, bars, gay,
+         label, estimate, year, component, csize, neighborhood_label) %>%
+  spread(key = label, value = estimate) %>%
+  rename(median_income = `median income`, 
+         median_rent = `median rent`, 
+         total_population = `total population`, 
+         college_educated = `college educated`) %>%
+  # filter(total_population > 0) %>%
+  # filter out NAs
+  filter_at(vars(college_educated, male, married, median_income, median_rent, 
+                 total_population, white), 
+            all_vars(!is.na(.)))
+
+
+model_data_prop_wide_std <- 
+  model_data_prop_wide %>%
+  # log and scale
+  mutate_at(vars(median_income, median_rent, total_population), log) 
+
+# take logs of total pop, median income, median rent before scaling
+# use scaled versions for matching
+
+# let's assume we'll model the proportions
+
+model_data_t1 <- 
+  model_data_prop_wide %>%
+  filter(year == "2006-2010") %>%
+  select(-year)
+
+model_data_t2 <- 
+  model_data_prop_wide %>%
+  filter(year == "2011-2015") %>%
+  select(-year)
+
+id_variables <- names(model_data_t1)[1:11]
+
+model_data_wide <- 
+  model_data_t1 %>%
+  inner_join(model_data_t2, by = id_variables, 
+             suffix = c("_2010", "_2015"))
