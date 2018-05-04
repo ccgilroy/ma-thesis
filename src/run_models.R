@@ -57,6 +57,9 @@ ml_model3 <- lmer(white_2015 ~ gay + white_2010 + (1 | city), data = d)
 
 college_educated_2015 ~ gay + college_educated_2010 + (1 | city)
 
+# initial models ----
+# (no matching)
+
 run_models <- function(outcome) {
   f <- . ~ college_educated_2010 + male_2010 + married_2010 + 
     white_2010 + log(median_rent_2010) + log(median_income_2010) + 
@@ -146,12 +149,69 @@ plot_ranef(m_list$m_rent$mlm_gay, "Outcome: log median rent")
 # a multilevel model... so good?
 plot_ranef(m_list$m_inc$mlm_gay, "Outcome: log median income")
 
-
-
-# ----
+# stan ----
 
 library(rstanarm)
 m2_b <- stan_glm(f2, data = d)
 # multilevel model is too slow to run
 # mlm <- stan_glmer(college_educated_2015 ~ college_educated_2010 + (1|city), data = d)
 # ml_m2_b <- stan_lmer(update(f2, . ~ . + (1 | city)), data = d)
+
+# matching ----
+library(MatchIt)
+
+# that's stupid, 
+# it shouldn't matter if there are NA values in variables I'm not using for matching
+d_test <- 
+  d %>% 
+  # filter(city %in% c("Boston")) %>%
+  select(GEOID, city,
+         gay, college_educated_2010, male_2010, married_2010, white_2010, 
+         median_rent_2010, median_income_2010, total_population_2010)
+
+# d_test %>% 
+#   select(gay, college_educated_2010, male_2010, married_2010, white_2010, median_rent_2010, median_income_2010, total_population_2010) %>%
+#   mutate(log_income = log(median_income_2010), 
+#          log_rent = log(median_rent_2010)) %>%
+#   na.omit() %>% 
+#   dim()
+
+zz <- matchit(formula = gay ~ college_educated_2010 + male_2010 + married_2010 + 
+                white_2010 + log10(median_rent_2010) + log10(median_income_2010) + 
+                log10(total_population_2010), 
+              data = as.data.frame(d_test), 
+              # method = "optimal",
+              method = "nearest",
+              distance = "mahalanobis", 
+              ratio = 1, 
+              exact = c("city"))
+
+zz$match.matrix
+
+# plot() and summary() are things
+
+# sanity check
+match.data(zz) %>%
+  group_by(city) %>%
+  summarize(gay = sum(gay), 
+            n = n()) %>%
+  mutate(prop = gay/n)
+
+# seems way more consistent with nearest than optimal...
+# it's also concerning that they're completely different
+# HOW does mahalanobis distance value each covariate?
+# I want them all standardized, basically...
+
+library(leaflet)
+# by tract
+geometry_gay_tracts <- read_rds("data/census/geometry_2010_no_downtown.rds")
+
+geometry_gay_tracts %>%
+  # filter(GEOID %in% match.data(zz)$GEOID) %>%
+  inner_join(match.data(zz), by = "GEOID", suffix = c("", ".y")) %>%
+  # mutate(gay = as.factor(gay)) %>%
+  leaflet() %>%
+  addTiles() %>%
+  addPolygons(label = ~as.character(GEOID), 
+              opacity = 1, fillOpacity = .5, 
+              color = ~colorFactor("Set2", gay)(gay))
