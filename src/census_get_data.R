@@ -100,10 +100,10 @@ vars_household <- c(
 # testing ----
 fips_codes %>% select(state, state_code) %>% group_by(state, state_code) %>% summarise()
 
-test <- get_acs("tract", variables = vars_demographic, state = "53", county = "033", year = "2015", survey = "acs5")
-test2 <- get_acs("tract", variables = vars_demographic, state = "53", county = "033", year = "2015", survey = "acs5", output = "wide")
+test <- get_acs("tract", variables = vars_demographic, state = "53", county = "033", year = 2015, survey = "acs5")
+test2 <- get_acs("tract", variables = vars_demographic, state = "53", county = "033", year = 2015, survey = "acs5", output = "wide")
 
-test3 <- get_acs("tract", table = "B01003", state = "53", county = "033", year = "2015", survey = "acs5", keep_geo_vars = TRUE)
+test3 <- get_acs("tract", table = "B01003", state = "53", county = "033", year = 2015, survey = "acs5", keep_geo_vars = TRUE)
 
 # this gets you area land, area water, and the TRACTCE
 
@@ -116,68 +116,68 @@ test3 <- get_acs("tract", table = "B01003", state = "53", county = "033", year =
 # table B01003: total population
 b01003_2015 <- pmap_df(states_and_counties_condensed, function(state, county) {
   get_acs("tract", table = "B01003", state = state, county = county,
-          year = "2015", survey = "acs5")
+          year = 2015, survey = "acs5")
 })
 
 b01003_2010 <- pmap_df(states_and_counties_condensed, function(state, county) {
   get_acs("tract", table = "B01003", state = state, county = county,
-          year = "2010", survey = "acs5")
+          year = 2010, survey = "acs5")
 })
 
 # gender
 b01001_2015 <- pmap_df(states_and_counties_condensed, function(state, county) {
   get_acs("tract", table = "B01001", state = state, county = county,
-          year = "2015", survey = "acs5", summary_var = "B01001_001")
+          year = 2015, survey = "acs5", summary_var = "B01001_001")
 })
 
 b01001_2010 <- pmap_df(states_and_counties_condensed, function(state, county) {
   get_acs("tract", table = "B01001", state = state, county = county,
-          year = "2010", survey = "acs5", summary_var = "B01001_001")
+          year = 2010, survey = "acs5", summary_var = "B01001_001")
 })
 
 # race
 b03002_2015 <- pmap_df(states_and_counties_condensed, function(state, county) {
   get_acs("tract", table = "B03002", state = state, county = county,
-          year = "2015", survey = "acs5", summary_var = "B03002_001")
+          year = 2015, survey = "acs5", summary_var = "B03002_001")
 })
 
 b03002_2010 <- pmap_df(states_and_counties_condensed, function(state, county) {
   get_acs("tract", table = "B03002", state = state, county = county,
-          year = "2010", survey = "acs5", summary_var = "B03002_001")
+          year = 2010, survey = "acs5", summary_var = "B03002_001")
 })
 
 # education 
 b07009_2015 <- pmap_df(states_and_counties_condensed, function(state, county) {
   get_acs("tract", table = "B07009", state = state, county = county,
-          year = "2015", survey = "acs5", summary_var = "B07009_001")
+          year = 2015, survey = "acs5", summary_var = "B07009_001")
 })
 
 b07009_2010 <- pmap_df(states_and_counties_condensed, function(state, county) {
   get_acs("tract", table = "B07009", state = state, county = county,
-          year = "2010", survey = "acs5", summary_var = "B07009_001")
+          year = 2010, survey = "acs5", summary_var = "B07009_001")
 })
 
 # households ----
 # family households
 b11001_2015 <- pmap_df(states_and_counties_condensed, function(state, county) {
   get_acs("tract", table = "B11001", state = state, county = county,
-          year = "2015", survey = "acs5", summary_var = "B11001_001")
+          year = 2015, survey = "acs5", summary_var = "B11001_001")
 })
 
 b11001_2010 <- pmap_df(states_and_counties_condensed, function(state, county) {
   get_acs("tract", table = "B11001", state = state, county = county,
-          year = "2010", survey = "acs5", summary_var = "B11001_001")
+          year = 2010, survey = "acs5", summary_var = "B11001_001")
 })
 
 # unmarried-couples
 b11009_2015 <- pmap_df(states_and_counties_condensed, function(state, county) {
   get_acs("tract", table = "B11009", state = state, county = county,
-          year = "2015", survey = "acs5", summary_var = "B11009_001")
+          year = 2015, survey = "acs5", summary_var = "B11009_001")
 })
 
 b11009_2010 <- pmap_df(states_and_counties_condensed, function(state, county) {
   get_acs("tract", table = "B11009", state = state, county = county,
-          year = "2010", survey = "acs5", summary_var = "B11009_001")
+          year = 2010, survey = "acs5", summary_var = "B11009_001")
 })
 
 # Tenure
@@ -197,12 +197,12 @@ vars_economic <-
 
 econ_2015 <- pmap_df(states_and_counties_condensed, function(state, county) {
   get_acs("tract", variables = vars_economic, state = state, county = county,
-          year = "2015", survey = "acs5")
+          year = 2015, survey = "acs5")
 })
 
 econ_2010 <- pmap_df(states_and_counties_condensed, function(state, county) {
   get_acs("tract", variables = vars_economic, state = state, county = county,
-          year = "2010", survey = "acs5")
+          year = 2010, survey = "acs5")
 })
   
 

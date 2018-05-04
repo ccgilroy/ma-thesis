@@ -75,7 +75,7 @@ census_api_key(keys$census_key)
 geometry_b01003_2010 <- reduce(
   pmap(states_and_counties_condensed, function(state, county) {
     get_acs("tract", table = "B01003", state = state, county = county,
-            year = "2010", survey = "acs5", geometry = TRUE)
+            year = 2010, survey = "acs5", geometry = TRUE)
   }), rbind
 )
 
