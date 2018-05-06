@@ -20,8 +20,14 @@ merged_count_data <-
              tract = col_character()
            ))
 
+merged_density_data <- 
+  read_csv("data/census/merged_density_data.csv", 
+           col_types = list(
+             moe = col_double(), 
+             tract = col_character()
+           ))
+
 # important variables ----
-# TODO: add proportion college educated
 variable_labels <- tribble(
   ~variable   , ~label,
   "B01001_002", "male",
@@ -30,7 +36,8 @@ variable_labels <- tribble(
   "B01003_001", "total population",
   "B19013_001", "median income",
   "B25064_001", "median rent",
-  "B07009_005_006", "college educated"
+  "B07009_005_006", "college educated", 
+  "DENSITY", "population density"
 )
 
 prop_vars <- c(
@@ -48,7 +55,9 @@ educ_vars <- c(
 count_vars <- c(
   "B01003_001", # total
   "B19013_001", # median hh income
-  "B25064_001" # median rent 
+  "B25064_001", # median rent 
+  "DENSITY"     # population density
+  # "ALAND"       # area land
 )
 
 educ_data <- 
@@ -57,7 +66,7 @@ educ_data <-
   group_by(GEOID, NAME, summary_est, summary_moe, 
            year, bars, state, county, tract, gay) %>%
   summarise(estimate = sum(estimate), 
-            moe = moe_sum(moe)) %>%
+            moe = moe_sum(moe, estimate)) %>%
   mutate(variable = "B07009_005_006") %>%
   mutate(prop = estimate/summary_est, 
          prop_moe = moe_prop(estimate, summary_est, moe, summary_moe)) %>%
@@ -70,6 +79,7 @@ prop_data <-
 
 count_data <- 
   merged_count_data %>%
+  bind_rows(merged_density_data) %>%
   filter(variable %in% count_vars)
 
 # count data will have NAs for "summary_est" "summary_moe" "prop" "prop_moe" 
@@ -108,6 +118,7 @@ qual_cities <- unique(main_data_gay_qual$city)
 model_data <- 
   main_data %>%
   filter(city %in% qual_cities) %>% 
+  # tracts in LA that only show up in one of the two 5-year ACSes
   filter(!GEOID %in% c("06037137000", "06037930401")) %>%
   left_join(geometry_components_qual_filtered, by = "GEOID") 
 
@@ -134,21 +145,24 @@ model_data_prop_wide <-
   rename(median_income = `median income`, 
          median_rent = `median rent`, 
          total_population = `total population`, 
+         population_density = `population density`,
          college_educated = `college educated`) %>%
   # filter(total_population > 0) %>%
   # filter out NAs
   filter_at(vars(college_educated, male, married, median_income, median_rent, 
-                 total_population, white), 
+                 total_population, white, population_density), 
             all_vars(!is.na(.)))
 
 
 model_data_prop_wide_std <- 
   model_data_prop_wide %>%
   # log and scale
-  mutate_at(vars(median_income, median_rent, total_population), log) 
+  mutate_at(vars(median_income, median_rent, total_population, population_density), log) 
 
 # take logs of total pop, median income, median rent before scaling
 # use scaled versions for matching
+# update: mahalanobis distance accounts for scale automatically, so no need
+# should still probably log though
 
 # let's assume we'll model the proportions
 
