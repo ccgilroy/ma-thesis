@@ -215,16 +215,45 @@ qual_count_wide %>%
 
 plot_white_married_2way <- 
   qual_prop_wide %>%
-  ggplot(aes(x = white, y = married, group = component)) + 
+  mutate(label_bool = ifelse(city %in% c("Chicago", "Seattle"), 
+                             "labelled", "not labelled")) %>%
+  ggplot(aes(x = white, y = married, group = component, color = label_bool)) + 
   geom_path(arrow = arrow(angle = 15, ends = "last", length = unit(.05, "inches"), type = "closed")) +
   labs(title = "Changes in proportion white and proportion married in gay neighborhoods", 
        subtitle = "Comparing neighborhood-level values for each characteristic",
        caption = "Arrows connect a neighborhood in 2006-2010\nto the same neighborhood in 2011-2015", 
-       x = "proportion white", 
-       y = "proportion in different-sex marriage") + 
-  theme_minimal() # +
-  # geom_text(aes(x = white, y = married, label = str_c(city, component)), 
-  #           data = filter(qual_prop_wide, year == "2006-2010"))
+       x = "proportion white (individuals)", 
+       y = "proportion in different-sex marriage (households)") + 
+  theme_minimal() +
+  scale_color_manual(values = c("#BD0026", "black"), guide = FALSE) +
+  geom_label(aes(x = white, y = married, 
+                 label = str_c(neighborhood_label, city, sep = ", ")),
+             color = "#BD0026",
+             data = filter(qual_prop_wide, year == "2011-2015", 
+                           city %in% c("Chicago", "Seattle")), 
+             hjust = 0.25, vjust = 0, 
+             nudge_x = .001, nudge_y = .001)
+
+plot_male_married_2way <-
+  qual_prop_wide %>%
+  mutate(label_bool = ifelse(city %in% c("Chicago", "Seattle"), 
+                             "labelled", "not labelled")) %>%
+  ggplot(aes(x = male, y = married, group = component, color = label_bool)) + 
+  geom_path(arrow = arrow(angle = 15, ends = "last", length = unit(.05, "inches"), type = "closed")) +
+  labs(title = "Changes in proportion male and proportion married in gay neighborhoods", 
+       subtitle = "Comparing neighborhood-level values for each characteristic",
+       caption = "Arrows connect a neighborhood in 2006-2010\nto the same neighborhood in 2011-2015", 
+       x = "proportion male (individuals)", 
+       y = "proportion in different-sex marriage (households)") + 
+  theme_minimal() +
+  scale_color_manual(values = c("#BD0026", "black"), guide = FALSE) +
+  geom_label(aes(x = male, y = married, 
+                 label = str_c(neighborhood_label, city, sep = ", ")),
+             color = "#BD0026",
+             data = filter(qual_prop_wide, year == "2011-2015", 
+                           city %in% c("Chicago", "Seattle")), 
+             hjust = 0.25, vjust = 0, 
+             nudge_x = .001, nudge_y = .001)
 
 ggsave("output/figures/white_married_2way.png", plot_white_married_2way,
        width = 8, height = 5)
@@ -268,6 +297,32 @@ plot_rent_education_2way <-
 
 ggsave("output/figures/rent_education_2way.png", plot_rent_education_2way,
        width = 8, height = 5)
+
+options(scipen = 99)
+plot_inc_education_2way <- 
+  qual_prop_wide %>%
+  mutate(label_bool = ifelse(city %in% c("Chicago", "Seattle"), 
+                             "labelled", "not labelled")) %>%
+  ggplot(aes(x = `median income`, y = `college educated`, group = component, color = label_bool)) + 
+  geom_path(arrow = arrow(angle = 15, ends = "last", length = unit(.05, "inches"), type = "closed")) +
+  labs(title = "Changes in median income and proportion college educated in gay neighborhoods", 
+       subtitle = "Comparing neighborhood-level values for each characteristic",
+       caption = "Arrows connect a neighborhood in 2006-2010\nto the same neighborhood in 2011-2015", 
+       x = "median income, 2015 dollars", 
+       y = "proportion college-educated") +
+  scale_color_manual(values = c("#BD0026", "black"), guide = FALSE) +
+  theme_minimal() + 
+  geom_label(aes(x = `median income`, y = `college educated`, 
+                 label = str_c(neighborhood_label, city, sep = ", ")),
+             color = "#BD0026",
+             data = filter(qual_prop_wide, year == "2011-2015", 
+                           city %in% c("Chicago", "Seattle")), 
+             hjust = 0.25, vjust = 0, 
+             nudge_x = 10, nudge_y = .005)
+
+ggsave("output/figures/inc_education_2way.png", plot_inc_education_2way,
+       width = 8, height = 5)
+
 
 # qual_prop_wide %>%
 #   filter(year == "2006-2010") %>%
