@@ -138,6 +138,24 @@ plot_ranef <- function(model, title = "") {
     labs(x = "city", y = "intercept (centered at grand mean)", title = title) 
 }
 
+plot_ranef_vertical <- function(model, title = "") {
+  ranef_df <- 
+    data_frame(city = rownames(ranef(model)$city), 
+               ranef = ranef(model)$city[,1], 
+               se_ranef = arm::se.ranef(model)$city[,1])
+  
+  ranef_df %>%
+    mutate(lower = ranef - 1.96*se_ranef, 
+           upper = ranef + 1.96*se_ranef, 
+           city = as.factor(city)) %>%
+    ggplot(aes(y = fct_reorder(city, ranef), x = ranef)) +
+    ggstance::geom_pointrangeh(aes(xmin = lower, xmax = upper)) + 
+    theme_minimal() + 
+    geom_vline(xintercept = 0, color = "blue") +
+    theme(axis.title.y = element_blank()) +
+    labs(x = "intercept (centered at grand mean)", title = title)
+}
+
 plot_ranef(m_list$m_col_edu$mlm_gay, "Outcome: proportion college educated")
 plot_ranef(m_list$m_male$mlm_gay, "Outcome: proportion male")
 # lol @Seattle and San Francisco...
@@ -155,6 +173,28 @@ plot_ranef(m_list$m_rent$mlm_gay, "Outcome: log median rent")
 plot_ranef(m_list$m_inc$mlm_gay, "Outcome: log median income")
 
 plot_ranef(m_list$m_dens$mlm_gay, "Outcome: log population density")
+
+p_ranef_col_edu <- 
+  plot_ranef_vertical(m_list$m_col_edu$mlm_gay, 
+                      "Outcome: proportion college-educated, 2015")
+p_ranef_rent <- 
+  plot_ranef_vertical(m_list$m_rent$mlm_gay, 
+                      "Outcome: median rent, 2015 ($, logged)")
+
+library(grid)
+library(gridExtra)
+
+p_ranef_col_edu_rent <- 
+  grid.arrange(
+    textGrob("Varying intercepts by city", gp = gpar(fontsize = 1.5*12)), 
+    arrangeGrob(p_ranef_col_edu, p_ranef_rent, ncol = 2), 
+    heights = c(.05, 1)
+  )
+
+ggsave(filename = "output/figures/ranef_col_edu_rent.png", 
+       plot = p_ranef_col_edu_rent, 
+       height = 12, 
+       width = 10)
 
 # stan ----
 
@@ -483,11 +523,56 @@ texreg(list(m_list$m_col_edu$m_gay,
        digits = 3, 
        booktabs = TRUE)
 
-screenreg(list(m_list$m_col_edu$m, 
-               m_list$m_col_edu$m_gay, 
-               m_list$m_col_edu$mlm_gay, 
-               m_list_matched$m_col_edu_matched$m_gay, 
-               m_list_aggregated$m_col_edu_aggregated$m_gay), 
+m_table_col_edu <- 
+  list(m_list$m_col_edu$m, 
+       m_list$m_col_edu$m_gay, 
+       m_list$m_col_edu$mlm_gay, 
+       m_list_matched$m_col_edu_matched$m_gay, 
+       m_list_aggregated$m_col_edu_aggregated$m_gay)
+
+m_table_male <- 
+  list(m_list$m_male$m, 
+       m_list$m_male$m_gay, 
+       m_list$m_male$mlm_gay, 
+       m_list_matched$m_male_matched$m_gay, 
+       m_list_aggregated$m_male_aggregated$m_gay)
+
+m_table_married <- 
+  list(m_list$m_married$m, 
+       m_list$m_married$m_gay, 
+       m_list$m_married$mlm_gay, 
+       m_list_matched$m_married_matched$m_gay, 
+       m_list_aggregated$m_married_aggregated$m_gay)
+
+m_table_white <- 
+  list(m_list$m_white$m, 
+       m_list$m_white$m_gay, 
+       m_list$m_white$mlm_gay, 
+       m_list_matched$m_white_matched$m_gay, 
+       m_list_aggregated$m_white_aggregated$m_gay)
+
+m_table_inc <- 
+  list(m_list$m_inc$m, 
+       m_list$m_inc$m_gay, 
+       m_list$m_inc$mlm_gay, 
+       m_list_matched$m_inc_matched$m_gay, 
+       m_list_aggregated$m_inc_aggregated$m_gay)
+
+m_table_rent <- 
+  list(m_list$m_rent$m, 
+       m_list$m_rent$m_gay, 
+       m_list$m_rent$mlm_gay, 
+       m_list_matched$m_rent_matched$m_gay, 
+       m_list_aggregated$m_rent_aggregated$m_gay)
+
+m_table_dens <- 
+  list(m_list$m_dens$m, 
+       m_list$m_dens$m_gay, 
+       m_list$m_dens$mlm_gay, 
+       m_list_matched$m_dens_matched$m_gay, 
+       m_list_aggregated$m_dens_aggregated$m_gay)
+
+screenreg(m_table_rent, 
           custom.coef.names = c( #"intercept", 
             "proportion college-educated, 2010", 
             "proportion male, 2010", 
