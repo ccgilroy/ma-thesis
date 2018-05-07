@@ -5,7 +5,7 @@
 
 ## Clustering and filtering
 
-I first assess the results of clustering and filtering visually and by example. In the maps in Figures 1 and 2, I show the results of the process described above for two cities, Chicago and Seattle. These are the two cities that, based on my own residential history, I am most confident in my ability to interpret. They also exemplify what I would consider clear and interpretable clusters.
+I first assess the results of clustering and filtering visually using two primary examples. In the maps in Figures 1 and 2, I show the results of the process described above for two cities, Chicago and Seattle. These exemplify clear and interpretable clusters, ones that correspond to objects of study in prior qualitative work on gay neighborhood change.
 
 ![Chicago, suburbs not shown.](../../output/figures/chicago.png){ height=4in }
 
@@ -35,12 +35,12 @@ In Table 1, I present average tract-level characteristics, four demographic and 
 
 \begin{table}
 
-\caption{\label{tab:}Average values for tracts}
+\caption{\label{tab:}Average values for all tracts}
 \centering
 \begin{tabular}[t]{lrrrrrr}
 \toprule
 \multicolumn{1}{c}{ } & \multicolumn{2}{c}{Gay neighborhood tracts} & \multicolumn{2}{c}{Other tracts with gay bars} & \multicolumn{2}{c}{Tracts without gay bars} \\
-% \cmidrule(l{2pt}r{2pt}){2-3} \cmidrule(l{2pt}r{2pt}){4-5} \cmidrule(l{2pt}r{2pt}){6-7}
+\cmidrule(l{2pt}r{2pt}){2-3} \cmidrule(l{2pt}r{2pt}){4-5} \cmidrule(l{2pt}r{2pt}){6-7}
 \multicolumn{1}{c}{\em  } & \multicolumn{2}{c}{\em N = 146} & \multicolumn{2}{c}{\em N = 342} & \multicolumn{2}{c}{\em N = 22519} \\
 \cmidrule(l{2pt}r{2pt}){2-3} \cmidrule(l{2pt}r{2pt}){4-5} \cmidrule(l{2pt}r{2pt}){6-7}
   & 2006-2010 & 2011-2015 & 2006-2010 & 2011-2015 & 2006-2010 & 2011-2015\\
@@ -50,36 +50,39 @@ male & 0.54 & 0.54 & 0.53 & 0.52 & 0.48 & 0.48\\
 married & 0.19 & 0.20 & 0.27 & 0.27 & 0.44 & 0.43\\
 white & 0.60 & 0.60 & 0.51 & 0.51 & 0.48 & 0.46\\
 median income & 63916.50 & 68341.77 & 48446.03 & 50195.39 & 64326.67 & 61341.20\\
+\addlinespace
 median rent & 1229.51 & 1319.33 & 1000.13 & 1056.72 & 1167.82 & 1194.26\\
+population density & 29724.92 & 31188.73 & 12032.03 & 12864.39 & 10300.26 & 10715.10\\
 \bottomrule
 \end{tabular}
 \end{table}
 
+
 On average, tracts in gay neighborhoods are more educated, and have become more educated. They are skewed more male than other tracts, have fewer different-sex married couples, and are whiter, but these characteristics do not change much, on average, in the short window of time covered by my data. Economically, they start off with higher median incomes and rents, and these also increase. The excluded tracts with gay bars fall between on demographic characteristics, and below on economic characteristics.
 
-Next, I illustrate systematic variation by looking at each gay neighborhood relative to its own context. This is what I show in Figure 3 for the four demographic characteristics, plotting neighborhood-level characteristics against those same characteristics at the county level.[^county_medians] Here I move from presenting results about Census tracts to presenting results for gay neighborhoods, which are clusters of tracts as defined previously.
+To better illustrate this systematic variation, I examine each gay neighborhood relative to its own context. This is what I show in Figure 3 for the four demographic characteristics, plotting neighborhood-level characteristics against those same characteristics at the county level.[^county_medians] Here I move from presenting results about Census tracts to presenting results for gay neighborhoods, which are clusters of tracts as defined previously.
 
 [^county_medians]: I have not yet obtained county-level data for median income or median rent, but plan to do so. These cannot be calculated directly from tract-level data.
 
 ![Gay neighborhoods in context. Red lines represent parity.](../../output/figures/demographic_comparison.png)
 
-These gay neighborhoods systematically differ from their broader urban contexts. They are whiter, more male, more educated, and less married. All of this conforms to our expectations and preconceptions for gay neighborhoods. Though I do not measure the individual cooccurrence of these traits, and I of course cannot measure sexual orientation, these trends are consistent with the idea that these neighborhoods are spaces for white, middle-class, gay men.
+These gay neighborhoods differ systematically from their broader urban contexts. They are whiter, more male, more educated, and less married. All of this conforms to our expectations and preconceptions for gay neighborhoods. Though I do not measure the individual cooccurrence of these traits, and I of course cannot measure sexual orientation, these trends are consistent with the idea that these neighborhoods are spaces for white, middle-class, gay men.
 
-The scale of variation differs by variable. Counties are clustered tightly at a little under 50% male; gay neighborhoods occupy a narrow range from 50% to 60% male. By contrast, there is much more heterogeneity in how white a county and its corresponding gay neighborhoods are.
+The scale of variation differs by variable. Counties are clustered tightly at just under 50% male; gay neighborhoods occupy a narrow but higher range from 50% to 60% male. By contrast, there is much more heterogeneity in how white a county and its corresponding gay neighborhoods are.
 
 From Figure 3, we also begin to see what change in these neighborhoods looks like. To highlight this process more clearly, I now present bivariate plots of different sets of variables. In these, both axes are neighborhood-level characteristics. Each point is a single neighborhood in either 2006-2010 or 2011-2015, and an arrow connects the earlier observation to the later one for the same neighborhood.
 
 ![Divergent trajectories.](../../output/figures/white_married_2way.png)
 
-Figure 4 presents two demographic characteristics without a single coherent trajectory: the proportion of white individuals and the proportion of different-sex married couple households. One demographic implication of the "there goes the gayborhood" hypothesis is the idea that gay neighborhoods are experiencing an influx and increased prevalence of straight, white, married couples across the board, and that this is what poses a general threat to gay culture and institutions in these spaces.[^prevalence] From these data, this is not necessarily true. Of course, this descriptive finding is subject to the caveat that I am observing a short period of time with noisy data. Further investigation could confirm or undermine this.
+Figure 4 presents two demographic characteristics without a single coherent trajectory: the proportion of white individuals and the proportion of different-sex married couple households. One demographic implication of the "there goes the gayborhood" hypothesis is the idea that gay neighborhoods are experiencing an influx and increased prevalence of straight, white, married couples across the board, and that this is what poses a general threat to gay culture and institutions in these spaces.[^prevalence] From these data, this does not appear to be be consistently true across gay neighborhoods, though that trajectory does appear valid for some well-studied neighborhoods such as Boystown and Andersonville in Chicago. While I only observe change over a short period of time, and the data presented contain noise and measurement error, this suggests one benefit of looking at a broader range of cities and neighborhoods. The model results below will test and refine this finding.
 
-[^prevalence]: Strictly speaking, an influx would refer to counts, and increase prevalence would refer to proportions. If in-migration and displacement is the primary concern, the former matters more; if change in the culture or tone of an area matters more, the latter does. I present the latter here.
+[^prevalence]: Strictly speaking, an influx would refer to counts, and increase prevalence would refer to proportions. If in-migration and displacement is the primary concern, the former matters more; if change in the culture or tone of an area matters more, the latter does. Because my concern is the potential demographic sources of cultural changes, I present the latter here.
 
 ![Coherent trajectories.](../../output/figures/inc_education_2way.png)
 
-The second plot, Figure 5 shows median income, an economic indicator, and education, a demographic trait associated with class. Both of these are associated with processes of gentrification. For these, the trajectories for the majority of gay neighborhoods is clear: they are becoming more educated and wealthier. Recall, as shown above, that these neighborhood begin in the first time period with a more highly educated population than average for their contexts, and with higher rents and incomes. It appears, descriptively, that gay neighborhoods in recent times are generally experiencing changes that strongly resemble gentrification.
+Figure 5 contrasts with Figure 4. This plot shows median income, an economic indicator, and education, a demographic trait associated with class. Both of these are associated with processes of gentrification. For these, the trajectories for the majority of gay neighborhoods is clear: they are becoming more educated and wealthier. Recall, as shown above, that these neighborhood begin in the first time period with a more highly educated population than average for their contexts, and with higher rents and incomes. It appears, descriptively, that gay neighborhoods in recent times are generally experiencing changes consistent with gentrification. Again, the model results below attempt to account for this.
 
-In summary, I have described what gay neighborhoods were like in the recent past, and how they have changed. Gay neighborhoods look different from their contexts, and they share similarities with each other. On some axes of structural change---those consistent with what we might call gentrification---they exhibit consistent trends. On others---those that would allow us to ascribe a clear narrative about the reasons for this change---they do not.
+In summary, I have described what gay neighborhoods were like in the recent past, and how they have changed. Gay neighborhoods look different from their contexts, and they share similarities with each other. On some axes of demographic and economic change---those consistent with what we might call gentrification---they exhibit consistent trends. On others---those that would allow us to ascribe a clear narrative about the reasons for this change---the patterns are not as clear.
 
 While I have deliberately broadened my sample beyond the most prototypical set of cities with gay neighborhoods, I haven also taken care to exclude cities and neighborhoods that do not clearly belong. As a result, the heterogeneity and coherence of different aspects of these neighborhoods are both striking.
 
@@ -107,17 +110,10 @@ To contextualize the magnitude of these associations, I compare them to inter-ci
 
 ![Comparison to random effects.](../../output/figures/ranef_col_edu_rent.png)
 
----
-
 These model results confirm the distinctness of gay neighborhoods in many ways. They differ systematically from other neighborhoods, including neighborhoods that have been selected to be otherwise as similar as possible, in how they have changed from 2006-2010 to 2011-2015. They differ by reaching higher proportions of college-educated, male, and white individuals, higher median incomes, and a lower proportion of married couples than would have been expected had they not been gay neighborhoods.
 
 The implications of this demographic evidence, however, are mixed. Contrary to the expectations of the "there goes the gayborhood" hypothesis, what would make for the clearest signs of gay displacement or straight influx are instead weak, absent, or even reversed. Of note, the lowered proportion of married couples and heightened proportion male suggest that these neighborhoods remain distinctly gay. If straight, married couples were increasingly moving to gay neighborhoods they perceived as newly accessible, we would have expected to see the opposite. This pattern emerges only net of other factors in a statistical model; it is not evident from the much more heterogeneous descriptive data.
 
 At the same time, changes in education level and, to a lesser extent, income are indicative of broader patterns of gentrification in gay neighborhoods. Gay neighborhoods become more educated and wealthier than would be expected if they were not gay, and this trend matches the coherent descriptive trajectories presented above. However, these changes do not automatically signal gay displacement, and they are not matched by corresponding differences in rent or density. Finally, the above-expected increase in proportion of white residents, in neighborhoods that were whiter than average to begin with, might indicate particular concerns for the outcomes of queer people of color.
 
-
-
-For all
-
-to get that amount of demographic change in a short period of time
-seeing even this much change, in this little time, is a surprise
+Ten years is a short period of time in which to observe demographic change; with the five-year averages of the ACS, the effective timespan covered by these observations is even shorter. Given this, and the challenges of estimation with such a small sample of gay neighborhoods, these findings are, if anything, surprisingly clear. Of course, additional data and robustness checks could further solidify these results.
