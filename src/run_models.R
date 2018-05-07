@@ -75,8 +75,8 @@ run_models <- function(outcome, d) {
   
   # list(f, f_gay, f_ml, f_ml_gay)
   
-  m <- lm(f, data = d)
-  m_gay <- lm(f_gay, data = d)
+  m <- glm(f, data = d)
+  m_gay <- glm(f_gay, data = d)
   mlm <- lmer(f_ml, data = d)
   mlm_gay <- lmer(f_ml_gay, data = d)
   
@@ -251,7 +251,7 @@ d_matchit <-
 match_results <- 
   matchit(formula = gay ~ college_educated_2010 + male_2010 + married_2010 + 
             white_2010 + log10(median_rent_2010) + log10(median_income_2010) + 
-            log10(population_density_2010), 
+            log10(population_density_2010) + log10(total_population_2010), 
           data = d_matchit, 
           method = "nearest",
           distance = "mahalanobis", 
@@ -421,7 +421,8 @@ tidied_coefficients %>%
   geom_hline(yintercept = 0) + 
   ggthemes::scale_color_solarized()
 
-tidied_coefficients %>%
+p_coef <- 
+  tidied_coefficients %>%
   filter(term == "gay") %>%
   mutate(data = ifelse(data == "all" & multilevel, "all (multilevel)", data)) %>%
   filter(!multilevel | data == "all (multilevel)") %>%
@@ -460,6 +461,12 @@ tidied_coefficients %>%
        y = "outcome", 
        color = "tracts") 
 
+ggsave(filename = "output/figures/gay_coefficient_plot.png", 
+       plot = p_coef, 
+       width = 8, 
+       height = 8)
+
+# tables of coefficients ----
 library(texreg)
 texreg(m_list_aggregated$m_col_edu_aggregated$m_gay)
 
@@ -471,9 +478,33 @@ texreg(list(m_list$m_col_edu$m_gay,
             m_list_aggregated$m_col_edu_aggregated$m_gay
        ), 
        include.aic = TRUE, 
-       include.bic = TRUE, 
+       include.bic = TRUE,
+       include.deviance = FALSE,
        digits = 3, 
        booktabs = TRUE)
+
+screenreg(list(m_list$m_col_edu$m, 
+               m_list$m_col_edu$m_gay, 
+               m_list$m_col_edu$mlm_gay, 
+               m_list_matched$m_col_edu_matched$m_gay, 
+               m_list_aggregated$m_col_edu_aggregated$m_gay), 
+          custom.coef.names = c( #"intercept", 
+            "proportion college-educated, 2010", 
+            "proportion male, 2010", 
+            "proportion married, 2010", 
+            "proportion white, 2010", 
+            "median rent ($, logged)", 
+            "median income ($, logged)", 
+            "population density (per sq. mi., logged)", 
+            "indicator for gay neighborhood"),
+          # reorder.coef = c(9, 2, 3, 4, 5, 7, 6, 8, 1),
+          reorder.coef = c(8, 1, 2, 3, 4, 6, 5, 7),
+          omit.coef = "(Intercept)",
+          include.aic = TRUE, 
+          include.bic = TRUE,
+          include.deviance = FALSE,
+          digits = 3, 
+          booktabs = TRUE)
 
 stargazer::stargazer(m_list$m_col_edu$m_gay, keep.stat = c("aic", "n"))
 
