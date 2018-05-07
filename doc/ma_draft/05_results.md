@@ -109,31 +109,15 @@ To contextualize the magnitude of these associations, I compare them to inter-ci
 
 ---
 
-Interpretation:
+These model results confirm the distinctness of gay neighborhoods in many ways. They differ systematically from other neighborhoods, including neighborhoods that have been selected to be otherwise as similar as possible, in how they have changed from 2006-2010 to 2011-2015. They differ by reaching higher proportions of college-educated, male, and white individuals, higher median incomes, and a lower proportion of married couples than would have been expected had they not been gay neighborhoods.
 
-These model results confirm the distinctness of gay neighborhoods in many ways. They differ from other neighborhoods, including neighborhoods that have been selected to be otherwise as similar as possible, in how they have changed from 2006-2010 to 2011-2015.
+The implications of this demographic evidence, however, are mixed. Contrary to the expectations of the "there goes the gayborhood" hypothesis, what would make for the clearest signs of gay displacement or straight influx are instead weak, absent, or even reversed. Of note, the lowered proportion of married couples and heightened proportion male suggest that these neighborhoods remain distinctly gay. If straight, married couples were increasingly moving to gay neighborhoods they perceived as newly accessible, we would have expected to see the opposite. This pattern emerges only net of other factors in a statistical model; it is not evident from the much more heterogeneous descriptive data.
 
-demographic evidence is mixed
+At the same time, changes in education level and, to a lesser extent, income are indicative of broader patterns of gentrification in gay neighborhoods. Gay neighborhoods become more educated and wealthier than would be expected if they were not gay, and this trend matches the coherent descriptive trajectories presented above. However, these changes do not automatically signal gay displacement, and they are not matched by corresponding differences in rent or density. Finally, the above-expected increase in proportion of white residents, in neighborhoods that were whiter than average to begin with, might indicate particular concerns for the outcomes of queer people of color.
 
-The clearest signs of displacement---both generally and of LGBTQ populations in particular---are weak or absent.
 
-The lowered proportion of married couples and heightened proportion male suggest that these neighborhoods remain distinct. If straight, married couples were increasingly moving to gay neighborhoods they perceived as newly accessible, we would have seen the opposite.
-
-This pattern emerges only net of other factors; it is not obvious from descriptive data.
-
-At the same time, changes in education level and, to a lesser extent, income are indicative of gentrification more broadly.
-
-These changes do not automatically signal gay displacement, and they are not matched by corresponding differences in rent or density.
-
-(See appendix for full tables of coefficients)
 
 For all
 
 to get that amount of demographic change in a short period of time
-
-
-I don't know what to do with proportion white. why does it magically turn significant when I aggregate?
-
-compare to other coefficients
-
-compare to random effects---between-city heterogeneity
+seeing even this much change, in this little time, is a surprise
