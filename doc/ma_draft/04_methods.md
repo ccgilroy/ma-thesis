@@ -45,26 +45,52 @@ A second aspect of filtering my data is to curate the number of cities I include
 
 ## Variable selection
 
-I select six specific variables from the ACS, driven by two factors: the kinds of changes I expect to see, and a focus on normative or privileged categories.
+I select seven specific variables from the ACS, driven by two factors: the kinds of changes I expect to see, and a focus on normative or privileged categories. [THIS IS NOT A GOOD EXPLANATION]
 
 In terms of demographic characteristics, I select counts and calculate proportions. I use *male* and non-Hispanic *white*. I also use *college-educated*, meaning with a bachelors degree or graduate/professional degree, and *married*, referring only to different-sex married couples. The Census Bureau recodes same-sex married couples to unmarried partners.
 
-I select two variables as economic indicators, *median rent* and *median income.* The latter is median household income. Where I present numbers, I have converted the 2010 values to 2015 dollars, using the conversion factor recommended by the Census for comparison. Where I combine tracts, I take a simple average of medians.
+but proportion owner-occupied housing is anticipated to be low for gay neighborhoods, which are comprised primarily of renters. [ARE THEY?]
+
+I select two variables as economic indicators, *median rent* and *median income.* The latter is median household income. Where I present numbers, I have converted the 2010 values to 2015 dollars, using the conversion factor recommended by the Census for comparison. Where I combine tracts, I take a population-weighted average of medians.
 
 ## Modeling strategies[^modeling]
 
 [^modeling]: I have not yet implemented these models in all their variations. I plan to fit a range of models, beginning with ordinary least squares regression, and moving toward more complex multilevel models. In addition to models using matched neighborhoods, I plan to fit models incorporating all tracts as a baseline and robustness check.
 
-My overarching question is whether gay neighborhoods show patterns of change like each other, because they are gay neighborhoods, or whether they are instead more similar to other neighborhoods in their respective cities. Another way to put this is, does the fact that these are specifically gay neighborhoods matter for the kinds of contextual changes they experience?
+My overarching question is whether gay neighborhoods show patterns of change like each other, because they are gay neighborhoods, or whether they are instead more similar to other neighborhoods in their respective cities. Put another way, does the fact that these are specifically gay neighborhoods matter for the kinds of contextual changes they experience?
 
-The research design for my proposed modeling strategy is oriented toward answering the theoretical question I posed in two principal ways. First, because I am examining neighborhoods across different cities, a *multilevel model* is appropriate [@mcelreath_statistical_2016]. Neighborhoods, both gay and otherwise, are grouped together statistically within their respective cities. This allows me to assess whether between-city variation is more important than variation between gay and other neighborhoods.
+For my research design, I adopt two principal modeling strategies, each oriented toward answering the theoretical question I posed. First, because I am examining neighborhoods across different cities, a *multilevel model* is potentially appropriate [@mcelreath_statistical_2016]. Neighborhoods, both gay and otherwise, are grouped together statistically within their respective cities and counties. This allows me to assess whether between-city variation is more important than variation between gay and other neighborhoods.
 
-Second, a *matching* strategy is necessary. Using Mahalanobis distance or propensity score matching [@stuart_matching_2010] within cities, I will construct neighborhoods that are contextually comparable to each gay neighborhood during the 2006-2010 time period, except in terms of the presence or absence of gay bars, and use only this subset in my models. By focusing on comparison with a subset of neighborhoods that are generally similar, I improve my ability to make claims about whether or not the cultural and institutional gayness of these neighborhoods is an important factor for change.
+Second, a *matching* strategy is necessary. Using Mahalanobis distance matching [@stuart_matching_2010] within cities, I construct synthetic neighborhoods that are demographically and economically comparable to each gay neighborhood during the 2006-2010 time period, except in terms of the presence or absence of gay bars.
 
-These models will take the following form, using the variables above and an indicator for whether or not a neighborhood is a gay neighborhood:
+gay bars excluded as candidates for matching, no geographic clustering of matched tracts
+
+I fit use only this subset in my models. By focusing on comparison with a subset of neighborhoods that are generally similar, I improve my ability to make claims about whether or not the cultural and institutional gayness of these neighborhoods is an important factor for change.
+
+I use the MatchIt R package [CITE]
+
+I match on the seven model covariates in 2006-2010, as well as on total tract population, to ensure that not only individual tracts but also their aggregations are comparable.
+
+match within cities.
+
+nearest-neighbor matching ; covariation and comparable scales
+
+because it is multidimensional, it provides better overall matches than propensity score matching, which matches on a unidimensional scale
+
+These models take the following forms, using the variables above and an indicator for whether or not a neighborhood is a gay neighborhood:
 
 $$x_{t+1} \sim \mathcal{N}(\alpha_{city} + \beta_1 gay_{t} + \beta_2 x_{t} + X\beta_{controls}, \sigma^2)$$
 $$\alpha_{city} \sim \mathcal{N}(\alpha, \sigma_\alpha^2)$$
+
+or
+
+$$x_{t+1} \sim \mathcal{N}(\alpha + \beta_1 gay_{t} + \beta_2 x_{t} + X\beta_{controls}, \sigma^2)$$
+
+What this means is that I adopt a multilevel modeling approach or a matching-based approach, but not both simultaneously.
+
+within the limitations of statistical power, etc; I can't get much more complicated than this
+
+I do not use beta regression to model proportions, in order to keep my fully pooled models comparable to my multilevel models, and simplify interpretation.
 
 Two other complexities to potentially implement are to allow for the correlation of errors and to incorporate uncertainty deriving from measurement. As my earlier discussion of neighborhood change suggests, I expect that different kinds of changes might be correlated with each other. I can allow for that possibility by putting a correlation matrix on the error terms of the equations, creating what economists call Seemingly Unrelated Regressions [@zellner_direct_2010]. Finally, so as not to overstate the certainty of my models, the most appropriate modeling strategy would also incorporate the margins of error associated with the ACS estimates [@mcelreath_statistical_2016].[^complexity] These are important ideas, but not essential ones.
 
