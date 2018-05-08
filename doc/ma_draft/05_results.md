@@ -57,7 +57,6 @@ population density & 29724.92 & 31188.73 & 12032.03 & 12864.39 & 10300.26 & 1071
 \end{tabular}
 \end{table}
 
-
 On average, tracts in gay neighborhoods are more educated, and have become more educated. They are skewed more male than other tracts, have fewer different-sex married couples, and are whiter, but these characteristics do not change much, on average, in the short window of time covered by my data. Economically, they start off with higher median incomes and rents, and these also increase. The excluded tracts with gay bars fall between on demographic characteristics, and below on economic characteristics.
 
 To better illustrate this systematic variation, I examine each gay neighborhood relative to its own context. This is what I show in Figure 3 for the four demographic characteristics, plotting neighborhood-level characteristics against those same characteristics at the county level.[^county_medians] Here I move from presenting results about Census tracts to presenting results for gay neighborhoods, which are clusters of tracts as defined previously.
