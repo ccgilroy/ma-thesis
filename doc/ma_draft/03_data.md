@@ -59,4 +59,4 @@ The most salient limitation this creates is on the use of same-sex couples data.
 
 [^2015]: https://www.census.gov/programs-surveys/acs/guidance/comparing-acs-data/2015/5-year-comparison.html
 
-I use the `tidycensus` R package to retrieve ACS data for all tracts in all counties containing gay bars.
+I use the `tidycensus` R package [@walker_tidycensus:_2018] to retrieve ACS data for all tracts in all counties containing gay bars.
