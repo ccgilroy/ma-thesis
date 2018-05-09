@@ -53,7 +53,7 @@ However, the fact that the ACS is a survey and not a complete count comes with l
 
 The most salient limitation this creates is on the use of same-sex couples data. Even in tracts with relatively large numbers of same-sex couple households, they remain only a small proportion of the population. Due to the disparity in group sizes, small random errors in different-sex couples recording the genders of spouses or partners result in a large inflation in counts of same-sex couples [@oconnell_same-sex_2011]. To attempt to mitigate this problem, the Census Bureau improved its form design and made changes to its coding practices, resulting in a decreased error rate, between 2007 and 2008.[^2007] A consequence of this change is that it is not meaningful to compare counts of same-sex couples between the 2006-2010 5-year data and the 2011-2015 5-year data.[^2015] Therefore, I do not make this comparison.
 
-[^decennial]: In subsequent analyses, I plan to incorporate 2000 and 2010 decennial Census data. Tract geographies change between 2000 and 2010.
+[^decennial]: Decennial Census data, of course, would not have this problem of survey error, but poses other challenges in examining change, including the fact that tract geographies change between 2000 and 2010.
 
 [^2007]: https://www2.census.gov/topics/families/same-sex-couples/guidance/changes-to-acs-2007-to-2008.pdf
 
