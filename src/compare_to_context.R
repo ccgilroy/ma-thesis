@@ -96,7 +96,7 @@ compare_prop <-
             suffix = c("", "_city"))
 
 compare_prop %>%
-  filter(!label %in% c("total population", "median income", "median rent")) %>% 
+  filter(!label %in% c("total population", "median income", "median rent", "population density")) %>% 
   ggplot(aes(x = estimate, y = estimate_city, color = year,
              group = component)) + 
   geom_point() + 
@@ -109,7 +109,7 @@ compare_prop %>%
 
 plot_demographic_comparison <- 
   compare_prop %>%
-  filter(!label %in% c("total population", "median income", "median rent")) %>% 
+  filter(!label %in% c("total population", "median income", "median rent", "population density")) %>% 
   ggplot(aes(x = estimate, y = estimate_city, # color = year,
              group = component)) + 
   geom_path(arrow = arrow(angle = 15, ends = "last", length = unit(.05, "inches"), type = "closed")) +

@@ -198,8 +198,8 @@ ggsave(filename = "output/figures/ranef_col_edu_rent.png",
 
 # stan ----
 
-library(rstanarm)
-m2_b <- stan_glm(f2, data = d)
+# library(rstanarm)
+# m2_b <- stan_glm(f2, data = d)
 # multilevel model is too slow to run
 # mlm <- stan_glmer(college_educated_2015 ~ college_educated_2010 + (1|city), data = d)
 # ml_m2_b <- stan_lmer(update(f2, . ~ . + (1 | city)), data = d)
@@ -506,6 +506,17 @@ ggsave(filename = "output/figures/gay_coefficient_plot.png",
        width = 8, 
        height = 8)
 
+p_coef_wide <- 
+  p_coef + 
+  facet_wrap(~ outcome, scale = "free_y", ncol = 2, dir = "v") +
+  theme(strip.text = element_blank())
+
+ggsave(filename = "output/figures/gay_coefficient_plot_wide.png", 
+       plot = p_coef_wide, 
+       width = 10, 
+       height = 5)
+
+
 # tables of coefficients ----
 library(texreg)
 texreg(m_list_aggregated$m_col_edu_aggregated$m_gay)
@@ -573,6 +584,13 @@ m_table_dens <-
        m_list_aggregated$m_dens_aggregated$m_gay)
 
 screenreg(m_table_rent, 
+          custom.model.names = c(
+            "Baseline", 
+            "All tracts", 
+            "Multilevel", 
+            "Matched tracts", 
+            "Aggregated tracts"
+          ),
           custom.coef.names = c( #"intercept", 
             "proportion college-educated, 2010", 
             "proportion male, 2010", 
@@ -591,7 +609,53 @@ screenreg(m_table_rent,
           digits = 3, 
           booktabs = TRUE)
 
+make_tex_model_table <- function(models, table_caption) {
+  texreg(models, 
+         custom.model.names = c(
+           "Baseline", 
+           "All tracts", 
+           "Multilevel", 
+           "Matched", 
+           "Aggregated"
+         ),
+         custom.coef.names = c( #"intercept", 
+           "prop. college-educated, 2010", 
+           "proportion male, 2010", 
+           "proportion married, 2010", 
+           "proportion white, 2010", 
+           "median rent (\\$, logged)", 
+           "median income (\\$, logged)", 
+           "pop. density (per sq. mi., logged)", 
+           "indicator for gay neighborhood"),
+         reorder.coef = c(8, 1, 2, 3, 4, 6, 5, 7),
+         omit.coef = "(Intercept)",
+         include.aic = TRUE, 
+         include.bic = TRUE,
+         include.deviance = FALSE,
+         digits = 3, 
+         booktabs = TRUE, 
+         caption = table_caption, 
+         caption.above = TRUE, 
+         float.pos = "h!")
+}
+
+make_tex_model_table(m_table_col_edu, "Outcome - proportion college-educated, 2015")
+
+make_tex_model_table(m_table_male, "Outcome - proportion male, 2015")
+
+make_tex_model_table(m_table_married, "Outcome - proportion married, 2015")
+
+make_tex_model_table(m_table_white, "Outcome - proportion white, 2015")
+
+make_tex_model_table(m_table_inc, "Outcome - median income, 2015 (\\$, logged)")
+
+make_tex_model_table(m_table_rent, "Outcome - median rent, 2015 (\\$, logged)")
+
+make_tex_model_table(m_table_dens, "Outcome - population density (per sq. mi. logged)")
+
 stargazer::stargazer(m_list$m_col_edu$m_gay, keep.stat = c("aic", "n"))
+
+# TODO: make alternate table of averages for JUST modeled tracts
 
 # buffer ----
 library(sf)

@@ -132,3 +132,42 @@ mapshot(map_miami,
 #   addPolygons(label = ~as.character(bars), 
 #               opacity = 1, fillOpacity = .5, 
 #               color = "#BD0026") 
+
+# cities in analysis ----
+included_cities <- qual_filtered_components_labeled$city %>% unique()
+
+map_all_cities <- 
+  gaycities_geocoded_all %>%
+  filter(city %in% included_cities) %>%
+  group_by(city) %>%
+  summarise(lat = first(lat), lng = first(lng)) %>%
+  leaflet() %>%
+  addProviderTiles("CartoDB.Positron") %>%
+  addCircles(color = "#611bb8",    
+             opacity = 1, fillOpacity = .5) %>%
+  addLabelOnlyMarkers(label = ~as.character(city),
+                      labelOptions = labelOptions(noHide = TRUE))
+
+mapshot(map_all_cities, 
+        file = file.path(here::here(), "output/figures/map_all_cities.png"), 
+        vwidth = 837, vheight = 558)
+  
+# directional patterns ----
+# `groups` comes from plot_descriptives.R
+directional_patterns <- read_csv("data/census/directional_patterns.csv")
+
+qual_filtered_components_labeled %>%
+  left_join(directional_patterns, by = c("neighborhood_label", "city", "component")) %>%
+  leaflet() %>%
+  addProviderTiles("CartoDB.Positron") %>%
+  addPolygons(label = ~str_c(neighborhood_label, ": ", gentrification), 
+              opacity = 1, fillOpacity = .5, 
+              color = ~colorFactor("Set1", gentrification)(gentrification))
+
+qual_filtered_components_labeled %>%
+  left_join(directional_patterns, by = c("neighborhood_label", "city", "component")) %>%
+  leaflet() %>%
+  addProviderTiles("CartoDB.Positron") %>%
+  addPolygons(label = ~str_c(neighborhood_label, ": ", assimilation), 
+              opacity = 1, fillOpacity = .5, 
+              color = ~colorFactor("Set1", assimilation)(assimilation))

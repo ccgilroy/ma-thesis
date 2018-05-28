@@ -16,16 +16,27 @@ source("src/load_acs_variable_data.R")
 
 # summarise from tracts to components ----
 # TODO: decide if I want to use weighted averages by total population
+weights <- 
+  main_data_gay_qual %>%
+  filter(label == "total population") %>%
+  select(GEOID, year,
+         weight = estimate, 
+         weight_moe = moe)
+
+# this still doesn't make sense!
+
 qual_summarised <- 
   main_data_gay_qual %>%
+  left_join(weights, by = c("GEOID", "year")) %>%
   group_by(component, csize, neighborhood_label, 
            state, city, year, variable, label) %>%
   summarise(estimate_mean = mean(estimate), 
             estimate_sd = sd(estimate),
+            estimate_weighted = sum(estimate * weight) / sum(weight),
             estimate = sum(estimate), 
-            moe = moe_sum(moe),
+            moe = moe_sum(moe, estimate = estimate),
             summary_est = sum(summary_est), 
-            summary_moe = moe_sum(moe),
+            summary_moe = moe_sum(moe, summary_est),
             bars = sum(bars)) %>%
   mutate(prop = estimate/summary_est, 
          prop_moe = moe_prop(estimate, summary_est, moe, summary_moe)) 
@@ -34,6 +45,8 @@ qual_summarised <-
 # summary = sum
 # medians = average
 # props = recalc prop
+# population-weighted mean = ???
+# need separate data set of population, call it "weight"
 
 # works for everything except averages
 
@@ -43,7 +56,7 @@ usd_vars <- c("median income", "median rent")
 
 qual_summarised <- 
   qual_summarised %>%
-  mutate(estimate = ifelse(label %in% usd_vars, estimate_mean, estimate), 
+  mutate(estimate = ifelse(label %in% usd_vars, estimate_weighted, estimate), 
          estimate = ifelse(label %in% usd_vars & year == "2006-2010", 
                            estimate*conversion_factor, estimate)) 
 
@@ -255,6 +268,111 @@ plot_male_married_2way <-
              hjust = 0.25, vjust = 0, 
              nudge_x = .001, nudge_y = .001)
 
+groups <- 
+  qual_prop_wide %>%
+  select(year, neighborhood_label, city, component,
+         male, married, `college educated`, `median income`) %>%
+  group_by(neighborhood_label, city, component) %>%
+  summarise_at(vars(male, married, `college educated`, `median income`), 
+               function(x) last(x) - first(x)) %>%
+  mutate(assimilation = case_when(
+    male < 0 & married < 0 ~ "male -, married -",
+    male > 0 & married < 0 ~ "male +, married -",
+    male < 0 & married > 0 ~ "male -, married +", 
+    male > 0 & married > 0 ~ "male +, married +"
+  )) %>% 
+  mutate(gentrification = case_when(
+    `college educated` < 0 & `median income` < 0 ~ "education -, income -", 
+    `college educated` > 0 & `median income` < 0 ~ "education +, income -", 
+    `college educated` < 0 & `median income` > 0 ~ "education -, income +", 
+    `college educated` > 0 & `median income` > 0 ~ "education +, income +"
+  ))
+
+groups_assimilation <- 
+  groups %>%
+  ungroup() %>%
+  select(component, assimilation)
+
+groups_gentrification <- 
+  groups %>%
+  ungroup() %>%
+  select(component, gentrification)
+
+# married X male - color by direction
+plot_male_married_2way_colored <- 
+  qual_prop_wide %>%
+  left_join(groups_assimilation, by = c("component")) %>%
+  ggplot(aes(x = male, y = married, group = component, color = assimilation)) + 
+  geom_path(arrow = arrow(angle = 15, ends = "last", length = unit(.05, "inches"), type = "closed")) +
+  labs(title = "Changes in proportion male and proportion married in gay neighborhoods", 
+       subtitle = "Comparing neighborhood-level values for each characteristic",
+       caption = "Arrows connect a neighborhood in 2006-2010\nto the same neighborhood in 2011-2015", 
+       x = "proportion male (individuals)", 
+       y = "proportion in different-sex marriage (households)") + 
+  theme_minimal() +
+  scale_color_brewer(type = "qual", palette = "Set1") +
+  guides(color = guide_legend(title = NULL))
+
+ggsave("output/figures/male_married_colored.png", plot_male_married_2way_colored,
+       width = 8, height = 5)
+
+trad_cities <- c("Chicago", "San Francisco", "New York", "Seattle", "Los Angeles", "Boston")
+# and/or LA and/or Boston, following Levine
+qual_prop_wide %>%
+  left_join(groups_assimilation, by = c("component")) %>%
+  filter(city %in% trad_cities) %>%
+  ggplot(aes(x = male, y = married, group = component, color = assimilation)) + 
+  geom_path(arrow = arrow(angle = 15, ends = "last", length = unit(.05, "inches"), type = "closed")) +
+  labs(title = "Changes in proportion male and proportion married in gay neighborhoods", 
+       subtitle = "Comparing neighborhood-level values for each characteristic",
+       caption = "Arrows connect a neighborhood in 2006-2010\nto the same neighborhood in 2011-2015", 
+       x = "proportion male (individuals)", 
+       y = "proportion in different-sex marriage (households)") + 
+  theme_minimal() +
+  scale_color_brewer(type = "qual", palette = "Set1") +
+  guides(color = guide_legend(title = NULL)) 
+
+qual_prop_wide %>%
+  left_join(groups_assimilation, by = c("component")) %>%
+  filter(city %in% trad_cities) %>% 
+  filter(year == "2011-2015") %>%
+  select(neighborhood_label, city, assimilation) %>% 
+  arrange(assimilation)
+
+# a large number of these places are getting more male and more married
+# Andersonville, ironically, is the only one that shows a pattern of assimilation 
+# in this time period...
+# SF is getting more male, less married, which is consistent with TECH BRO
+# LOTS are getting more male AND more married, which is plausible thinking about
+# the economic clout of men vs women, but still odd (odd is what I want, though)
+# the ones that start relatively low on both are most prone to increases. 
+# the two that get more married, less male, are the ones that were most married to begin with
+# (i.e. the least gayborhood)
+
+# there are no -, - cities in the traditional group
+# those are ... mostly Florida, again. 
+
+qual_prop_wide %>%
+  left_join(groups_gentrification, by = c("component")) %>%
+  filter(city %in% trad_cities) %>% 
+  filter(year == "2011-2015") %>%
+  select(neighborhood_label, city, gentrification) %>% 
+  arrange(gentrification)
+
+qual_prop_wide %>%
+  left_join(groups_gentrification, by = c("component")) %>%
+  filter(year == "2011-2015") %>%
+  select(neighborhood_label, city, gentrification, `college educated`, `median income`) %>% 
+  arrange(gentrification)
+
+# (basically) nowhere has its education and income go down
+# a couple places, mostly LA, have income go down, lol
+# everywhere else it goes up
+# story gets a little more complicated if we add all of the places
+# those two most educated places that also decrease in income are 
+# West Hollywood and Hell's Kitchen ... two places that we think
+# from other sources remain pretty gay (HK is a new gayborhood in Ghaziani's terms)
+
 ggsave("output/figures/white_married_2way.png", plot_white_married_2way,
        width = 8, height = 5)
 
@@ -323,10 +441,31 @@ plot_inc_education_2way <-
 ggsave("output/figures/inc_education_2way.png", plot_inc_education_2way,
        width = 8, height = 5)
 
+plot_inc_education_2way_colored <- 
+  qual_prop_wide %>%
+  left_join(groups_gentrification, by = c("component")) %>%
+  ggplot(aes(x = `median income`, y = `college educated`, group = component, color = gentrification)) + 
+  geom_path(arrow = arrow(angle = 15, ends = "last", length = unit(.05, "inches"), type = "closed")) +
+  labs(title = "Changes in median income and proportion college educated in gay neighborhoods", 
+       subtitle = "Comparing neighborhood-level values for each characteristic",
+       caption = "Arrows connect a neighborhood in 2006-2010\nto the same neighborhood in 2011-2015", 
+       x = "median income, 2015 dollars", 
+       y = "proportion college-educated") +
+  theme_minimal() + 
+  scale_color_brewer(type = "qual", palette = "Set1") +
+  guides(color = guide_legend(title = NULL))
+
+ggsave("output/figures/inc_education_colored.png", plot_inc_education_2way_colored, 
+       width = 8, height = 5)  
+
+# looking at more or fewer doesn't change the story
+# Florida doesn't look great, but otherwise...
 
 # qual_prop_wide %>%
 #   filter(year == "2006-2010") %>%
 #   select()
+
+write_csv(groups, "data/census/directional_patterns.csv")
   
 # maps ----
 library(leaflet)
@@ -477,7 +616,7 @@ library(kableExtra)
 kable(mx, 
       format = "latex", 
       booktabs = TRUE, 
-      caption = "Average values for tracts", 
+      caption = "Average values for all tracts", 
       align = "r", 
       digits = 2) %>%
   add_header_above(c(" ", 
