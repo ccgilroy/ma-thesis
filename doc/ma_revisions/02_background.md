@@ -1,7 +1,7 @@
 ---
 ---
 
-# Main argument
+# Main argument for background
 
 - say what I'm doing in this section overall: providing necessary background on gay neighborhood formation and change
 - formation/origins/initial gentrification/time period
@@ -16,7 +16,13 @@
 
 # Background and significance
 
-I briefly describe the origins of gay neighborhoods, in order to elaborate on the themes of gentrification and assimilation introduced above. I discuss the existing evidence for change in gay neighborhoods, and assess the degree to which that evidence supports claims of assimilation or gentrification.
+[I think Kate still wants this part to be "more general". I don't think there's anything to say at the more abstract level.]
+
+[Ghaziani literally summarizes five classes of explanation for gay neighborhood formation and change in his introduction and footnotes, pp 290-291. what's the point of me rehashing all of this?]
+
+[What the hell do I get out of bringing up the origins of gay neighborhoods, and the analogies to other types of neighborhoods?]
+
+I briefly describe the origins of gay neighborhoods, in order to elaborate on the themes [possibilities] of gentrification and assimilation introduced above. I discuss the existing evidence for change in gay neighborhoods, and assess the degree to which that evidence supports claims of assimilation or gentrification.
 
 How is the status of gay neighborhoods today thought to differ from when they first formed? Have the meaning and impact of gay neighborhoods on LGBTQ lives evolved over time as well?
 
@@ -26,7 +32,7 @@ Finally, I outline my intended contribution to this literature.
 
 ## Origins
 
-Gay neighborhoods are urban places with concentrations of gay residents, gay institutions, and gay culture [@levine_gay_1979; @ghaziani_there_2014; @ghaziani_measuring_2014]. They have existed in various American cities since at least the second half of the 20th century [@berube_my_2011; @demilio_capitalism_1992; @ghaziani_there_2014]. They arose to provide safety and visibility for LGBTQ people, and provided a defined space in which to build both a sense of community and political clout [@castells_cultural_1983; @armstrong_forging_2002; @hanhardt_safe_2013; @stewart-winter_queer_2016]. Gay neighborhoods have become a common feature of major cities, an urban type. In the 1970s, only three of the neighborhoods that @levine_gay_1979 investigates across five cities possessed all of the traits necessary to be gay neighborhoods in the sociological sense: the Castro in San Francisco, the West Village in New York, and West Hollywood in Los Angeles. By the 2000s, @ghaziani_there_2014 [2] can cite the existence of a dozen neighborhoods across as many cities. Known, visible gay neighborhoods have become established and have proliferated in the past several decades.
+Gay neighborhoods are urban places with concentrations of gay residents, gay institutions, and gay culture [@levine_gay_1979; @ghaziani_there_2014; @ghaziani_measuring_2014]. They have existed in various American cities since at least the second half of the 20th century [@berube_my_2011; @demilio_capitalism_1992; @ghaziani_there_2014]. They arose to provide safety and visibility for LGBTQ people, and provided a defined space in which to build both a sense of community and political clout [@castells_cultural_1983; @armstrong_forging_2002; @hanhardt_safe_2013; @stewart-winter_queer_2016]. Gay neighborhoods have become a common feature of major cities, an urban type. In the 1970s, only three of the neighborhoods that @levine_gay_1979 investigates across five cities possessed all of the traits necessary to be gay neighborhoods in the sociological sense: the Castro in San Francisco, the West Village in New York, and West Hollywood in Los Angeles. Other neighborhoods, such as New Town in Chicago, possessed only some of these characteristics (people, institutions, culture, and isolation), and were accordingly perceived to be gay neighborhoods in varying degrees. By the 2000s, however, @ghaziani_there_2014 [2] can cite the existence of a dozen neighborhoods across as many cities. Known, visible gay neighborhoods have become established and have proliferated in the past several decades.
 
 **Gay neighborhoods are thought to originate in an initial wave of gentrification.** Working-class neighborhoods with run-down housing stock are renovated by gay newcomers, often with only modest capital [@castells_cultural_1983; @lauria_toward_1985]. This explanation invokes stereotyped traits of gay male aesthetic tastes and the pioneering handiness of lesbians [@ghaziani_there_2014, 231-232]. The "amenities" produced in this way make once-undesirable neighborhoods more generally attractive.
 
@@ -49,13 +55,11 @@ In this model, gay neighborhoods play a specific intermediate role in urban chan
 This stage model implies that
 Different gay neighborhoods could exist simultaneously in different stages of "development," even within the same city. In fact, over long periods of time gay neighborhoods do move; "new" and "next" gay neighborhoods emerge in cities like Chicago and New York [@ghaziani_there_2014].
 
-**assimilation goes here**?
-
-if, by contrast, gay neighborhoods have generally become "passé" [@brown_gay_2007]
+acceptance -> assimilation? [integration]
 
 But are gay neighborhood as urban form bound to a particular historical moment in time, and therefore "passé"?
 
-Since the formation of gay neighborhoods, LGBTQ people in the United States have won social and political victories. Legal achievements include the full decriminalization of homosexuality in 2003, and marriage equality in 2015. Socially, an unusually rapid shift in public opinion has taken place, with majorities now approving of homosexuality and same-sex marriage [@rosenfeld_moving_2017].
+Rather than only responding to possibly heterogeneous local urban trends, gay neighborhoods may have become more generally "passé" [@brown_gay_2007], because of recent historical changes. In other words, **increasing acceptance might lead to spatial assimilation and cultural integration.** Gay neighborhoods formed in response to stigma. But, since the formation of gay neighborhoods, LGBTQ people in the United States have won social and political victories. Legal achievements include the full decriminalization of homosexuality in 2003, and marriage equality in 2015. Socially, an unusually rapid shift in public opinion has taken place, with majorities now approving of homosexuality and same-sex marriage [@rosenfeld_moving_2017].
 
 These national changes affect the urban places where LGBTQ people live. If one of the defining characteristics of "gay ghettos" was social isolation from mainstream American life [@levine_gay_1979], this isolation could now be coming to an end. For LGBTQ residents of gay neighborhoods, reduced stigma and increasing acceptance may remove the external social forces limiting their residential options. For straight urbanites, as disgust gives way to tolerance or progressiveness, the prospect of living in a gay neighborhood may come to seem attractive rather than outré. The net result of this shift would be a pattern of residential assimilation.
 
@@ -81,7 +85,9 @@ Qualitative work documents changes in bars and street life in both San Francisco
 
 The most compelling evidence that gay neighborhood change is widespread comes from two studies examining Atlanta and Dallas. Both are major cities in the South, and fall outside the cities that figure most prominently in journalism and research on gay neighborhood change.
 
-@doan_demise_2011
+In Midtown, Atlanta, @doan_demise_2011 find
+
+gentrification and affordability of housing
 
 @smart_there_2016
 
@@ -89,7 +95,7 @@ Nevertheless, they say, listings are still centered on the historic gay neighbor
 
 [final sentence/bridge here]
 
-; since @levine_gay_1979, no single researcher has examined even five cities concurrently.
+; since @levine_gay_1979, no single researcher has examined even five cities concurrently. [outside of review articles]
 
 **By contrast, demographic evidence of assimilation is too broad.** Studies of same-sex couples in urban areas do not examine gay neighborhoods specifically. At the metropolitan-area level, demographic research has shown a decline in segregation between same-sex and different-sex couples [@spring_declining_2013]. Unlike the present study, this research does not directly observe the demographics of gay neighborhoods. However, Spring argues that it indirectly implies assimilation in those neighborhoods. She examines 100 metropolitan areas, but she does not claim or demonstrate that all of those places contain gay neighborhoods.
 
@@ -175,6 +181,4 @@ better establishing the geographic extent of recent gay neighborhood change will
 
 Not structurally equivalent.
 
-
-
-**do scope conditions go here, or in the data section?**
+**name scope conditions go here, or in the data section?** (lesbians, rurality)
