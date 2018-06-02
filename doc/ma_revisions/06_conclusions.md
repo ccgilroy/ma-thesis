@@ -8,9 +8,9 @@
 
 **There are shortcomings to the fact that I cannot measure neighborhood residents' sexualities directly.**
 
-Influx of young, single, male technology workers who are straight would be demographically indistinguishable
+Influx of young, single, male technology workers who are straight would be demographically indistinguishable. except possibly in terms of income. 
 
-In the West Coast cities of San Francisco and Seattle, this demographic is consequential.
+In the West Coast cities of San Francisco and Seattle, this "tech bro" demographic is consequential [@herzog_amazon_2015].
 
 
 **The time scale is an issue.**

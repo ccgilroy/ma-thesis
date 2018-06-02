@@ -35,8 +35,10 @@ this is *why* I can do more than five cities.
 
 Census tracts are not neighborhoods
 
+**yes to lesbians, no to rural areas**
+
 ## Change and matching
 
-
+**why not same-sex couple households?** the error rates are too damn high. cannot compare change over time.
 
 **matched tracts are not contiguous**, unlike gay neighborhood tracts
