@@ -172,3 +172,7 @@ the methods problem here is the relationship between numbers and meaning
 I didn't appreciate that Levine was 28 when his paper came out.
 
 https://www.nytimes.com/1993/04/07/obituaries/martin-p-levine-42-a-sociologist-is-dead.html
+
+cite this thing because it's awesome:
+
+Hwang, Jackelyn. 2016. “The Social Construction of a Gentrifying Neighborhood: Reifying and Redefining Identity and Boundaries in Inequality.” Urban Affairs Review 52(1):98–128.

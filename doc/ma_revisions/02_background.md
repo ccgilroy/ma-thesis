@@ -34,27 +34,15 @@ Finally, I outline my intended contribution to this literature.
 
 Minority neighborhoods contain not only residents of that group, but also group institutions and a visible local predominance of the group's culture [@wirth_ghetto_1928]. Accordingly, gay neighborhoods are urban places with concentrations of gay residents, gay institutions, and gay culture [@levine_gay_1979; @ghaziani_there_2014; @ghaziani_measuring_2014]. While not as long-established as Jewish and other immigrant neighborhoods [@wirth_ghetto_1928], they have existed in various American cities since at least the second half of the 20th century [@berube_my_2011; @demilio_capitalism_1992; @ghaziani_there_2014]. They arose to provide safety and visibility for LGBTQ people, and provided a defined space in which to build both a sense of community and political clout [@castells_cultural_1983; @armstrong_forging_2002; @hanhardt_safe_2013; @stewart-winter_queer_2016]. Gay neighborhoods have become a common feature of major cities, an urban type. In the 1970s, only three of the neighborhoods that @levine_gay_1979 investigates across five cities possessed all of the traits necessary to be gay neighborhoods in the sociological sense: the Castro in San Francisco, the West Village in New York, and West Hollywood in Los Angeles. Other neighborhoods, such as New Town in Chicago, possessed only some of these characteristics (people, institutions, culture, and isolation), and were accordingly perceived to be gay neighborhoods in varying degrees. By the 2000s, however, @ghaziani_there_2014 [2] can cite the existence of a dozen neighborhoods across as many cities. Known, visible gay neighborhoods have become established and have proliferated in the past several decades.
 
-**Gay neighborhoods are thought to originate in an initial wave of gentrification.** For instance, before they were known as gay, the Castro was working-class Irish [@castells_cultural_1983, 156], while parts of Lakeview in Chicago were Puerto Rican [@enke_finding_2007, 73-77] and middle-class white [@stewart-winter_queer_2016, 106-109]. These existing residents were either replaced or displaced by gay newcomers. In this process, a typically working-class neighborhood, with affordable and run-down housing stock, is renovated and revitalized by this influx of LGBTQ people, often with only modest capital [@castells_cultural_1983; @lauria_toward_1985].
+**Gay neighborhoods are thought to originate in an initial wave of gentrification.** For instance, before they were known as gay, the Castro was working-class Irish [@castells_cultural_1983, 156], while parts of Lakeview in Chicago were Puerto Rican [@enke_finding_2007, 73-77] and middle-class white [@stewart-winter_queer_2016, 106-109]. These existing residents were either replaced or displaced by gay newcomers. In this process, a typically working-class neighborhood, with affordable and run-down housing stock, is renovated and revitalized by this influx of LGBTQ people, often with only modest capital [@castells_cultural_1983; @lauria_toward_1985]. Though it has a basis in observed changes in neighborhoods like the Castro and Andersonville, this narrative draws on stereotyped traits to explain why LGBTQ people fix up and "spruce up" neighborhoods: lesbians are hardy urban pioneers, while gay men have artistic talent and valuable aesthetic tastes [@ghaziani_there_2014, 231-232; @castells_cultural_1983, 166]. Following Ruth Glass and naming this process *gentrification* emphasizes the potential for displacement or other harms to existing residents from this change in neighborhood economic status [@hanhardt_safe_2013, 128].
 
-Capitol Hill in Seattle was middle-class, white, and Catholic [@atkins_gay_2011, 168-170]
-
-This explanation draws on stereotyped traits of gay male aesthetic tastes and the pioneering handiness of lesbians [@castells_cultural_1983; @ghaziani_there_2014, 231-232]. The "amenities" produced in this way make once-undesirable neighborhoods more generally attractive.
-
-[THIS IS AWKWARD, FIX IT.] These newcomers may replace existing residents or displace them, depending on the telling.
-
-The term gentrification, while contested, describes
-
-emphasizing displacement or harm to existing residents [@hanhardt_safe_2013, 128]
-
-DISPLACEMENT: where does it fit? that's what the term gentrification emphasizes
-
-NOT UNIVERSAL: in Lakeview in Chicago, associated with the deterioration of the neighborhood [@stewart-winter_queer_2016, 107]. TSW's economic analysis is on point [221]
-
-**Gay neighborhoods may therefore decline as a result of advanced gentrification.**
+The "amenities" produced through this initial gentrification process make once-undesirable neighborhoods more generally attractive. **As a consequence, gay neighborhoods may then decline as the result of a second wave of advanced gentrification.**
 
 stage model
 
-@collins_sexual_2004 describes
+@collins_sexual_2004 proposed ecological stage model
+
+based on Soho in London
 
 @ruting_economic_2008
 
@@ -66,7 +54,7 @@ not just that they can no longer afford to live there, but that, because what re
 
 exemplars of advanced gentrification [@brown-saracino_explicating_2017]
 
-In this model, gay neighborhoods play a specific intermediate role in urban change.
+In this model, gay neighborhoods and LGBTQ people play a specific intermediate role in urban change. They are both gentrifiers and subject to gentrification [@moskowitz_when_2017].
 
 This stage model implies that
 Different gay neighborhoods could exist simultaneously in different stages of "development," even within the same city. In fact, over long periods of time gay neighborhoods do move; "new" and "next" gay neighborhoods emerge in cities like Chicago and New York [@ghaziani_there_2014].
@@ -81,27 +69,11 @@ Rather than only responding to possibly heterogeneous local urban trends, gay ne
 
 **Evidence for change in gay neighborhoods is largely restricted to a handful of cities.** Qualitative work documents changes in bar subcultures and street life in both San Francisco and New York [@mattson_style_2014; @hanhardt_safe_2013]. A recent *New York Times* article [@james_there_2017] reiterating the "there goes the gayborhood" trope rests primarily on two cases: a *Seattle Times* analysis of Capitol Hill [@balk_map:_2014] and Ghaziani's work on Boystown in Chicago. @ghaziani_there_2014 uses qualitative interviews to document directed LGBTQ migration in Chicago, from Boystown to Andersonville and other queer "cultural archipelagos." While confirming the existence of change, his principle finding does not provide evidence for the assimilation or disappearance of distinct queer urban spaces. In addition to interview data from Chicago, Ghaziani collects media accounts of gay neighborhood change from many cities in the United States. While these accounts establish widespread interest in and concern over change in gay neighborhoods, they do not demonstrate the existence or nature of this change.
 
-The most compelling evidence that gay neighborhood change is widespread comes from two studies examining Atlanta and Dallas. Both are major cities in the South, and fall outside the cities that figure most prominently in journalism and research on gay neighborhood change.
+The most compelling evidence that gay neighborhood change is widespread comes from two studies examining Atlanta and Dallas. Both are major cities in the South, and fall outside the cities that figure most prominently in journalism and research on gay neighborhood change. In Atlanta, @doan_demise_2011 analyze a combination of interviews, Census data, and planning documents. They find that, while LGBTQ people desire to live in gay neighborhoods like Midtown, they are increasingly unable to as gentrification affects the affordability of housing. As a result, the LGBT community has become dispersed to other neighborhoods. In Dallas, @smart_there_2016 examine change over time in the real estate listings advertised in a gay periodical. They find that these become increasingly dispersed over time, but largely in "hot spots" adjacent to existing enclaves. Nevertheless, they say, listings are still centered on the historic gay neighborhood of Oak Lawn. Though they note that homeowners expand more than renters. they take this as evidence of continued clustering rather than assimilation. The findings of these two studies each indicate some type of change, but point in somewhat different directions. Moreover, differences in method render these cases difficult to compare and synthesize. Finally, each of these works focuses on one or at most two cities. In fact, since @levine_gay_1979, no single researcher has examined even five cities concurrently.
 
-In Midtown, Atlanta, @doan_demise_2011 find
+**By contrast to the narrowness of qualitative case studies, demographic evidence of assimilation is too broad.** Studies of same-sex couples in urban areas do not examine gay neighborhoods specifically. At the metropolitan-area level, demographic research has shown a decline in segregation between same-sex and different-sex couples [@spring_declining_2013]. Unlike the present study, this research does not directly observe the demographics of gay neighborhoods. However, Spring argues that it indirectly implies assimilation in those neighborhoods. She examines 100 metropolitan areas, but she does not claim or demonstrate that all of those places contain gay neighborhoods. In fact, she notes that some cities with gay neighborhoods, like Chicago, are outliers, showing *increasing* segregation by sexuality for both male same-sex couples and female same-sex couples. In one of the only other studies of residential segregation by sexuality, @poston_residential_2017 also do not account for the role of gay neighborhoods in generating their hypotheses, nor do they distinguish between cities with and without gay neighborhoods in their analysis. This distinction is consequential: a concentration of LGBTQ residents does not automatically make a place into a gay neighborhood. Without "anchor institutions," even areas with large concentrations of LGBTQ residents are not perceived as gay neighborhoods [@ghaziani_there_2014; @ghaziani_measuring_2014]. These concentrations are invisible.
 
-gentrification and affordability of housing
-
-@smart_there_2016
-
-Nevertheless, they say, listings are still centered on the historic gay neighborhood of Oak Lawn.
-
-[final sentence/bridge here]
-
-Each of these works focuses on one or at most two cities. In fact, since @levine_gay_1979, no single researcher has examined even five cities concurrently. [outside of review articles]
-
-**By contrast, demographic evidence of assimilation is too broad.** Studies of same-sex couples in urban areas do not examine gay neighborhoods specifically. At the metropolitan-area level, demographic research has shown a decline in segregation between same-sex and different-sex couples [@spring_declining_2013]. Unlike the present study, this research does not directly observe the demographics of gay neighborhoods. However, Spring argues that it indirectly implies assimilation in those neighborhoods. She examines 100 metropolitan areas, but she does not claim or demonstrate that all of those places contain gay neighborhoods. In fact, she notes that some cities with gay neighborhoods, like Chicago, are outliers, showing *increasing* segregation by sexuality for both male same-sex couples and female same-sex couples.
-
-@ghaziani_there_2014 relies extensively on Spring's work to make the argument that gay neighborhood change is widely occurring. He fails to note that his own case, Chicago, is an outlier in her study, with increasing segregation by sexuality for both male same-sex couples and female same-sex couples.
-
-@poston_residential_2017 do not account for gay neighborhoods at all in the formation of their hypotheses. [they say they do, but they don't.]
-
-This distinction is consequential: a concentration of LGBTQ residents does not automatically make a place into a gay neighborhood. Without "anchor institutions," even areas with large concentrations of LGBTQ residents are not perceived as gay neighborhoods [@ghaziani_there_2014; @ghaziani_measuring_2014]. These concentrations are invisible. [Why does this matter: bars themselves are good proxies]
+[why not only care about where the gays live?] [sense of ambivalence or loss in this genre]
 
 ## Meaning of gay neighborhoods
 
@@ -119,7 +91,7 @@ Gay neighborhoods originated out of a need for "everyday survival" [@castells_cu
 
 even Ghaziani shows this
 
-LGBTQ are divided on whether or not gay neighborhoods and gay bars are
+LGBTQ people are divided on whether or not gay neighborhoods and gay bars are
 
 A national survey of LGBT Americans [@pew_research_center_survey_2013] shows that their opinions are divided on the continuing relevance of gay neighborhoods. A majority, however, do think it is important to maintain spaces like neighborhoods and bars.
 
