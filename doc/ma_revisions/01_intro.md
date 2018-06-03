@@ -35,36 +35,6 @@ This phenomenon of recent, linked cultural and demographic change in gay neighbo
 
 The evidence for this phenomenon, however, comes from a limited number of cases. These studies are most often qualitative observations of cultural and institutional change, with the concomitant demographic change being presumed or implied. This study takes a broader view, examining demographic and economic change directly across a range of gay neighborhoods. This examination establishes the extent of different types of gay neighborhood change. By analytically leveraging other neighborhoods for comparison, it also lets us distinguish between causes of gay neighborhood change tied to the changing status of LGBTQ people, whether based in assimilation or gentrification, or causes tied to local urban changes.
 
-Scholars have called for broad, comparative work to establish general trends in the dynamics of neighborhoods and cities, particularly with regard to sexuality [@small_no_2014; @brown_gender_2014; @stone_where_2017]. This study responds to that call by investigating profiles of demographic and economic change across neighborhoods in 23 cities. I systematically classify gay neighborhoods across these cities by reviving a classic approach using the locations of gay institutions [@levine_gay_1979; @castells_cultural_1983]. I update and extend this approach using contemporary digital techniques. Through geocoding, I link
+Scholars have called for broad, comparative work to establish general trends in the dynamics of neighborhoods and cities, particularly with regard to sexuality [@small_no_2014; @brown_gender_2014; @stone_where_2017]. This study responds to that call by investigating profiles of demographic and economic change across neighborhoods in 23 cities. I systematically classify gay neighborhoods across these cities by reviving a classic approach using the locations of gay institutions [@levine_gay_1979; @castells_cultural_1983]. I update and extend this approach using contemporary digital techniques. Through geocoding, I link the classified gay neighborhoods to Census data at the tract level. Because data on same-sex couples are largely inadequate for exploring change over time at a fine spatial scale, and because most theories of change entail multiple kinds of change, I incorporate a broader profile of change in my analysis.
 
-Because data on same-sex couples are largely inadequate for exploring change over time at a fine spatial scale, and
-
-refocus the question
-
-[HOW MUCH OF THIS GOES HERE, AND HOW MUCH GOES AT THE END OF THE BACKGROUND SECTION?]
-
-To achieve this, I must classify gay neighborhoods across many cities;
-
-To do so, I revive a classic method using the locations of gay bars and update it using contemporary digital techniques. [a classic method?]
-
-linked to Census data through geocoding. [again, there's no way Castells or Levine could have done this... even Ghaziani probably couldn't have. I shouldn't undersell my methodological edge.]
-
-WHY have scholars made calls for broader approaches? Otherwise, our knowledge might be limited. We wouldn't even know what we don't know. Can't speak to generalizability.
-
-Small: no two ghettos are alike [@small_no_2014]
-
-It responds to
-
-sexuality in an urban context [], and the dynamics of neighborhoods and cities more generally [@small_no_2014].
-
-let us generalize
-
-to demarcate, classify gay neighborhoods;
-
-this allows me to achieve a unique scale.
-
-[DO I EVER DEFINE GENTRIFICATION IN THE INTRO? MAYBE I SHOULD]
-
-rich people move in, rents go up, poorer existing residents maybe get pushed out.
-
-For changes in gay neighborhoods to have sprung from the shifting status of LGBTQ people in US society, whether solely or in combination with economic shifts, they should be recent and widespread. I find that the expected types of change largely are not.
+This study addresses two questions. First, to what extent are demographic and economic changes taking place in gay neighborhoods? Second, are gay neighborhoods experiencing changes beyond what would be expected for their cities? For changes in gay neighborhoods to have sprung from the shifting status of LGBTQ people in US society, whether solely or in combination with economic shifts, they should be recent and widespread. I find that the expected types of change largely are not.
