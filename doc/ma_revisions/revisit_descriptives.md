@@ -176,3 +176,5 @@ https://www.nytimes.com/1993/04/07/obituaries/martin-p-levine-42-a-sociologist-i
 cite this thing because it's awesome:
 
 Hwang, Jackelyn. 2016. “The Social Construction of a Gentrifying Neighborhood: Reifying and Redefining Identity and Boundaries in Inequality.” Urban Affairs Review 52(1):98–128.
+
+Ward, Jane. 2003. “Producing ‘Pride’ in West Hollywood: A Queer Cultural Capital for Queers with Cultural Capital.” Sexualities 6(1):65–94.

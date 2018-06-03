@@ -1,9 +1,11 @@
 ---
 ---
 
+# Data and methods
+
 [is this data? or is it methods? should I combine them?]
 
-## Gay bars
+## Gay neighborhoods from gay bars
 
 **I use clusters of gay bars to demarcate gay neighborhoods, because concentrations of gay institutions are part of the definition of gay neighborhoods.**
 
@@ -37,7 +39,7 @@ Census tracts are not neighborhoods
 
 **yes to lesbians, no to rural areas**
 
-## Change and matching
+## Neighborhood change and matched tracts
 
 **why not same-sex couple households?** the error rates are too damn high. cannot compare change over time.
 

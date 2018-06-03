@@ -39,6 +39,8 @@ Scholars have called for broad, comparative work to establish general trends in 
 
 Because data on same-sex couples are largely inadequate for exploring change over time at a fine spatial scale, and
 
+refocus the question
+
 [HOW MUCH OF THIS GOES HERE, AND HOW MUCH GOES AT THE END OF THE BACKGROUND SECTION?]
 
 To achieve this, I must classify gay neighborhoods across many cities;
