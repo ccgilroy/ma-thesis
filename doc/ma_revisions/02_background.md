@@ -36,28 +36,7 @@ Minority neighborhoods contain not only residents of that group, but also group 
 
 **Gay neighborhoods are thought to originate in an initial wave of gentrification.** For instance, before they were known as gay, the Castro was working-class Irish [@castells_cultural_1983, 156], while parts of Lakeview in Chicago were Puerto Rican [@enke_finding_2007, 73-77] and middle-class white [@stewart-winter_queer_2016, 106-109]. These existing residents were either replaced or displaced by gay newcomers. In this process, a typically working-class neighborhood, with affordable and run-down housing stock, is renovated and revitalized by this influx of LGBTQ people, often with only modest capital [@castells_cultural_1983; @lauria_toward_1985]. Though it has a basis in observed changes in neighborhoods like the Castro and Andersonville, this narrative draws on stereotyped traits to explain why LGBTQ people fix up and "spruce up" neighborhoods: lesbians are hardy urban pioneers, while gay men have artistic talent and valuable aesthetic tastes [@ghaziani_there_2014, 231-232; @castells_cultural_1983, 166]. Following Ruth Glass and naming this process *gentrification* emphasizes the potential for displacement or other harms to existing residents from this change in neighborhood economic status [@hanhardt_safe_2013, 128].
 
-The "amenities" produced through this initial gentrification process make once-undesirable neighborhoods more generally attractive. **As a consequence, gay neighborhoods may then decline as the result of a second wave of advanced gentrification.**
-
-stage model
-
-@collins_sexual_2004 proposed ecological stage model
-
-based on Soho in London
-
-@ruting_economic_2008
-
-@brown_gender_2014 summarizes
-
-undermine the character or culture, and lead to both the closure of local institutions and the displacement of long-time residents.
-
-not just that they can no longer afford to live there, but that, because what rendered the neighborhood meaningful no longer exists, they no longer even want to.
-
-exemplars of advanced gentrification [@brown-saracino_explicating_2017]
-
-In this model, gay neighborhoods and LGBTQ people play a specific intermediate role in urban change. They are both gentrifiers and subject to gentrification [@moskowitz_when_2017].
-
-This stage model implies that
-Different gay neighborhoods could exist simultaneously in different stages of "development," even within the same city. In fact, over long periods of time gay neighborhoods do move; "new" and "next" gay neighborhoods emerge in cities like Chicago and New York [@ghaziani_there_2014].
+The "amenities" produced through this initial gentrification process make once-undesirable neighborhoods more generally attractive. **As a consequence, gay neighborhoods may then decline as the result of a second wave of gentrification.** @brown-saracino_explicating_2017 calls this process *advanced gentrification*, and notes that qualitative researchers have increasingly studied it even as quantitative research has neglected it. @collins_sexual_2004 fits advanced gentrification into a four-stage ecological model of gay neighborhood emergence in marginal areas, development, and integration, based on the case of Soho in London. Ultimately, an influx of heterosexuals may undermine the character or culture of the gay neighborhood, and lead to both the closure of local institutions and the dispersal of LGBTQ residents. It is not only that these residents can no longer afford to live in the gay neighborhood, but that the institutions that rendered it meaningfully gay no longer exist. In this model, gay neighborhoods and LGBTQ people play a specific intermediate role in urban change. They are both gentrifiers and subject to gentrification [@moskowitz_when_2017]. This stage model implies that different gay neighborhoods could exist simultaneously in different stages of "development," across cities or even within the same city. In fact, over long periods of time gay neighborhoods do move; "new" and "next" gay neighborhoods emerge in cities like Chicago and New York [@ghaziani_there_2014], though perhaps not everywhere [@ruting_economic_2008].
 
 Rather than only responding to possibly heterogeneous local urban trends, gay neighborhoods may have become more generally "passé" [@brown_gay_2007] because of recent historical changes. In other words, **increasing acceptance might lead to the spatial assimilation and cultural integration of LGBTQ people.** Gay neighborhoods formed in response to stigma. But, since the formation of gay neighborhoods, LGBTQ people in the United States have won social and political victories. Legal achievements include the full decriminalization of homosexuality in 2003, and marriage equality in 2015. Socially, an unusually rapid shift in public opinion has taken place, with majorities now approving of homosexuality and same-sex marriage [@rosenfeld_moving_2017]. These national changes affect the urban places where LGBTQ people live. If one of the defining characteristics of "gay ghettos" was social isolation from mainstream American life [@levine_gay_1979], this isolation could now be coming to an end. For LGBTQ residents of gay neighborhoods, reduced stigma and increasing acceptance may remove the external social forces limiting their residential options. For straight urbanites, as disgust gives way to tolerance or progressiveness, the prospect of living in a gay neighborhood may come to seem attractive rather than outré. The net result of this shift would be a pattern of residential assimilation.
 
