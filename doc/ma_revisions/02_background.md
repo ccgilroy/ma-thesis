@@ -52,43 +52,11 @@ The most compelling evidence that gay neighborhood change is widespread comes fr
 
 **By contrast to the narrowness of qualitative case studies, demographic evidence of assimilation is too broad.** Studies of same-sex couples in urban areas do not examine gay neighborhoods specifically. At the metropolitan-area level, demographic research has shown a decline in segregation between same-sex and different-sex couples [@spring_declining_2013]. Unlike the present study, this research does not directly observe the demographics of gay neighborhoods. However, Spring argues that it indirectly implies assimilation in those neighborhoods. She examines 100 metropolitan areas, but she does not claim or demonstrate that all of those places contain gay neighborhoods. In fact, she notes that some cities with gay neighborhoods, like Chicago, are outliers, showing *increasing* segregation by sexuality for both male same-sex couples and female same-sex couples. In one of the only other studies of residential segregation by sexuality, @poston_residential_2017 also do not account for the role of gay neighborhoods in generating their hypotheses, nor do they distinguish between cities with and without gay neighborhoods in their analysis. This distinction is consequential: a concentration of LGBTQ residents does not automatically make a place into a gay neighborhood. Without "anchor institutions," even areas with large concentrations of LGBTQ residents are not perceived as gay neighborhoods [@ghaziani_there_2014; @ghaziani_measuring_2014]. These concentrations are invisible.
 
-[why not only care about where the gays live?] [sense of ambivalence or loss in this genre]
-
 ## Meaning of gay neighborhoods
 
-**Gay neighborhood change matters because gay neighborhoods remain meaningful to LGBTQ people and continue to materially impact their lives.**
+The continuing significance of gay neighborhoods is a motivation to care not just about outcomes for LGBTQ people, but for gay places themselves. **Gay neighborhood change matters because gay neighborhoods remain meaningful to LGBTQ people and continue to materially impact their lives.** Gay neighborhoods originated out of a need for "everyday survival" [@castells_cultural_1983] and safety from violence [@hanhardt_safe_2013], then enabled political organization and the formation of social movements [@armstrong_forging_2002]. They continue to play a role in providing a sense of community, facilitating cultural reproduction, and finding sexual and romantic partners. Through interviews and media content analysis, @ghaziani_there_2014 finds that LGBTQ residents of gay neighborhoods cite these reasons and more for choosing to live in them. And, whether they live in gay neighborhoods or not, LGBTQ people recognize that gay neighborhoods continue to be relevant. A national survey of LGBT Americans [@pew_research_center_survey_2013] shows that a majority (56%) agree that "it is important to maintain places like LGBT neighborhoods and gay and lesbian bars." The response indicates a divide among LGBTQ people over assimilation, with the remainder saying that "these types of places will not be important as LGBT people are more accepted into society." Gay men and those particularly invested in LGBT identity are the most likely to value gay neighborhoods. Finally, gay neighborhoods may hold particular importance for young queer and trans people of color, who are marginalized in multiple ways [@ghaziani_there_2014, 176-183]. Because of economic barriers, these individuals often already experience these neighborhoods as "vicarious citizens" [@greene_gay_2014] rather than as residents [@hanhardt_safe_2013]. Many LGBTQ people continue to perceive these spaces as a refuge, a mecca, or a home.
 
-What do gay neighborhoods do? Evidence for the continuing significance of gay neighborhoods.
-
-it remains to be shown whether Grindr is destroying us [it's not, but that's okay]
-
-cultural consequences
-
-material consequences
-
-Gay neighborhoods originated out of a need for "everyday survival" [@castells_cultural_1983] and safety from violence [@hanhardt_safe_2013], then enabled political organization and the formation of social movements [@armstrong_forging_2002]. [MIGHT BE REDUNDANT]
-
-even Ghaziani shows this
-
-LGBTQ people are divided on whether or not gay neighborhoods and gay bars are
-
-A national survey of LGBT Americans [@pew_research_center_survey_2013] shows that their opinions are divided on the continuing relevance of gay neighborhoods. A majority, however, do think it is important to maintain spaces like neighborhoods and bars.
-
-[health and wellbeing? do I care? not about health]
-
-refuge, mecca, home
-
-if we take seriously what queer people say is important for their lives, then we must concern ourselves with the fate of gay neighborhoods.
-
-Existing evidence shows that the story is more complicated than pure assimilation.
-
-fragmented "cultural archipelagos" may take the place of monolithic gayborhoods [@ghaziani_there_2014] [just as ephemeral "pop-up" events replace gay bars]
-
-Gay neighborhoods may hold particular importance for young queer and trans people of color. Because of economic barriers, these multiply marginalized individuals already experience these neighborhoods vicariously or transiently, rather than as residents [@hanhardt_safe_2013; @greene_gay_2014].
-
-In the long run, all neighborhoods change. But there is no guarantee that present gay neighborhoods will be replaced, should they disappear.
-
-@ghaziani_there_2014 notes, through interviews and media content analysis, that gay and straight residents of gay neighborhoods cite different reasons for living in them.
+In the long run, all neighborhoods change. But there is no guarantee that present gay neighborhoods will be replaced, should they disappear. Existing evidence shows that the story is more complicated than pure assimilation, and this, in a way, demonstrates the continuing salience of queer spaces. Fragmented "cultural archipelagos" may take the place of monolithic gayborhoods [@ghaziani_there_2014], just as ephemeral "pop-up" events supplant gay bars [@ghaziani_queer_2018].
 
 ## Broader significance
 
@@ -110,13 +78,17 @@ despite noted similarities to neighborhoods of immigrants or racial minorities
 
 sexuality possibly less visible
 
+limits to assimilation?
+
 ## The approach
+
+outline my theoretical interest
 
 theoretically, interested in assimilation and in gentrification
 
-empirically, measure demographic change and economic change at the neighborhood level
+empirically, I measure demographic change and economic change at the neighborhood level
 
-**I achieve breadth in two ways**
+**I achieve breadth in two ways** [the necessary breadth]
 
 **First, MORE CITIES**
 
