@@ -1,21 +1,6 @@
 ---
 ---
 
-# Main argument for introduction
-
-- Gay neighborhoods are a case of urban change and majority-minority relations
-    - We think they exist
-    - We think they exist for reasons
-    - These reasons are not unique
-    - [This is still not interesting to me]
-    - If what we think are the reasons change, we should observe change
-    - DO WE?!?
-    - Maybe not, y'all
-- Argument for recent, widespread change/decline
-- This is possibly overstated
-- What if it's not unique to / common among gay neighborhoods, but localized to particular contexts?
-- here's how I'll go about adding to that conversation
-
 # Introduction
 
 > "When we use the phrase 'gay community' we are implying something more than a gay territory and an open gay life style. We are referring to a deliberate effort by gay people to set up their own organizations and institutions in all spheres of life."  

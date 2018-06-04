@@ -1,0 +1,45 @@
+---
+title: |
+    | How Distinct Is Gay Neighborhood Change?
+    | Persistence and Variation in Gayborhood Trajectories
+author: "Connor Gilroy"
+date: "June 3, 2018"
+output:
+    pdf_document:
+        latex_engine: xelatex
+        # includes:
+        #     after_body: 07_appendix.tex
+mainfont: Gentium Basic
+monofont: InconsolataGo
+fontsize: 12pt
+header-includes:
+    - \usepackage{longtable,booktabs}
+    - \usepackage{indentfirst}
+bibliography: gayborhood_literature.bib
+csl: american-sociological-association.csl
+---
+
+\setlength\parindent{0.5cm}
+\setlength{\parskip}{0em}
+\linespread{1.6}\selectfont
+\def\UrlBreaks{\do\/\do-\do\.}
+
+
+```{r child='01_intro.md'}
+```
+
+```{r child='02_background.md'}
+```
+
+```{r child='03_data.md'}
+```
+
+```{r child='06_conclusions.md'}
+```
+
+\newpage
+
+# References
+
+\setlength\parindent{-0.5cm}
+\setlength\leftskip{0.5cm}

@@ -1,19 +1,6 @@
 ---
 ---
 
-# Main argument for background
-
-- say what I'm doing in this section overall: providing necessary background on gay neighborhood formation and change
-- formation/origins/initial gentrification/time period
-- evidence for change is thinner than it seems [present]
-    - interview/ethnography
-    - media coverage
-    - demography/census
-- meaning and impact of gay neighborhoods, past and continuing
-- broader significance
-- what I'm doing here
-- end with precise research questions
-
 # Background and significance
 
 I briefly describe the origins of gay neighborhoods, in order to elaborate on the possibilities of gentrification and assimilation introduced above. I discuss the existing evidence for change in gay neighborhoods, and assess the degree to which that evidence supports claims of assimilation or gentrification. I explain how the status of gay neighborhoods today is thought to differ from when they first formed, with particular attention to views about the contemporary meaning and impact of gay neighborhoods on LGBTQ lives. I position gay neighborhoods in relation to other urban neighborhoods and urban change more generally. Finally, I outline my intended contribution to this literature.
