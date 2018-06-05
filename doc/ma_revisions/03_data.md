@@ -33,9 +33,24 @@ This bar-based approach to gay neighborhoods has several implications that shape
 
 ## Neighborhood change and comparisons
 
-**why not same-sex couple households?** the error rates are too damn high. cannot compare change over time.
+I select seven demographic and economic variables from the US Census Bureau's American Community Survey, and use these to examine neighborhood change between two points over a ten-year period, from 2006 to 2015. The ACS has been conducted on a yearly basis since 2006, and the estimates are publicly available in 1-year, 3-year, and 5-year data sets. I use two non-overlapping 5-year ACS data sets, because tract-level data are only available at this temporal resolution. The 2006-2010 values of each variable are my covariates, and the 2011-2015 values are the outcomes. Based on the neighborhood classification described above, I create a binary indicator for whether or not a tract is part of a gay neighborhood. I retrieve ACS data for all tracts in all counties containing gay bars, using
+the *tidycensus* R package [@walker_tidycensus:_2018]. These data are the components of the models I describe in the following section.
+
+The ACS has advantages and disadvantages. It is regular, recent, and frequent, and so better suited for examining short-term changes than the decennial Census. However, the fact that five years of data are combined into a single estimate could obscure temporal trends. Moreover, as a survey rather than a complete census, the ACS has relatively large margins of error in its estimates [@spielman_studying_2015]. This problem of precision is particularly acute for small areas like Census tracts, and for small counts and proportions within those areas. In choosing among related variables, I select the variables that best mitigate these shortcomings.
+
+The neighborhood changes of interest are both demographic and economic. In terms of demographic characteristics, I evaluate changes in the gender ratio using the proportion of male individuals, and changes in racial composition using the proportion of non-Hispanic white individuals. For education levels, I use the proportion of individuals with a college education or higher. My proxy for sexuality is changes in household type, measured by the proportion of married-couple households. In Census data, this refers only to different-sex married couples. I do not use the proportion of same-sex couple households as a measure, for two reasons. First, because this proportion is always small, even in gay neighborhoods, it has a large margin of error relative to its value. Second, counts of same-sex couples are systematically inflated due to small random errors in different-sex couples in recording their genders. Because the Census Bureau improved its form design to mitigate this problem between 2007 and 2008, the 2006-2010 counts are not comparable to the 2011-2015 counts [@oconnell_same-sex_2011]. I cannot examine neighborhood changes in the proportion of same-sex couples over time. My other measures are sufficient to characterize demographic change in gay neighborhoods.
+
+In addition to these four proportions, I select three other variables. I select two variables as economic indicators, median household income and median rent. While previous researchers have critiqued the ACS median rent measure as somewhat unreliable [@mccabe_does_2016], I prefer it over alternate housing-related measures, such as proportion of owner-occupied housing, largely because I anticipate gay neighborhoods to have a high proportion of renters. Where I present numbers, I have converted the 2010 values to 2015 dollars, using the conversion factor recommended by the Census for comparison. When I combine tracts, I take a population-weighted average of medians. Finally, I select population density to account for population dynamics more generally. Densification is a potential aspect of neighborhood change, and gay neighborhoods are generally found in dense urban areas to begin with. Population densities are taken from data prepared by Social Explorer [@u.s._census_bureau_population_2010; @u.s._census_bureau_population_2015].
+
+To summarize, the seven outcomes are proportions college-educated, male, married, and white; median income and median rent; and population density. With these, I aim to capture information about the types of people anticipated to already live in gay neighborhoods, such as middle-class, white, gay men; the types of people predicted to move into these neighborhoods, such as straight, married couples; and the kinds of changes associated with gentrification more broadly, such as an influx of middle or upper class residents and a rise in rents. I have chosen variables that are both substantively informative and reliable.
+
+all tracts? or some?
+
+I produce a set of matched tracts
 
 **matched tracts are not contiguous**, unlike gay neighborhood tracts
+
+also total population, to render tract aggregates comparable
 
 ## Modeling change over time
 

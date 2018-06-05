@@ -47,6 +47,7 @@ ACS estimates are available in 1-year, 3-year, and 5-year data sets, at differin
 
 Because the ACS has been performed every year since 2006, with data from these years publicly available, I can obtain data for two non-overlapping five year periods, 2006-2010 and 2011-2015.[^acs] This positions me to use the ACS to assess change over time on a variety of characteristics in a recent time frame. The ACS has the significant advantages of being regular, frequent, and recent.
 
+
 [^acs]: As of December 2017, these data are available through 2016.
 
 However, the fact that the ACS is a survey and not a complete count comes with limitations.[^decennial] As a survey, it has relatively large margins of error, particularly for small areas like Census tracts [@spielman_studying_2015]. Because this problem of error is more acute for small counts than large counts, it influences the variables I choose, described in the Methods section below.
