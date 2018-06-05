@@ -13,19 +13,11 @@ I proceed by identifying gay neighborhoods, selecting characteristics to examine
 
 To demarcate gay neighborhoods, I use clusters of gay bars, because concentrations of gay institutions are part of the definition of gay neighborhoods. For this definition, I rely on Levine, who writes that "an urban neighborhood can be termed a 'gay ghetto' if it contains gay institutions in number, a conspicuous and locally dominant gay subculture that is socially isolated from the larger community, and a residential population that is substantially gay" [-@levine_gay_1979]. I use one part of this definition as proxy for the whole in my operationalization. Similarly to Levine, @castells_cultural_1983 compare the locations of gay bars against four other indicators of gay neighborhoods: qualitative reports of gay residence, counts of multiple-male households, votes for a gay electoral candidate, and gay businesses. They find that these measures are generally consistent with each other. In terms of contemporary work, @mattson_style_2014 has documented the centrality of bars to gay cultural and neighborhood life, while @ghaziani_measuring_2014 has called them "anchor institutions" and proposed their use to measure urban sexual cultures. As opposed to other measures, gay bars have the advantage of being widespread and consistently measurable, which enables an analysis spanning multiple cities.
 
-I obtain my list of gay bars from GayCities, a gay travel website. GayCities (www.gaycities.com) was founded in 2005. It relaunched in 2008, and has since grown into Q.Digital, an LGBTQ marketing and media conglomerate. The site solicits crowdsourced opinions, reviews, and information from the LGBTQ community to provide a comprehensive picture of the places it lists. GayCities fulfills a similar role to traditional print gay travel guides and city guides. These guidebooks include the Gayellow Pages [@hayslett_out_2011] and the Damron's guides, which have a 50-year history and have been used in considerable previous research [@levine_gay_1979; @castells_city_1983, 148 Map 14.3; @mattson_counting_2017]. I choose GayCities over these print media source because, as an already-digital source, it is scalable and accessible. I can download bar listings for as many cities as are available, and easily extract the addresses of bars to geocode within Census tracts. For examining change in a relatively recent time period, an Internet-based data source has considerable advantages.
+I obtain my list of gay bars from GayCities, a gay travel website. GayCities (www.gaycities.com) was founded in 2005. It relaunched in 2008, and has since grown into Q.Digital, an LGBTQ marketing and media conglomerate. The site solicits crowdsourced opinions, reviews, and information from the LGBTQ community to provide a comprehensive picture of the places it lists. GayCities fulfills a similar role to traditional print gay travel guides and city guides. These guidebooks include the Gayellow Pages [@hayslett_out_2011] and the Damron's guides, which have a 50-year history and have been used in considerable previous research [@levine_gay_1979; @castells_city_1983, 148 Map 14.3; @mattson_counting_2017]. I choose GayCities over these print media source because, as an already-digital source, it is scalable and accessible. I can download bar listings for as many cities as are available, and easily extract the addresses of bars to geocode within Census tracts. For examining change in a recent time period, an internet-based data source has considerable advantages.
+
+**Because I am examining the present outcomes of past gay neighborhoods, my indicator of gay neighborhoods should be historical.** To this end, I use an archived version of GayCities from 2007 to obtain bar listings, instead of the present version of the website. The Internet Archive, a non-profit organization, automatically crawls and archives the internet, which is useful to social scientists for historical research [@gade_.gov_2017]. I use their Wayback Machine tool, which provides snapshots of websites such as GayCities. The earliest relatively complete snapshot of GayCities is from July 28, 2007. I retrieve bar information from this archived version of GayCities through web scraping, the automated retrieval of unstructured data from the Internet [@boeing_new_2017]. Retrieving bar names and addresses in this way is justified because GayCities' robots.txt is permissive of scraping and GayCities' terms prohibit only commercial use of their data.
 
 
-
-historical bit.
-
-[but the other parts don't disappear]
-
-**I use clusters of gay bars to demarcate gay neighborhoods, because concentrations of gay institutions are part of the definition of gay neighborhoods.**
-
-the precedent: levine + castells
-
-reminder: ghaziani, mattson, maybe brown/knopp?
 
 
 
@@ -41,7 +33,6 @@ their heuristic is what I want; they have the same incentive to document concent
 
 *set the tone, cultural dominance* -> filter out downtowns, in cities like Columbus, Seattle
 
-**Because I am examining the present outcomes of past gay neighborhoods, my indicator of gay neighborhoods should be historical.** I use an archived version of GayCities from 2007, instead of the present version of the website. The Wayback Machine, from Archive.org, crawls and archives the internet. Their earliest relatively complete snapshot of GayCities is from July 28, 2007.
 
 
 Single bars may open and close, but clusters of bars do not spring up overnight.
