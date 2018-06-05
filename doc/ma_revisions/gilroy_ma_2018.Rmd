@@ -1,7 +1,7 @@
 ---
 title: |
     | How Distinct Is Gay Neighborhood Change?
-    | Persistence and Variation in Gayborhood Trajectories
+    | Patterns and Variation in Gayborhood Trajectories
 author: "Connor Gilroy"
 date: "June 3, 2018"
 output:
