@@ -3,8 +3,6 @@
 
 # Data and methods
 
-[is this data? or is it methods? should I combine them?]
-
 I proceed by identifying gay neighborhoods, selecting characteristics to examine, and modeling change over time comparatively. I identify gay neighborhoods consistently across a range of cities by using clusters of gay bars. I select seven Census tract features from the American Community Survey at two time points, and use the values of those features at the earlier time period to match tracts within cities. I use linear models with appropriate controls to assess whether gay neighborhoods change differently from other neighborhoods over time.
 
 [NOTE: when do I first say what "recent" means? It's *very* recent, probably *too* recent. But I have plans to fix that later, which I cover in my conclusion.]
@@ -21,45 +19,17 @@ In 2007, GayCities lists 902 bars across 63 cities. Of these, 840 bars are locat
 
 I associate gay bars with Census tracts by geocoding their addresses, and aggregate adjacent tracts to form neighborhoods. I do this using two application programming interfaces for geocoding. I first send bar addresses from GayCities to the Google Maps Geocoding API, in order to obtain more precise addresses with zip codes. I manually adjudicate the 9 addresses for which Google Maps returns multiple results using GayCities bar descriptions. I batch code these refined addresses using the Census Geocoding API, a service that links addresses or coordinates to Census geographies. Finally, I geocode the 38 addresses for which the Census returns a tie or a failure to match an address through individual API calls, using the latitude and longitude provided by the Google Maps Geocoding API. In this way, I am able to successfully geocode all 840 bars within 488 Census tracts.
 
-Many of these 488 tracts are adjacent to each other, indicating that gay bars frequently occur in spatially contiguous clusters of tracts. This is expected, because gay neighborhoods should contain concentrations of gay institutions. **I merge these adjacent tracts in the final analysis for substantive and methodological reasons.** Substantively, Census tracts do not correspond to neighborhoods, but urban demographers often lack principled ways of aggregating them. Spatial clusters of gay bars provide a rationale for aggregation. Methodologically, this *regionalization* process has the ancillary advantage of reducing the margin of error in ACS variable estimates, which can be substantial at the tract level [@spielman_reducing_2015]. In this way, I move from gay bar locations to Census tracts to gay neighborhoods.
+Many of these 488 tracts are adjacent to each other, indicating that gay bars frequently occur in spatially contiguous clusters of tracts. This is expected, because gay neighborhoods should contain concentrations of gay institutions. **I merge these adjacent tracts in the final analysis for substantive and methodological reasons.** Substantively, Census tracts do not correspond to neighborhoods, but urban demographers often lack principled ways of aggregating them. Spatial clusters of gay bars provide a rationale for aggregation. Methodologically, this *regionalization* process has the ancillary advantage of reducing the margin of error in ACS variable estimates, which can be substantial at the tract level [@spielman_reducing_2015]. I use the *sf* and *sp* packages for spatial data in R to generate lists of adjacent tracts, and I use the *igraph* package to assign numeric identifiers to the clusters produced by this adjacency list. In Appendix B, I show a network graph of these clusters, with the ones that I ultimately classify as gay neighborhoods highlighted. In this way, I move from gay bar locations to Census tracts to gay neighborhoods.
 
 **In connecting gay bars to gay neighborhoods, I am not concerned about selectivity in the GayCities listings.** Any archival source is bound to be selective. But gay city guides have the appropriate incentives and the requisite cultural knowledge to document concentrations of gay institutions, gay culture, and gay people. Gay neighborhoods must be visibly gay; a neighborhood that was not known as gay could not have been subject to processes of assimilation and gentrification affecting gay neighborhoods specifically. Finally, while individual bars may open and close, clusters of bars do not spring up overnight.
 
-**In each city that I choose to include, I designate the largest cluster or clusters of gay bars as gay neighborhoods.** Because they are large cities that have played outsized roles in LGBTQ urban history, I include the two largest neighborhoods in San Francisco and Chicago, and three in New York [@mattson_style_2014; @hanhardt_safe_2013; @ghaziani_there_2014]. I rank the other cities based on the size of their largest cluster, and determine 21 to have gay neighborhoods, though I subsequently treat Long Beach, California, as if it were part of Los Angeles because they are both within the same county. I include some more peripheral cities based on their occurrence in prior research, such as New Orleans [@knopp_theoretical_1990], Columbus [@hayslett_out_2011], and San Antonio [@xstone_where_2017]. In total, this gives me 28 gay neighborhoods. I combine neighborhood labels and descriptions from the GayCities data with information from the literature to assign descriptive names to each of them, which I list in Appendix A.
+**In each city that I choose to include, I designate the largest cluster or clusters of gay bars as gay neighborhoods.** Because they are large cities that have played outsized roles in LGBTQ urban history, I include the two largest neighborhoods in San Francisco and Chicago, and three in New York [@mattson_style_2014; @hanhardt_safe_2013; @ghaziani_there_2014]. I rank the other cities based on the size of their largest cluster, and determine 21 to have gay neighborhoods, though I subsequently treat Long Beach, California, as if it were part of Los Angeles because they are both within the same county. I include some more peripheral cities based on their occurrence in prior research, such as New Orleans [@knopp_theoretical_1990], Columbus [@hayslett_out_2011], and San Antonio [@stone_where_2017]. In total, this gives me 28 gay neighborhoods. I combine neighborhood labels and descriptions from the GayCities data with information from the literature to assign descriptive names to each of them, which I list in Appendix A.
 
-**I exclude the other half of the 48 available cities in the GayCities data entirely, because I cannot be sure that they have gay neighborhoods at all.** The largest city excluded in this way is Phoenix, Arizona. I examine the spatial distribution of bars in all cities visually, and use city descriptions from GayCities, prior qualitative research, and media accounts as supplemental information in making these choices. For instance, the GayCities description for Seattle notes that "Gay Seattle is primarily centered around Capitol Hill, a quaint, friendly neighborhood..." By contrast, the description of Portland, OR, begins by stating that "Although it has no gay district, Portland makes up for that with all that it does have to offer."
+**I exclude the other half of the 48 available cities in the GayCities data from my analyses entirely, because I cannot be sure that they have gay neighborhoods at all.** The largest city excluded in this way is Phoenix, Arizona. I examine the spatial distribution of bars in all cities visually, and use city descriptions from GayCities, prior qualitative research, and media accounts as supplemental information in making these choices. For instance, the GayCities description for Seattle notes that "Gay Seattle is primarily centered around Capitol Hill, a quaint, friendly neighborhood..." By contrast, the description of Portland, OR, begins by stating that "Although it has no gay district, Portland makes up for that with all that it does have to offer." On the basis of these descriptions, and on media coverage and research [@atkins_gay_2011; @balk_map:_2014; @albright_there_2018], I include Seattle and its Capitol Hill neighborhood in my analysis, but exclude Portland.
 
-**Not all clusters of gay bars are gay neighborhoods, so I use other aspects of Levine's definition to refine the filtering of my neighborhoods.** Because gay neighborhoods should contain gay residential concentration as well as institutions, I filter out warehouse districts in cities like Portland, Austin, and Minneapolis. Because gay neighborhoods are areas where LGBTQ people exert cultural dominance or "set the tone" [@ghaziani_there_2014; @chauncey_gay_1994], I exclude downtown or center city areas. This means that I filter out downtown bars in cities like Columbus and Seattle, even when adjacent to gay neighborhoods.
+**Not all clusters of gay bars are gay neighborhoods, so I use other aspects of Levine's definition to refine the filtering of my neighborhoods.** Because gay neighborhoods should contain gay residential concentrations as well as institutions, I filter out warehouse districts in cities like Portland, Austin, and Minneapolis. Because gay neighborhoods are areas where LGBTQ people exert cultural dominance or "set the tone" [@ghaziani_there_2014; @chauncey_gay_1994], I exclude downtown or center city areas, under the assumption that LGBTQ people are not dominant in these areas. This means that I filter out bars with a "downtown" neighborhood label in cities like Columbus and Seattle, even when those bars are adjacent to gay neighborhoods. I rerun the clustering process described above with these restrictions.
 
-
-
-**Digital data enable analysis at scale.**
-
-this is *why* I can do more than five cities.
-
-; I did not have to choose in advance which cities to digitize---I had 48 to examine.
-
-The most significant city with a documented gay neighborhood that was absent from these data was Oklahoma City.
-
- [because it looks like a damn checkerboard]
-
-**something about geolocation**
-
-
-
-This bar-based approach to gay neighborhoods has several implications that shape my findings.
-
-First,  
-
-**yes to lesbians, no to rural areas, core not periphery**
-
-First, core over periphery
-
-in that regard, it differs from approaches focused on queering space
-
-expect bias toward gay men over lesbians, but not excluding lesbians
-
-Lesbian bars such as the Lexington in San Francisco and the Wildrose in Seattle
+This bar-based approach to gay neighborhoods has several implications that shape the scope of my findings. First, even though I include a broader range of cities and neighborhoods than prior work, my approach centers core gay spaces over peripheral ones. In that regard, it differs from approaches focused on queering space [@brown_queering_2008; @oswin_critical_2008; @halberstam_queer_2005], though some gay bar cultures are queer rather than homonormative [@mattson_style_2014; @kanai_remaking_2015]. I categorically exclude non-urban gay spaces, such as Provincetown, from my study. Qualitative work has examined rural queer spaces in comparison with urban ones [@halberstam_queer_2005; @brown-saracino_neighborhood_2010; @brown-saracino_explicating_2017], but I do not expect them to be quantitatively comparable. By contrast to rural resort towns, I do not categorically exclude lesbian women from consideration---unlike @castells_cultural_1983 or @levine_gay_1979. While more gay men than lesbian women live or have lived in gay neighborhoods---32% versus 18%---both groups are present [@pew_research_center_survey_2013]. Accordingly, most of the bars used to determine neighborhood locations and boundaries are bars for gay men, but lesbian bars such as the Lexington in San Francisco and the Wildrose in Seattle also form part of my bar listings. I expect and find an empirical bias toward men in my demographic data.
 
 ## Neighborhood change and comparisons
 
