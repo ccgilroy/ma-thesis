@@ -22,7 +22,7 @@ csl: american-sociological-association.csl
 \setlength\parindent{0.5cm}
 \setlength{\parskip}{0em}
 \linespread{1.6}\selectfont
-\def\UrlBreaks{\do\/\do-\do\.}
+\def\UrlBreaks{\do\/\do-\do\.\do\_}
 
 
 ```{r child='01_intro.md'}
@@ -32,6 +32,9 @@ csl: american-sociological-association.csl
 ```
 
 ```{r child='03_data.md'}
+```
+
+```{r child='04_results.md'}
 ```
 
 ```{r child='06_conclusions.md'}

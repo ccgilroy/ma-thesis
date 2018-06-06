@@ -27,11 +27,56 @@ Neighborhoods are fragmented in other cities. Capitol Hill in Denver and South B
 
 In total, I identify 28 gay neighborhoods across 23 cities. They are diverse in size and geography. The largest gay neighborhoods by number of tracts and bars are the West Village and Chelsea in New York and the Castro and adjacent areas in San Francisco, which corroborates the historic centrality of these places to gay cultural life. The smallest gay neighborhoods are in Southern cities like San Antonio, Tampa, and Miami, which still exhibit substantial concentrations of gay spaces.
 
-The high degree to which gay institutions are concentrated in gay neighborhoods can be illustrated as follows. Of the 488 Census tracts in these cities that contain at least one gay bar, only 146 tracts---29.9% of the original number---fall in what I consider to be gay neighborhoods. However, these gay neighborhoods contain more than two thirds of all of the gay bars in these cities, numbering 346 of 529, or 67.3%. These 346 gay-neighborhood bars outnumber the 311 gay bars in the 24 other cities and nine resort towns combined. Though I do not produce similar measures of gay residential concentration, I take this uneven distribution to indicate the outsized importance of these neighborhoods for LGBTQ community life. 
+The high degree to which gay institutions are concentrated in gay neighborhoods can be illustrated as follows. Of the 295 Census tracts in these cities that contain at least one gay bar, only 146 tracts---49.5% of the original number---fall in what I consider to be gay neighborhoods. However, these gay neighborhoods contain more than two thirds of all of the gay bars in these cities, numbering 346 of 529, or 67.3%. These 346 gay-neighborhood bars outnumber the 311 gay bars in the 24 other cities and nine resort towns combined. Though I do not produce similar measures of gay residential concentration, I take this uneven distribution to indicate the outsized importance of these neighborhoods for LGBTQ community life.
+
+[WAIT, is this right?!? check out those tract numbers]
+
+[THAT'S the most important thing to do before I leave for the gym.]
 
 ## Descriptive results
 
 demographic signature; distinct change on SOME characteristics, but not others
+
+\linespread{1}\selectfont
+
+\begin{table}
+
+\caption{\label{tab:}Average values for tracts in 23 included cities}
+\centering
+\begin{tabular}[t]{lrrrr}
+\toprule
+\multicolumn{1}{c}{ } & \multicolumn{2}{c}{Gay neighborhood tracts} & \multicolumn{2}{c}{Matched tracts} \\
+\cmidrule(l{2pt}r{2pt}){2-3} \cmidrule(l{2pt}r{2pt}){4-5}
+\multicolumn{1}{c}{\em  } & \multicolumn{2}{c}{\em N = 146} & \multicolumn{2}{c}{\em N = 146} \\
+\cmidrule(l{2pt}r{2pt}){2-3} \cmidrule(l{2pt}r{2pt}){4-5}
+  & 2006-2010 & 2011-2015 & 2006-2010 & 2011-2015\\
+\midrule
+college educated & 0.54 & 0.60 & 0.55 & 0.58\\
+male & 0.54 & 0.54 & 0.53 & 0.51\\
+married & 0.19 & 0.20 & 0.22 & 0.24\\
+white & 0.60 & 0.60 & 0.59 & 0.57\\
+median income & 63916.50 & 68341.77 & 67155.78 & 68901.86\\
+median rent & 1229.51 & 1319.33 & 1270.25 & 1356.67\\
+population density & 29724.92 & 31188.73 & 28556.85 & 29748.92\\
+\midrule
+\multicolumn{1}{c}{ } & \multicolumn{2}{c}{Other tracts with gay bars} & \multicolumn{2}{c}{All other tracts} \\
+\cmidrule(l{2pt}r{2pt}){2-3} \cmidrule(l{2pt}r{2pt}){4-5}
+\multicolumn{1}{c}{\em  } & \multicolumn{2}{c}{\em N = 150} & \multicolumn{2}{c}{\em N = 13020} \\
+\cmidrule(l{2pt}r{2pt}){2-3} \cmidrule(l{2pt}r{2pt}){4-5}
+  & 2006-2010 & 2011-2015 & 2006-2010 & 2011-2015\\
+\midrule
+college educated & 0.42 & 0.45 & 0.31 & 0.32\\
+male & 0.52 & 0.52 & 0.48 & 0.48\\
+married & 0.28 & 0.29 & 0.43 & 0.42\\
+white & 0.48 & 0.49 & 0.41 & 0.39\\
+median income & 56858.91 & 59269.48 & 62660.91 & 60144.23\\
+median rent & 1134.25 & 1248.99 & 1180.59 & 1218.56\\
+population density & 19776.80 & 21400.86 & 13978.71 & 14567.13\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\linespread{1.6}\selectfont
 
 ## Modeling results
 

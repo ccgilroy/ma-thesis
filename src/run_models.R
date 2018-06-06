@@ -312,6 +312,8 @@ d_matched <-
   d %>%
   filter(GEOID %in% matched_tracts)
 
+write_lines(matched_tracts, "data/census/matched_tracts.txt")
+
 # test models ----
 m_col_edu_matched <- run_models(college_educated_2015 ~ ., d_matched)
 m_white_matched <- run_models(white_2015 ~ ., d_matched)
