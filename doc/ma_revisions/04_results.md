@@ -25,13 +25,9 @@ Neighborhoods are combined in some cities with larger gay neighborhoods. In San 
 
 Neighborhoods are fragmented in other cities. Capitol Hill in Denver and South Beach in Miami are the two primary instances of this. While the neighborhood labels from GayCities confirm that these are single neighborhoods, I do not attempt to unify them. I use only the largest cluster of bars to stand for the neighborhood as a whole. Maps of the four cities with merged gay neighborhoods and the two cities with fragmented gay neighborhoods are shown in Appendix C.
 
-adjacent neighborhoods could have different dynamics
+In total, I identify 28 gay neighborhoods across 23 cities. They are diverse in size and geography. The largest gay neighborhoods by number of tracts and bars are the West Village and Chelsea in New York and the Castro and adjacent areas in San Francisco, which corroborates the historic centrality of these places to gay cultural life. The smallest gay neighborhoods are in Southern cities like San Antonio, Tampa, and Miami, which still exhibit substantial concentrations of gay spaces.
 
-spaces versus populations
-
-diverse range of sizes
-
-In total, I identify 28 gay neighborhoods across 23 cities. 
+The high degree to which gay institutions are concentrated in gay neighborhoods can be illustrated as follows. Of the 488 Census tracts in these cities that contain at least one gay bar, only 146 tracts---29.9% of the original number---fall in what I consider to be gay neighborhoods. However, these gay neighborhoods contain more than two thirds of all of the gay bars in these cities, numbering 346 of 529, or 67.3%. These 346 gay-neighborhood bars outnumber the 311 gay bars in the 24 other cities and nine resort towns combined. Though I do not produce similar measures of gay residential concentration, I take this uneven distribution to indicate the outsized importance of these neighborhoods for LGBTQ community life. 
 
 ## Descriptive results
 
