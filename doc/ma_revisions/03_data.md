@@ -44,16 +44,6 @@ In addition to these four proportions, I select three other variables. I select 
 
 To summarize, the seven outcomes are proportions college-educated, male, married, and white; median income and median rent; and population density. With these, I aim to capture information about the types of people anticipated to already live in gay neighborhoods, such as middle-class, white, gay men; the types of people predicted to move into these neighborhoods, such as straight, married couples; and the kinds of changes associated with gentrification more broadly, such as an influx of middle or upper class residents and a rise in rents. I have chosen variables that are both substantively informative and reliable.
 
-all tracts? or some?
-
-I produce a set of matched tracts
-
-**matched tracts are not contiguous**, unlike gay neighborhood tracts
-
-also total population, to render tract aggregates comparable
-
-[MOVE MATCHING BELOW, where it already is? that last paragraph feels like an end to a section]
-
 ## Modeling change over time
 
 My overarching question is whether gay neighborhoods show patterns of change like each other, because they are gay neighborhoods, or whether they are instead more similar to other neighborhoods in their respective cities. Put another way, does the fact that these are specifically *gay* neighborhoods matter for the kinds of contextual changes they experience? For each of the seven outcomes above, I use a linear model where the predictors are whether or not an area is a gay neighborhood, the value of the outcome at the 2006-2010 time point, and the values of all of the other variables at the 2006-2010 time point. The units of observation are either individual tracts or aggregates of tracts into neighborhoods. These models take the following general form:

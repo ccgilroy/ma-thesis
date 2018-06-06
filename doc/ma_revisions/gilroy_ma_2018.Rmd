@@ -3,7 +3,7 @@ title: |
     | How Distinct Is Gay Neighborhood Change?
     | Patterns and Variation in Gayborhood Trajectories
 author: "Connor Gilroy"
-date: "June 3, 2018"
+date: "June 5, 2018"
 output:
     pdf_document:
         latex_engine: xelatex
