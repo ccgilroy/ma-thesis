@@ -19,30 +19,19 @@ In Seattle, the largest cluster of gay bars, four tracts and 11 bars, is centere
 
 A bar-based method of identifying gay neighborhoods is better at identifying the general locations of these neighborhoods, rather than their precise boundaries. This is sufficient, because the edges of gay neighborhoods are not clearly and universally specified. That is, gay neighborhoods present a fundamental boundary definition problem [@bowker_sorting_2000]. In other contexts [@hwang_social_2016], the boundaries residents draw of their neighborhoods have been shown to differ systematically among individuals. Census tract borders do not and cannot correspond to these social boundaries; they are a statistical convenience. In any case, gay bars provide a more principled way of delineating the category of gay neighborhoods from other neighborhoods than the primary quantitative alternative, which would be to use the prevalence of same-sex couples [@gates_gay_2004]. Because prevalence is a continuous measure, using it to classify neighborhoods as gay or not gay requires imposing an arbitrary cutoff [@brown_places_2006]. While my approach also involves subjective and pragmatic decisions, it avoids that need.
 
+Examining gay neighborhoods beyond Chicago and Seattle reveals two specific kinds of shortcomings to my method, while confirming its overall validity. In some cases, qualitatively distinct neighborhoods are merged together because they are adjacent to each other. In other cases, the opposite problem occurs, and a single neighborhood is fragmented because its bars are located in noncontiguous tracts.
 
+Neighborhoods are combined in some cities with larger gay neighborhoods. In San Francisco, the Castro, the Mission, and SOMA merge together. The West Village and Chelsea are adjacent in New York, as are Rittenhouse Square and Washington Square in Philadelphia. Dupont Circle, Logan Circle, and Shaw/U Street in Washington, DC, are similarly connected. Qualitative researchers find these differences important. For instance, both @hanhardt_safe_2013 and @greene_gay_2014 distinguish between the three DC neighborhoods, suggesting that they could be expected to undergo different types of change. However, as @compton_beyond_2012 discuss with regard to the Castro and the Mission, drawing precise quantitative boundaries between even well-defined cultural enclaves is difficult. I do not attempt to divide these neighborhoods. Instead, I analyze them as combined units, and run the same models on individual tracts as a robustness check.
 
-
-qualitative researchers find these differences important, but I do not account for them.
-
-For instance, WASHINGTON DC
-
-the best attempt to do this,
-
-bounding the Castro and the Mission in SF,
-
-acknowledges how difficult it is.
-
-qualitatively discuss some shortcomings
+Neighborhoods are fragmented in other cities. Capitol Hill in Denver and South Beach in Miami are the two primary instances of this. While the neighborhood labels from GayCities confirm that these are single neighborhoods, I do not attempt to unify them. I use only the largest cluster of bars to stand for the neighborhood as a whole. Maps of the four cities with merged gay neighborhoods and the two cities with fragmented gay neighborhoods are shown in Appendix C.
 
 adjacent neighborhoods could have different dynamics
 
 spaces versus populations
 
-again, I think if we care about the people, we have to care about the places
+diverse range of sizes
 
-two specific kinds of problems: agglomeration of adjacent neighborhoods that should be distinct and fragmentation of single neighborhoods that should be merged
-
-qualitatively and visually assess all 28 clusters included, as well as those excluded
+In total, I identify 28 gay neighborhoods across 23 cities. 
 
 ## Descriptive results
 
