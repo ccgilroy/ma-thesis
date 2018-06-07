@@ -100,12 +100,24 @@ Gay neighborhoods had various demographic and economic traits in common with eac
 
 ## Model results
 
-The goal of statistically modeling change is to compare gay neighborhoods to other neighborhoods. I present and interpret these models in order to show which descriptive trends and differences persist with multivariate controls. With the multilevel models, I also account for variation across cities. Rather than discuss the associations of all covariates, I focus primarily on presenting estimates for $\hat{\beta}_{gay}$, the coefficient for the indicator variable for gay neighborhoods. Figure 6 displays estimates for this single coefficient across 28 models--four models for each of seven outcomes.
+The question is not just how similar or different gay neighborhoods are among themselves, but how distinct they are from other neighborhoods in how they change. To compare gay neighborhoods to other neighborhoods, I model change over time statistically. I present and interpret the results of statistical models in order to show which descriptive trends and differences persist with multivariate controls. With the multilevel models, I also account for variation across cities. Rather than discuss the associations of all covariates, I focus primarily on presenting estimates for $\hat{\beta}_{gay}$, the coefficient for the indicator variable for gay neighborhoods. Figure 6 displays estimates for this single coefficient across 28 models---four models for each of seven outcomes.
+
+![Model results.](../../output/figures/gay_coefficient_plot.png)
 
 All models are multivariate linear regressions of the form shown in the Methods section. The first model ("All") compares gay neighborhood tracts to all other tracts in the same set of counties, excluding tracts which contain gay bars but which are not part of gay neighborhoods. The second model ("All (multilevel)") uses the same data, but allows model intercepts to vary across cities in a multilevel model. The third model ("Matched") restricts the sample of non-gay tracts to only individual matched tracts for comparison. The fourth model ("Aggregated") aggregates the gay neighborhood tracts into gay neighborhoods, and the matched tracts from the third model into synthetic comparison neighborhoods.
 
 All models incorporate the values of each outcome in 2006-2010 as additional covariates. In every case, the strongest predictor of an outcome in 2011-2015 is the same variable in 2006-2010. I include full tables of model coefficients for each outcome in Appendix D. I omit results for multilevel models for the matched and aggregated tracts, because the city-varying slopes in these models were not justified by improvements in model fit. Including the gay neighborhood indicator generally improved model fit. To show this, I include one model without the indicator for gay neighborhoods in each of the Appendix D tables.
 
-![Model results.](../../output/figures/gay_coefficient_plot.png)
-
 The models shown in Figure 6 are generally consistent in relation to each other. One limitation is that the standard errors and displayed 95% confidence intervals do not incorporate the measurement error in the American Community Survey. One motivation for the fourth, aggregated model is that aggregation reduces the impact of this measurement error. This is true even as the standard errors increase due to a decrease in the number of observations. For both this reason and the fact that matching attempts to control heterogeneity, the matched and aggregated model provides the most reasonable and appropriate estimates and confidence intervals. These are the values I report in the text.
+
+Proportion white and median income in 2011-2015 are less clearly different for gay neighborhoods. Gay neighborhoods emerge as whiter than their counterparts in the final model, by 2.6 percentage points, but in the other three models this association is not so pronounced. Gay neighborhoods are also weakly associated with increased median income, but the statistical power of my data is insufficient to say this with certainty, particularly in the matched models.
+
+Finally, changes in median rent and population density appear to have no association with gay neighborhoods. The estimated coefficients for these outcomes are near zero, although gay neighborhoods are possibly weakly associated with decreased population density in 2011-2015.
+
+![Comparison to random effects.](../../output/figures/ranef_col_edu_rent.png)
+
+To contextualize the magnitude of these associations, I compare them to inter-city variation. In Figure 7, I present random-effect plots for two outcomes, proportion college-educated and median rent. These plots show the variation in intercepts from the second set of models, the multilevel models of all tracts. This figure illustrates the substantial variation across cities in proportion college-educated and median rents at the tract level, net of other tract characteristics. For proportion college-educated, the difference between gay neighborhoods and other neighborhoods is nearly equivalent to the difference between an outlier like Washington, DC, and a more average city like Chicago. For rents, by contrast, the minimal differences between gay and other neighborhoods are far outweighed by differences between cities.
+
+
+
+[this is the part where I change my interpretations]
