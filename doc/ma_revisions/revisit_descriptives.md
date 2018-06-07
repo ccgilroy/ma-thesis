@@ -58,6 +58,9 @@ those two most educated places that also decrease in income are
 West Hollywood and Hell's Kitchen ... two places that we think
 from other sources remain pretty gay (HK is a new gayborhood in Ghaziani's terms)
 
+Two highly educated places that see a decrease in income are West Hollywood and Hell's Kitchen. The latter is a "new" gayborhood, in Ghaziani's account [-@ghaziani_there_2014].
+
+
 
 A few places,
 
@@ -69,7 +72,7 @@ Hell's Kitchen is a "new" gay neighborhood, in Ghaziani's terms.
 In terms of model interpretations, increasing more slowly, not decreasing
 
 
-Andersonville, which Ghaziani marks as the new gay neighborhood in Chicago, and a target for directed queer migration, is one of the neighborhoods becoming less male and more married.
+Andersonville, which @ghaziani_there_2014 marks as the new gay neighborhood in Chicago, and a target for directed queer migration, is one of the neighborhoods that has become less male and more married in recent years.
 
 # observations
 
@@ -105,6 +108,8 @@ Better-studied gay neighborhoods (in SF, NYC, Chicago, LA, Boston, Seattle) don'
 In terms of regional patterns, Florida and Los Angeles are the main places with increasing education and decreasing incomes. The few neighborhoods getting less male and less married are also mostly in Florida.
 
 Some specific neighborhoods provide more evidence for local heterogeneity, rather than national patterns. Hell's Kitchen in NYC, which Ghaziani notes as a "new" gay neighborhood, is another place with increasing education and decreasing income—distinct from Chelsea and Greenwich Village, which are both getting wealthier. By contrast, Andersonville in Chicago, another new gay neighborhood which Ghaziani focuses on as a destination for directed queer migration, is actually becoming more married and less male. Finally, both neighborhoods in San Francisco (Castro and Polk) are increasingly male and less married, which suggests that the "tech bro" problem is a real limitation there.
+
+Finally, both the Castro and Polk Street in San Francisco have become increasingly male and less married; I raise an alternative explanation for this in the conclusion.
 
 # what's my beef with Ghaziani?
 

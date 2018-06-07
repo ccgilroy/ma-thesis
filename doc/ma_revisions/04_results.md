@@ -29,13 +29,13 @@ In total, I identify 28 gay neighborhoods across 23 cities. They are diverse in 
 
 The high degree to which gay institutions are concentrated in gay neighborhoods can be illustrated as follows. Of the 295 Census tracts in these cities that contain at least one gay bar, only 146 tracts---49.5% of the original number---fall in what I consider to be gay neighborhoods. However, these gay neighborhoods contain more than two thirds of all of the gay bars in these cities, numbering 346 of 529, or 67.3%. These 346 gay-neighborhood bars outnumber the 311 gay bars in the 24 other cities and nine resort towns combined. Though I do not produce similar measures of gay residential concentration, I take this uneven distribution to indicate the outsized importance of these neighborhoods for LGBTQ community life.
 
-[WAIT, is this right?!? check out those tract numbers]
-
-[THAT'S the most important thing to do before I leave for the gym.]
-
 ## Descriptive results
 
-demographic signature; distinct change on SOME characteristics, but not others
+Gay neighborhoods have distinct demographic and economic characteristics, a "signature" of traits not directly related to their residents' sexual identities. For some of these traits, the changes gay neighborhoods have undergone in the past decade are consistent with each other, and distinct from other neighborhoods. On other traits, however, gay neighborhoods exhibit considerable heterogeneity in how they change. I present tables and figures to illustrate these findings, and discuss both general trends and specific examples.
+
+For the 23 cities that are the focus of my analysis, I present average tract values for the seven characteristics of interest in Table 1. I divide Census tracts into four groups: tracts located in gay neighborhoods, tracts matched to be as similar as possible to those neighborhoods in the 2006-2010 time period, tracts containing gay bars outside of gay neighborhoods, and all other tracts in the included counties. I show average values for 2006-2010 and 2011-2015 side-by-side to provide an overview of temporal change.
+
+This is the demographic signature of gay neighborhoods: they are whiter and more educated than most tracts in their areas. They have more men, and fewer married couples. They are denser, wealthier, and more expensive to rent in. This initial description of gay neighborhoods agrees with the work of previous scholars, such as @castells_cultural_1983, @hanhardt_safe_2013, and @ghaziani_there_2014. Table 1 also shows that matching by Mahalanobis distance successfully achieved similarity across all seven variables in 2006-2010. Because gay-neighborhood tracts are unusual, this is important to confirm. Finally, the tracts with gay bars outside gay neighborhoods have different characteristics from those inside gay neighborhoods. These values are often intermediate between gay neighborhoods and other places, except for median income, which is the lowest of all four categories of tracts. This suggests that excluding these tracts from my models is, in fact, appropriate. 
 
 \linespread{1}\selectfont
 
@@ -77,6 +77,10 @@ population density & 19776.80 & 21400.86 & 13978.71 & 14567.13\\
 \end{table}
 
 \linespread{1.6}\selectfont
+
+
+![Gay neighborhoods in their local urban contexts. Red lines represent parity.](../../output/figures/demographic_comparison.png)
+
 
 ## Modeling results
 
