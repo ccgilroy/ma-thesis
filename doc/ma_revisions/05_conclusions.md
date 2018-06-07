@@ -3,19 +3,14 @@
 
 # Discussion and conclusions
 
-## Findings
+It is premature to declare, as the *New York Times* has [@brown_gay_2007; @james_there_2017], that gay neighborhoods are going away. I find that gay neighborhoods were and are demographically and economically distinctive. They share commonalities with each other in what they look like, and in how they change over time. But I find no widespread evidence of assimilation in gay neighborhoods. Instead, I see some evidence of continuing differences. Evidence for a unique degree of advanced gentrification in gay neighborhoods is also limited.
 
-It is premature to declare, as the *New York Times* has [@brown_gay_2007; @james_there_2017], that gay neighborhoods are going away. I find that gay neighborhoods were and are demographically and economically distinctive. They share commonalities with each other in what they look like, and in how they change over time. But I find no widespread evidence of assimilation in gay neighborhoods. Instead, I see some evidence of continuing differences. Evidence for a unique degree of advanced gentrification in gay neighborhoods is also limited. However, the moderate increases I observe in education and, to a lesser extent, income levels might ultimately undermine status of these places as gay neighborhoods.
+My findings contrast with the "there goes the gayborhood" model. If the amenities and character of gay neighborhoods were uniquely attractive to straight newcomers, we would have seen a marked influx of different-sex married couples, and rents would have likely gone up to match. If LGBTQ people had used their increased acceptance into society to assimilate and integrate, then the integration of gay men would have been reflected in gay neighborhoods becoming less male. I see neither of these trends.
 
-## how does this connect to theory?
+However, gay neighborhoods are not totally static. The moderate increases I observe in education and, to a lesser extent, income levels might eventually undermine status of these places as gay neighborhoods. Paradoxically, the LGBTQ people best positioned to benefit from increasing acceptance---middle-class, white, partnered gay men and lesbians---are also those most able to choose to remain in gay neighborhoods if they desire. Those with the greatest continuing need for LGBTQ spaces---queer youth, trans people, and queer people of color---are the most likely to be pushed out by change. If gay neighborhoods were ever inclusive spaces for the entire LGBTQ community, the risk is that they are now homogenizing, becoming more than ever the exclusive domain of affluent gay men.
 
-Let's contrast this with expectations
+My findings are limited in scope to specific material changes, not cultural ones. The cultural and institutional changes that qualitative researchers have observed in gay neighborhoods are real. Bars have closed; the tenor of street life has changed [@hanhardt_safe_2013; @mattson_style_2015]. But I do not see the broad demographic and economic upheaval that is supposed to have precipitated these changes. When gay neighborhoods do change, they differ from other places mostly in terms of symbolic impact. This is why scholars such as @ghaziani_there_2014 have been so attentive to shifts in the meaning of gay neighborhoods. LGBTQ people care about outcomes in these particular neighborhoods not because the processes of urban change are unique, but because their communities are uniquely impacted.
 
-according to TGTG
-
-gay neighborhoods were uniquely attractive to the straights
-
-simultaneously less relevant to the gays
 
 ## what concerns remain?
 
@@ -27,16 +22,24 @@ Conversely, gentrification might leave only affluent gay men
 
 again, mention queer POC
 
-possibility that these neighborhoods are homogenizing
+
+even though we see that these neighborhoods
 
 
 in some senses, I'm doing exactly what Japonica would expect a quant person to do: minimize the findings of qual folks by going more general on them. but that's not exactly it! calling into question straightforward link between demographic/economic change and cultural/institutional change
+
+
+
 
 Cultural and institutional change is real.
 
 I don't see the broad demographic and economic upheaval that is supposed to have precipitated it.
 
 ## how connects to general urban stuff?
+
+despite originating in isolation
+
+with more heterosexual Americans expressing support for LGBTQ people than ever before []
 
 What does this tell us more generally? maybe they *haven't* exhausted their purpose, still part of the urban landscape
 
