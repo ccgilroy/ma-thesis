@@ -7,8 +7,6 @@ date: "June 7, 2018"
 output:
     pdf_document:
         latex_engine: xelatex
-        # includes:
-        #     after_body: 07_appendix.tex
 mainfont: Gentium Basic
 monofont: InconsolataGo
 fontsize: 12pt
@@ -45,14 +43,16 @@ csl: american-sociological-association.csl
 ```{r child='05_conclusions.md'}
 ```
 
-\newpage
-
-```{r child='06_appendix.md}
+```{r child='06_appendix.md'}
 ```
 
 \newpage
+
+\setlength{\parskip}{0em}
+\linespread{1.6}\selectfont
 
 # References
 
 \setlength\parindent{-0.5cm}
 \setlength\leftskip{0.5cm}
+
