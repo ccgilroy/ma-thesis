@@ -35,8 +35,6 @@ Gay neighborhoods have distinct demographic and economic characteristics, a "sig
 
 For the 23 cities that are the focus of my analysis, I present average tract values for the seven characteristics of interest in Table 1. I divide Census tracts into four groups: tracts located in gay neighborhoods, tracts matched to be as similar as possible to those neighborhoods in the 2006-2010 time period, tracts containing gay bars outside of gay neighborhoods, and all other tracts in the included counties. I show average values for 2006-2010 and 2011-2015 side-by-side to provide an overview of temporal change.
 
-This is the demographic signature of gay neighborhoods: they are whiter and more educated than most tracts in their areas. They have more men, and fewer married couples. They are denser, wealthier, and more expensive to rent in. This initial description of gay neighborhoods agrees with the work of previous scholars, such as @castells_cultural_1983, @hanhardt_safe_2013, and @ghaziani_there_2014. Table 1 also shows that matching by Mahalanobis distance successfully achieved similarity across all seven variables in 2006-2010. Because gay-neighborhood tracts are unusual, this is important to confirm. Finally, the tracts with gay bars outside gay neighborhoods have different characteristics from those inside gay neighborhoods. These values are often intermediate between gay neighborhoods and other places, except for median income, which is the lowest of all four categories of tracts. This suggests that excluding these tracts from my models is, in fact, appropriate. 
-
 \linespread{1}\selectfont
 
 \begin{table}
@@ -78,9 +76,21 @@ population density & 19776.80 & 21400.86 & 13978.71 & 14567.13\\
 
 \linespread{1.6}\selectfont
 
+This is the demographic signature of gay neighborhoods: they are whiter and more educated than most tracts in their areas. They have more men, and fewer married couples. They are denser, wealthier, and more expensive to rent in. This initial description of gay neighborhoods agrees with the work of previous scholars, such as @castells_cultural_1983, @hanhardt_safe_2013, and @ghaziani_there_2014. Table 1 also shows that matching by Mahalanobis distance successfully achieved similarity across all seven variables in 2006-2010. Because gay-neighborhood tracts are unusual, this is important to confirm. Finally, the tracts with gay bars outside gay neighborhoods have different characteristics from those inside gay neighborhoods. These values are often intermediate between gay neighborhoods and other places, except for median income, which is consistently the lowest of all four categories of tracts. This suggests that excluding these tracts from my models is, in fact, appropriate.
+
+Over the short period of time I examine here, the average change seen in gay neighborhoods is not dramatic. Gay neighborhoods hold relatively constant on most demographic characteristics. They become slightly denser, with somewhat higher median rents. The most substantial changes are increases in education levels and incomes. In my models below, I examine how robust these trends are to statistical controls.
+
+Gay neighborhoods differ descriptively from other neighborhoods. To shed light on whether they differ from or are similar to each other, I describe their varying changes in more detail. In the subsequent figures, I present change at the neighborhood level, rather than the tract level. Neighborhoods, again, are aggregates of tracts. This allows me to show the variation across neighborhoods, and to highlight their different trajectories over time.
+
+Figure 3 shows more comprehensively that gay neighborhoods differ demographically from their urban contexts. The four plots compare different demographic characteristics for each neighborhood against the county in which that neighborhood is located. Gay neighborhoods do not only differ on average from other places. Nearly every individual gay neighborhood is more educated, more male, less married, and whiter than its corresponding county. This is consistent with the notion that these neighborhoods are spaces for middle-class, white, gay men. However, the scale of variation differs by variable. Gay neighborhoods cluster narrowly between 50-60% male, which means that they are far from exclusively populated by men. They show much greater heterogeneity in racial composition, from under 25% white in Northcentral, San Antonio, to nearly 90% white in German Village, Columbus. While distinct, gay neighborhoods are not universally white and male.
 
 ![Gay neighborhoods in their local urban contexts. Red lines represent parity.](../../output/figures/demographic_comparison.png)
 
+Figure 3 begins to show change over time, but I use bivariate plots to make the point more clearly.
+
+tied to the continued presence or exodus of gay men
+
+tied to the influx of heteros
 
 ## Modeling results
 
