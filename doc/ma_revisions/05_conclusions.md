@@ -22,8 +22,6 @@ Future work should therefore examine change going back to at least 2000, using t
 
 
 
-**more clever use of existing measures** to answer who is leaving or being pushed out, and who is moving in. Economic heterogeneity, age structure, etc.
-
 ## Future and meta-contributions
 
 Methodologically, it’s productive to complement qualitative findings with broad, comparative, quantitative approaches

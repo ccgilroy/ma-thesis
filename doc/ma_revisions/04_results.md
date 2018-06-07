@@ -118,21 +118,4 @@ Finally, changes in median rent and population density appear to have no associa
 
 To contextualize the magnitude of these associations, I compare them to inter-city variation. In Figure 7, I present random-effect plots for two outcomes, proportion college-educated and median rent. These plots show the variation in intercepts from the second set of models, the multilevel models of all tracts. This figure illustrates the substantial variation across cities in proportion college-educated and median rents at the tract level, net of other tract characteristics. For proportion college-educated, the difference between gay neighborhoods and other neighborhoods is nearly equivalent to the difference between an outlier like Washington, DC, and a more average city like Chicago. For rents, by contrast, the minimal differences between gay and other neighborhoods are far outweighed by differences between cities.
 
-[this is the part where I change my interpretations]
-
-Evidence for
-
-While I observed above that some gay neighborhoods saw descriptive increases in the proportion of married-couple households,
-these increases are actually less than what comparable neighborhoods experienced over the same timeframe.
-
-not evidence for displacement
-
-income ain't clear; rent nope. 
-
-Here's what Kate says:
-
-> In interpret these results thus:  there is minimal evidence of demographic displacement in gay neighborhoods between 2006 and 2015.  Compared with similar neighborhoods in their own cities, gay neighborhoods are not experiencing disproportionate change in the median income of residents or the median rent.  Taken together, these results suggest that there is little evidence of the erosion of these neighborhoods, or of a unique pattern of neighborhood change.
-
-Compare this to the four paragraphs I've got written.
-
-last paragraph goes to limitations
+From these models, the evidence for demographic displacement in gay neighborhoods between 2006 and 2015 is minimal. Earlier, I observed that some gay neighborhoods saw descriptive increases in the proportion of married-couple households. But these increases are actually less than what similar neighborhoods experienced over the same timeframe. The models provide a weak indication of increases in the median income of gay neighborhood residents, but the evidence is not strong enough to definitively conclude that these increases are disproportionate. Gay neighborhoods are not experiencing disproportionate change in median rents. Taken together, these results suggest that there is little evidence of the erosion of these neighborhoods.
