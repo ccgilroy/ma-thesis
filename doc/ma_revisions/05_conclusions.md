@@ -14,27 +14,13 @@ When gay neighborhoods do change, they differ from other places mostly in terms 
 
 Despite their origins in social isolation, gay neighborhoods have persisted. With more heterosexual Americans expressing support for LGBTQ people than ever before [@rosenfeld_moving_2017; @mccarthy_two_2018], this persistence is noteworthy. The fate of Wirth's Jewish ghetto [-@wirth_ghetto_1928] was eventual assimilation, and gay neighborhoods were expected to follow the same path. Instead, they continue to fulfill a role for LGBTQ communities, and to contribute to the fabric of their cities more generally. This finding lays the foundation for future comparisons. Gay spaces may remain distinct through unique advantages, such as economic heterogeneity, or they may hold broader lessons that generalize across marginalized and minority groups. The puzzle of persistence raises intriguing possibilities for future comparative work.
 
-The two primary limitations of the current work relate to measurement and data. One is intrinsically difficult to solve; the other may be resolved by future work. First, there are inevitable shortcomings to the fact that I cannot measure neighborhood residents' sexualities directly. My method relies on straight and LGBTQ residents being demographically distinct from each other. However, young, single individuals---especially men---might be demographically indistinguishable, whether straight or gay. There are specific cases where this has the potential to be a problem. The West Coast cities of San Francisco and Seattle have experienced an influx of young, single, male technology workers, and this straight "tech bro" demographic is consequential for gay neighborhoods in these cities [@herzog_amazon_2015]. In my results, technology workers provide a likely explanation for why the Castro and Polk Street neighborhoods are increasingly single and increasingly male---but possibly still "de-gaying." I mitigate this methodological problem by considering economic factors such as income---"tech bros" are high earners---alongside demographic traits. Fundamentally, however, sexual orientation cannot be measured at fine spatial scales using existing data.
+The two primary limitations of the current work relate to measurement and data. One is intrinsically difficult to solve; the other may be addressed by future work. First, there are inevitable shortcomings to the fact that I cannot measure neighborhood residents' sexualities directly. My method relies on straight and LGBTQ residents being demographically distinct from each other. However, young, single individuals---especially men---might be demographically indistinguishable, whether straight or gay. There are specific cases where this has the potential to be a problem. The West Coast cities of San Francisco and Seattle have experienced an influx of young, single, male technology workers, and this straight "tech bro" demographic is consequential for gay neighborhoods in these cities [@herzog_amazon_2015]. In my results, technology workers provide a likely explanation for why the Castro and Polk Street neighborhoods are increasingly single and increasingly male---but possibly still "de-gaying." I mitigate this methodological problem by considering economic factors such as income---"tech bros" are high earners---alongside demographic traits. Fundamentally, however, sexual orientation cannot be measured at fine spatial scales using existing data.
 
-Second, I am limited by the short time scale of the American Community Survey. "Recent" but maybe too recent
+Second, I am limited by the short time scale of the American Community Survey. The uptick in media accounts of gay neighborhood change is recent [@ghaziani_there_2014], as is the surge of research on that change [@brown_gender_2014]. But data beginning in 2006 may be too recent to capture all relevant changes. Moreover, two time points are insufficient to uncover heterogeneity in rates of change across gay neighborhoods, or to account for the possibility that temporal trends are shifted or lagged. Observing heterogeneous or lagged change would provide evidence for the stage model of gayborhoods [@collins_sexual_2004], which explicitly allows for different gay neighborhoods to be in different phases of development or decline. That would, in turn, provide stronger support for the idea that gay neighborhoods change primarily in response to local urban conditions. While I have provided evidence against the competing model of a universal move toward assimilation, positive evidence in favor of heterogeneity would be ideal.
 
-Gay neighborhood change
+Future work should therefore examine change going back to at least 2000, using the decennial Census. It should be possible to confirm that the gay neighborhoods I observe from 2006 onward had similar demographic signatures in the past. Additional data, over a longer period of time, could confirm patterns of change and help to disentangle the reasons for variations. Using an even wider range of existing measures, such as economic heterogeneity or age structure, could more definitively answer the question of who is leaving or being displaced from gay neighborhoods.
 
-The increased media concern
 
-uptick in concern around 2007.
-
-same demographic signature in the past?
-
-**The time scale is an issue.**
-
-Future work should examine change going back to at least 2000, using the decennial Census. 
-
-There would be little advantage to examining change before 2000, because there is no competing explanation to contend with.
-
-Concern over gay neighborhood change only intensifies in the late 2000s, in any case.
-
-But the stage model [@collins_sexual_2004] is a local model of change
 
 **more clever use of existing measures** to answer who is leaving or being pushed out, and who is moving in. Economic heterogeneity, age structure, etc.
 
