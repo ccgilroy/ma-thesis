@@ -37,7 +37,7 @@ csl: american-sociological-association.csl
 ```{r child='04_results.md'}
 ```
 
-```{r child='06_conclusions.md'}
+```{r child='05_conclusions.md'}
 ```
 
 \newpage
