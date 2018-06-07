@@ -5,9 +5,17 @@
 
 ## Findings
 
-It is premature to declare, as the *New York Times* has [@brown_gay_2007; @james_there_2017], that gay neighborhoods are going away. I find that gay neighborhoods were and are demographically and economically distinctive. They share commonalities with each other in what they look like, and in how they change over time. But I find no widespread evidence of assimilation in gay neighborhoods. Instead, I see some evidence of continuing differences. Evidence for a unique degree of advanced gentrification in gay neighborhoods is also limited, though changes in education and, to a lesser extent, income levels might ultimately undermine status of these places as gay neighborhoods. 
+It is premature to declare, as the *New York Times* has [@brown_gay_2007; @james_there_2017], that gay neighborhoods are going away. I find that gay neighborhoods were and are demographically and economically distinctive. They share commonalities with each other in what they look like, and in how they change over time. But I find no widespread evidence of assimilation in gay neighborhoods. Instead, I see some evidence of continuing differences. Evidence for a unique degree of advanced gentrification in gay neighborhoods is also limited. However, the moderate increases I observe in education and, to a lesser extent, income levels might ultimately undermine status of these places as gay neighborhoods.
 
 ## how does this connect to theory?
+
+Let's contrast this with expectations
+
+according to TGTG
+
+gay neighborhoods were uniquely attractive to the straights
+
+simultaneously less relevant to the gays
 
 ## what concerns remain?
 
@@ -43,11 +51,6 @@ persistence is kind of intriguing; hopeful? inspiring?
 foundation for future comparisons? preserving the uniqueness of gay spaces [is this even a useful model? are the resources LGBTQ communities have by virtue of race and class an unique advantage, one that isn't replicable]
 
 why is change perceived to be more widespread than it is?
-
-
-
-
-
 
 ## Limitations
 
@@ -91,3 +94,5 @@ How are perceptions of and cultural boundaries around communities shifting?
 Given variable attachment among individuals, and rapid social change, how and why are investments in community persisting?
 
 can't look at them only insofar as they are "de-gaying" or "straightening". Think broader!
+
+quantitative thresholds

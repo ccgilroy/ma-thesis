@@ -120,6 +120,15 @@ To contextualize the magnitude of these associations, I compare them to inter-ci
 
 [this is the part where I change my interpretations]
 
+Evidence for
+
+While I observed above that some gay neighborhoods saw descriptive increases in the proportion of married-couple households,
+these increases are actually less than what comparable neighborhoods experienced over the same timeframe.
+
+not evidence for displacement
+
+income ain't clear; rent nope. 
+
 Here's what Kate says:
 
 > In interpret these results thus:  there is minimal evidence of demographic displacement in gay neighborhoods between 2006 and 2015.  Compared with similar neighborhoods in their own cities, gay neighborhoods are not experiencing disproportionate change in the median income of residents or the median rent.  Taken together, these results suggest that there is little evidence of the erosion of these neighborhoods, or of a unique pattern of neighborhood change.
