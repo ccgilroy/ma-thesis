@@ -4,7 +4,7 @@
 # Introduction
 
 > "When we use the phrase 'gay community' we are implying something more than a gay territory and an open gay life style. We are referring to a deliberate effort by gay people to set up their own organizations and institutions in all spheres of life."  
-> — @castells_cultural_1983
+> — @castells_cultural_1983 [161]
 
 Neighborhood enclaves identified with particular minority communities are a feature of cities. They arise in response to forces such as social stigma and economic disadvantage pushing minority groups apart from the rest of urban society, and cultural factors such as language, religion, and a desire for community pulling them together. Because cities are large and heterogeneous, they can support the existence of homophilic and homogeneous enclaves, which can develop institutions and cultures of their own: "small worlds" or subcultures within the large world of the city [@wirth_ghetto_1928; @wirth_urbanism_1938; @fischer_toward_1975]. While these enclaves are most commonly thought of in terms of race and ethnicity, which do dominate the spatial organization of the American city, other social characteristics such as sexuality may also form the basis for a spatial community.
 

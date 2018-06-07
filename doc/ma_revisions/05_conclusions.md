@@ -20,16 +20,4 @@ Second, I am limited by the short time scale of the American Community Survey. T
 
 Future work should therefore examine change going back to at least 2000, using the decennial Census. It should be possible to confirm that the gay neighborhoods I observe from 2006 onward had similar demographic signatures in the past. Additional data, over a longer period of time, could confirm patterns of change and help to disentangle the reasons for variations. Using an even wider range of existing measures, such as economic heterogeneity or age structure, could more definitively answer the question of who is leaving or being displaced from gay neighborhoods.
 
-
-
-## Future and meta-contributions
-
-Methodologically, it’s productive to complement qualitative findings with broad, comparative, quantitative approaches
-
-Substantively, territoriality is one instantiation of LGBTQ community
-How are perceptions of and cultural boundaries around communities shifting?
-Given variable attachment among individuals, and rapid social change, how and why are investments in community persisting?
-
-can't look at them only insofar as they are "de-gaying" or "straightening". Think broader!
-
-quantitative thresholds
+Places matter to people. Gay neighborhoods are significant to LGBTQ people, just as other places take on special meaning for other social groups. Qualitative research across history, geography, and sociology attests to this fact. If quantitative sociologists take this observation seriously, we can complement qualitative findings with our systematic and comparative lens. My work here is a first step toward productive dialogue across a methodological divide, and I believe this rapprochement can be generative for studying many aspects of social life.

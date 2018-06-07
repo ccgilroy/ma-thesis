@@ -3,9 +3,7 @@
 
 # Data and methods
 
-I proceed by identifying gay neighborhoods, selecting characteristics to examine, and modeling change over time comparatively. I identify gay neighborhoods consistently across a range of cities by using clusters of gay bars. I select seven Census tract features from the American Community Survey at two time points, and use the values of those features at the earlier time period to match tracts within cities. I use linear models with appropriate controls to assess whether gay neighborhoods change differently from other neighborhoods over time.
-
-[NOTE: when do I first say what "recent" means? It's *very* recent, probably *too* recent. But I have plans to fix that later, which I cover in my conclusion.]
+I proceed by identifying gay neighborhoods, selecting characteristics to examine, and modeling change over time comparatively. I identify gay neighborhoods consistently across a range of cities by using clusters of gay bars. I select seven Census tract features from the American Community Survey at two time points, spanning a ten-year period from 2006 to 2015, and use the values of those features at the earlier time period to match tracts within cities. I use linear models with appropriate controls to assess whether gay neighborhoods change differently from other neighborhoods over time.
 
 ## Gay neighborhoods from gay bars
 
