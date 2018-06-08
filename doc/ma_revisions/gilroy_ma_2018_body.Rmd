@@ -1,9 +1,4 @@
 ---
-title: |
-    | How Distinct Is Gay Neighborhood Change?
-    | Patterns and Variation in Gayborhood Trajectories
-author: "Connor Gilroy"
-date: "June 7, 2018"
 output:
     pdf_document:
         latex_engine: xelatex
@@ -22,10 +17,6 @@ csl: american-sociological-association.csl
 \setlength{\parskip}{0em}
 \linespread{1.6}\selectfont
 \def\UrlBreaks{\do\/\do-\do\.\do\_}
-
-
-```{r child='00_abstract.md'}
-```
 
 \newpage
 
